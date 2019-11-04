@@ -1,3 +1,4 @@
+
 ##Process Species Attributes
 
 library(readxl)
@@ -153,7 +154,7 @@ for(r in 1:nrow(d_fs_mean)){
 }
 
 #Plot:
-pdf("./Figures/EDA/RichnessNative1.pdf",height = 4, width = 6)
+#pdf("./Figures/EDA/RichnessNative1.pdf",height = 4, width = 6)
 ggplot(d_fs_mean) +
   geom_point(aes(x=year, y=Richness_native_mean, col = TRT)) + 
   geom_line(aes(x=year, y=Richness_native_mean, col = TRT))+
@@ -167,7 +168,7 @@ ggplot(d_fs_mean) +
   facet_grid(cols=vars(RevBI)) + 
   labs(col = "Treatment", y = "Native Richness") +
   theme(legend.position = c(0.8,0.8))
-dev.off()
+#dev.off()
 
 ggplot(d_annual_fs) + #Old, deprecate eventually
   geom_smooth(aes(x = year, y = Richness_exotic, col = TRT)) + 
@@ -192,7 +193,7 @@ for(r in 1:nrow(d_fs_mean)){
 }
 
 #Plot:
-pdf("./Figures/EDA/PropExotic1.pdf", height = 4, width = 6)
+#pdf("./Figures/EDA/PropExotic1.pdf", height = 4, width = 6)
 ggplot(d_fs_mean) +
   geom_point(aes(x=year, y=Prop_exotic_mean, lty = TRT)) + 
   geom_line(aes(x=year, y=Prop_exotic_mean, lty = TRT))+
@@ -207,7 +208,7 @@ ggplot(d_fs_mean) +
   labs(lty = "Treatment", y = "Proportion Exotic") +
   theme_bw() +
   theme(legend.position = c(0.8,0.8))
-dev.off()
+#dev.off()
 
 ####3.3 Q3####
 #How does exotic species cover change over time as a function of burn severity and seeding?
@@ -227,7 +228,7 @@ for(r in 1:nrow(d_fs_mean)){
 }
 
 #Plot:
-pdf("./Figures/EDA/PctCoverExotic1.pdf", height = 4, width = 6)
+#pdf("./Figures/EDA/PctCoverExotic1.pdf", height = 4, width = 6)
 ggplot(d_fs_mean) +
   geom_point(aes(x=year, y=PctC_exotic_mean, lty = TRT)) + 
   geom_line(aes(x=year, y=PctC_exotic_mean, lty = TRT))+
@@ -242,7 +243,7 @@ ggplot(d_fs_mean) +
   labs(lty = "Treatment", y = "Exotic Percent Cover") +
   theme_bw() +
   theme(legend.position = c(0.8,0.8))
-dev.off()
+#dev.off()
 
 ####3.4 Q4####
 #What are the dynamics of the invaders in the seed mix?
@@ -254,6 +255,7 @@ dev.off()
 #create exp(x)-1 transformation, the inverse of log(1+p)
 #https://stackoverflow.com/questions/2777053/in-ggplot-restrict-y-to-be-0-in-loess/2782383#2782383
 expm1_trans <-  function() trans_new("expm1", "expm1", "log1p")
+#Need this for a plotting function below.
 
 ##2 main models
 #Models
@@ -278,7 +280,7 @@ for(r in 1:nrow(d_mean_exotic_2main)){
 }
 
 
-pdf("./Figures/EDA/Cover2Main_1.pdf",width = 6, height = 4)
+#pdf("./Figures/EDA/Cover2Main_1.pdf",width = 6, height = 4)
 ggplot(d_mean_exotic_2main) +
   geom_point(aes(x=year, y=PctC_mean, col = Code)) + 
   geom_line(aes(x=year, y=PctC_mean, col = Code, lty = TRT))+
@@ -297,9 +299,9 @@ ggplot(d_mean_exotic_2main) +
   labs(lty = "Treatment", col = "Species", y = "Exotic Percent Cover") +
   theme_bw() +
   theme(legend.position = c(0.8,0.55))
-dev.off()
+#dev.off()
 
-pdf("./Figures/EDA/Cover2Main_1.pdf")
+#pdf("./Figures/EDA/Cover2Main_1.pdf")
 ggplot(d_mean_exotic_2main) +
   geom_point(aes(x = year, y = PctC_mean, col = Code, pch = TRT)) +
   geom_smooth(aes(x = year, y = PctC_mean, col = Code, lty = TRT)) + 
@@ -309,5 +311,5 @@ ggplot(d_mean_exotic_2main) +
   theme_bw() +
   #lims(y = c(0,50)) +
   theme(legend.position = c(0.8,0.7))
-dev.off()
+#dev.off()
 
