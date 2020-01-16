@@ -7,7 +7,7 @@
 
 library(readxl) #version 1.3.1 for read_excel()
 library(dplyr) #version
-library(ggplot2)
+library(ggplot2) #version 3.1.0
 library(reshape2)
 library(splines)
 library(scales)
@@ -23,9 +23,6 @@ natives <- unique(d_old$Code[which(d_old$Origin=="native")])
 #unk_full <- unique(d_old$Full_name[which(is.na(d_old$Origin))])
 d <- # took ./Data/ out; change to 2019
   read_excel("./Data/All Years 1997-2019 PermPlot-Entire.xlsx", sheet = "97-2019 EX1") 
-#JTS: Why did you take out ./Data/? I need that for it to work on my computer. Is it a different syntax on a PC I wonder?
-# need to change column names in excel file: add Origin; Genus/Species > Full_name; 
-#JTS: Was this done?
 
 # Species Code > Code; live/dead > Status; GF > Growth_form; Basal + canopy cm > 
 # Total_cm; Total transect_cm > Transect_cm; %C > PctC
@@ -159,7 +156,7 @@ for(r in 1:nrow(d_fs_mean)){
     d_fs_mean[r,paste(v,"sig",sep = "_")] = 
       summary(do.call("lm", list(as.formula(paste (v, "~ TRT")), data = d_yr)))$coef[2,4]
     print(summary(do.call("lm", list(as.formula(paste (v, "~ TRT")), data = d_yr))))
-    if(d_fs_mean[r,"TRT"] == "Unseeded" & d_fs_mean[r,paste(v,"sig",sep = "_")]<0.05){
+    if(d_fs_mean[r,"TRT"] == "Unseeded" & d_fs_mean[r,paste(v,"sig",sep = "_")] <0.05){
       d_fs_mean[r,paste(v,"symbol",sep = "_")] <- "*"
     } else d_fs_mean[r,paste(v,"symbol",sep = "_")] <- ""
   }
