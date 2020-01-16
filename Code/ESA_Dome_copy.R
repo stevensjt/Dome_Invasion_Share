@@ -14,15 +14,19 @@ library(scales)
 stdErr <- function(x) sqrt(var(x, na.rm = T)/length(na.exclude(x)))
 
 ####1. Data input and processing####
-d_old <- read_excel("dome_invasion_data.xlsx", sheet = "data") #Old data through 2013
+d_old <- read_excel("./Data/dome_invasion_data.xlsx", sheet = "data") #Old data through 2013
 ## use above code
 d_old$Origin[d_old$Origin=="NA"] <- NA #Recode NA from text to NA
 exotics <- unique(d_old$Code[which(d_old$Origin=="exotic")])
 natives <- unique(d_old$Code[which(d_old$Origin=="native")])
 #unk <- unique(d_old$Code[which(is.na(d_old$Origin))])
 #unk_full <- unique(d_old$Full_name[which(is.na(d_old$Origin))])
-d <- read_excel("All Years 1997-2019 PermPlot-Entire.xlsx", sheet = "97-2019 EX1") # took ./Data/ out; change to 2019
+d <- # took ./Data/ out; change to 2019
+  read_excel("./Data/All Years 1997-2019 PermPlot-Entire.xlsx", sheet = "97-2019 EX1") 
+#JTS: Why did you take out ./Data/? I need that for it to work on my computer. Is it a different syntax on a PC I wonder?
 # need to change column names in excel file: add Origin; Genus/Species > Full_name; 
+#JTS: Was this done?
+
 # Species Code > Code; live/dead > Status; GF > Growth_form; Basal + canopy cm > 
 # Total_cm; Total transect_cm > Transect_cm; %C > PctC
 d$Origin[d$Code%in%exotics] <- "exotic" 
@@ -174,16 +178,10 @@ ggplot(d_fs_mean) +
   geom_vline(aes(xintercept = 2011), lty = 2) +
   #geom_text(aes(x = year, y = 4, label = Richness_native_symbol), size =12) +
   facet_grid(cols=vars(RevBI)) + 
+  #JTS check facet_grid error. Column missing?
   labs(col = "Treatment", y = "Native Richness") +
   theme(legend.position = c(0.8,0.8))
 #dev.off()
-
-ggplot(d_annual_fs) + #Old, deprecate eventually
-  geom_smooth(aes(x = year, y = Richness_exotic, col = TRT)) + 
-  geom_vline(aes(xintercept = 1996), lty = 2) + 
-  geom_vline(aes(xintercept = 2011), lty = 2) +
-  geom_jitter(aes(x = year, y = Richness_exotic, col = TRT), width = 0.2) +
-  theme_bw()
 
 ####3.2 Q2####
 #How does exotic species proportion change over time as a function of burn severity and seeding?
