@@ -5,8 +5,8 @@
 
 ##Process Species Attributes
 
-library(readxl)
-library(dplyr)
+library(readxl) #version 1.3.1 for read_excel()
+library(dplyr) #version
 library(ggplot2)
 library(reshape2)
 library(splines)
