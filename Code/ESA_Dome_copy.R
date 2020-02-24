@@ -452,3 +452,118 @@ d_mean_exotic_2main %>%
 #!!! not much info given, overall cover for natives and brin increases in 2007
 #!!! decreases post 2011 fire 
 
+
+### How has oak/locust cover changed over time (alongside exotic cover)?
+### data visualization (no models)
+
+# generate dataset with mean percent cover of oak and locust
+
+## get oak/locust cover per transect per year (forest service land only)
+d_native <- 
+  #Remove trees from dataset because they're all native and mess up %cover
+  d[-which(d$Growth_form=="T"),] %>%
+  group_by(Transect_id, year) %>%
+  filter(FS_BAND == "FS") %>%
+  summarise(
+    RevBI = unique(RevBI),
+    FS_BAND = unique(FS_BAND), 
+    TRT = unique(TRT),
+    PctC_quercus = sum(PctC[grep("quga",Code)], na.rm = T), 
+    PctC_robinia = sum(PctC[grep("rone",Code)], na.rm = T)) 
+
+##average oak/locust cover per year 
+
+d_native_mean <- d_native %>%
+  group_by(year,RevBI,TRT) %>%
+  summarise(PctC_quercus_mean = mean(PctC_quercus), 
+            PctC_quercus_se = stdErr(PctC_quercus), 
+            PctC_robinia_mean = mean(PctC_robinia),
+            PctC_robinia_se = stdErr(PctC_robinia))
+    
+# plot exotic percent cover with Quercus gambellii, all burn plots
+
+ggplot(d_fs_mean) +
+  geom_point(aes(x=year, y=PctC_exotic_mean, lty = TRT)) + 
+  geom_line(aes(x=year, y=PctC_exotic_mean, lty = TRT))+
+  geom_errorbar(aes(x=year, ymin = PctC_exotic_mean - PctC_exotic_se, 
+                                        ymax = PctC_exotic_mean + PctC_exotic_se)) + 
+  geom_point(data = d_native_mean, aes(x=year, y=PctC_quercus_mean, color = 'Q. gambellii percent cover')) + 
+  geom_line(data = d_native_mean, aes(x=year, y=PctC_quercus_mean,lty = TRT, color = 'Q. gambellii percent cover'))+
+  geom_errorbar(data = d_native_mean, aes(x=year, ymin = PctC_quercus_mean - PctC_quercus_se, 
+                    ymax = PctC_quercus_mean + PctC_quercus_se),color = "salmon2") + 
+  geom_vline(aes(xintercept = 1996.5), lty = 2) +
+  geom_vline(aes(xintercept = 2011), lty = 2) +
+  facet_grid(cols=vars(RevBI)) + 
+  labs(lty = "Treatment", y = "Exotic Percent Cover", col = "") +
+  theme_bw() +
+  theme(legend.position = c(0.2,0.8))
+
+#!!! Q. agrifolia average cover is highest in high severity burn plots
+#!!! increasing cover across all plots by 2019
+
+# plot exotic percent cover with Quercus gambellii, high severity plots only
+
+# make dataframe with high severity quercus (and robinia) cover
+
+d_native_high <- d_native_mean %>%
+  filter(RevBI == "High")
+
+d_fs_mean %>%
+filter(RevBI == "High") %>%
+ggplot() +
+  geom_point(aes(x=year, y=PctC_exotic_mean, lty = TRT)) + 
+  geom_line(aes(x=year, y=PctC_exotic_mean, lty = TRT))+
+  geom_errorbar(aes(x=year, ymin = PctC_exotic_mean - PctC_exotic_se, 
+                                      ymax = PctC_exotic_mean + PctC_exotic_se)) + 
+  geom_point(dat = d_native_high, aes(x=year, y=PctC_quercus_mean, color = 'Q. gambellii percent cover')) + 
+  geom_line(dat = d_native_high, aes(x=year, y=PctC_quercus_mean,lty = TRT,  color = 'Q. gambellii percent cover'))+
+  geom_errorbar(dat = d_native_high, aes(x=year, ymin = PctC_quercus_mean - PctC_quercus_se, 
+                                          ymax = PctC_quercus_mean + PctC_quercus_se), color = "salmon2") + 
+  geom_vline(aes(xintercept = 1996.5), lty = 2) +
+  geom_vline(aes(xintercept = 2011), lty = 2) +
+  labs(lty = "Treatment", y = "Exotic Percent Cover", color = "") +
+  theme_bw() +
+  theme(legend.position = c(0.25,0.8))
+#!! Q. gambellii cover increased in seeded plots from 2016 to 2019 , while exotic cover decreased
+#!! in seeded plots 
+
+# plot exotic percent cover with R. neomexicana, all burn plots
+
+ggplot(d_fs_mean) +
+  geom_point(aes(x=year, y=PctC_exotic_mean, lty = TRT)) + 
+  geom_line(aes(x=year, y=PctC_exotic_mean, lty = TRT))+
+  geom_errorbar(aes(x=year, ymin = PctC_exotic_mean - PctC_exotic_se, 
+                    ymax = PctC_exotic_mean + PctC_exotic_se)) + 
+  geom_point(data = d_native_mean, aes(x=year, y=PctC_robinia_mean, color = 'R. neomexicana\npercent cover')) + 
+  geom_line(data = d_native_mean, aes(x=year, y = PctC_robinia_mean,lty = TRT, color = 'R. neomexicana\npercent cover'))+
+  geom_errorbar(data = d_native_mean, aes(x=year, ymin = PctC_robinia_mean - PctC_robinia_se, 
+                                          ymax = PctC_robinia_mean + PctC_robinia_se), color = "salmon2") + 
+  geom_vline(aes(xintercept = 1996.5), lty = 2) +
+  geom_vline(aes(xintercept = 2011), lty = 2) +
+  facet_grid(cols=vars(RevBI)) + 
+  labs(lty = "Treatment", y = "Exotic Percent Cover", col = "") +
+  theme_bw() +
+  theme(legend.position = c(0.85,0.8))
+
+#!!! Robinia cover increasing most in high & mod severity plots
+
+# plot exotic percent cover with robinia neomexicana, high severity burn plots only 
+
+d_fs_mean %>%
+  filter(RevBI == "High") %>%
+  ggplot() +
+  geom_point(aes(x=year, y=PctC_exotic_mean, lty = TRT)) + 
+  geom_line(aes(x=year, y=PctC_exotic_mean, lty = TRT))+
+  geom_errorbar(aes(x=year, ymin = PctC_exotic_mean - PctC_exotic_se, 
+                    ymax = PctC_exotic_mean + PctC_exotic_se)) + 
+  geom_point(dat = d_native_high, aes(x=year, y=PctC_robinia_mean, color = 'R. neomexicana\npercent cover')) + 
+  geom_line(dat = d_native_high, aes(x=year, y=PctC_robinia_mean,lty = TRT,  color = 'R. neomexicana\npercent cover'))+
+  geom_errorbar(dat = d_native_high, aes(x=year, ymin = PctC_robinia_mean - PctC_robinia_se, 
+                                         ymax = PctC_robinia_mean + PctC_robinia_se), color = "salmon3") + 
+  geom_vline(aes(xintercept = 1996.5), lty = 2) +
+  geom_vline(aes(xintercept = 2011), lty = 2) +
+  labs(lty = "Treatment", y = "Exotic Percent Cover", color = "") +
+  theme_bw() +
+  theme(legend.position = c(0.25,0.80)) 
+
+#!!! Average robinia cover incresed slightly from 2016-2019, as exotic cover dropped  
