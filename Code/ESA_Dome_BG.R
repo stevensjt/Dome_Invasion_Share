@@ -10,7 +10,7 @@ stdErr <- function(x) sqrt(var(x, na.rm = T)/length(na.exclude(x)))
 
 
 ####1. Data input and processing####
-setwd('/Users/BiancaGonzalez/Desktop/Bandelier USGS/R Analysis/Dome_Analysis/Dome_Invasion_Share')
+setwd('C:/Users/BiancaGonzalez/Desktop/Dome/Dome_Invasion_Share')
 
 d_old <- read_excel("./Data/dome_invasion_data.xlsx", sheet = "data") #Old data through 2013
 d_old$Origin[d_old$Origin=="NA"] <- NA #Recode NA 
@@ -24,7 +24,7 @@ unk_fullname <- unique(d_old$Full_name[which(is.na(d_old$Origin))])
 
 #gras assignment to most popular grasses by transect #by transect, filter using this UNK plant list and then per transect, assign plants
 # 2019 data
-d <- read_excel("./Data/All_Years_1997_2019_PermPlot_Entire.xlsx", sheet = "97-2019 EX1")
+d <- readxl::read_excel("./Data/All Years 1997-2019 PermPlot-Entire.xlsx", sheet = "97-2019 EX1")
 
 #initialize exotic/native column - 
 d$Origin[d$Code%in%exotics] <- "exotic" 
@@ -46,38 +46,33 @@ gras_cod<-unique(d$Code) %>% as.data.frame() #only gras and gras2
 # to look at: group by growth form and code
 gf_code<-d %>% group_by(Growth_form, Code) %>% summarise(n()) %>% rename(count = `n()`)
 
-# list of OEXX species with most common instances over all yrs
-oexx_inst<-d[grep("xx",d$Code,ignore.case = T), ] %>% group_by(Code, Full_name) %>% summarise(sum(Total_cm))
-select(Code, Total_cm) %>% arrange(-Total_cm)
+# list of OEXX species with most common instances over all yrs - to investigate with Kay?
+oexx_inst<-d[grep("xx",d$Code,ignore.case = T), ] %>% group_by(Code, Full_name) %>% summarise(sum(Total_cm)) %>% rename(Total_cm_sum = `sum(Total_cm)`) %>% 
+select(Code, Total_cm_sum) %>% arrange(-Total_cm_sum)
 
 # let's look at how common cheat grass is in plots
 cheat_plots<- d %>% subset(Code =="brte") %>% group_by(year,Transect_id) %>%
   summarise(sum(Total_cm)) %>% rename(Total_cm = `sum(Total_cm)`) %>% arrange(-Total_cm)
 
-# what threshold do we want for cheatgrass?  
-# above 1000 centimeters of cheatgrass --
+# threshold of above 1000 centimeters of cheatgrass --
 brte_plts<- cheat_plots %>% subset(Total_cm> 1000)
 
 # What are the transect IDs with the most common BRTE occurence?
 brte_plts$Transect_id %>% unique()
 
-# Maybe look at the plots that have had a certain X % increase in BRTE for every plot and do analysis on those
+# Look at the plots that have had a certain X % increase in BRTE for every plot and do analysis on those
 # need to calculate BRTE percent increase from year to year
 
-unique(cheat_plots$Transect_id[1])
+cheat_plots %>%
+  group_by(Transect_id) %>% 
+  arrange(year, .by_group=T) %>%
+  mutate(pct_change = (Total_cm/lag(Total_cm)-1) * 100) %>% 
+  arrange(pct_change)
 
-
-#mutate(FireYear = ifelse(Feature %in% grep("_fs", new_temp$Feature,value =T) == T, Year, NA))
-
-cheat_plots %>%  mutate(Percent_98 = ifelse((Transect_id == cheat_plots$Transect_id[1]) & (year==2008),
-                                            Total_cm,NA))
-ids<-unique(cheat_plots$Transect_id)
-for(i in seq_along(ids)){
+# graph of % increase in BRTE showcasing increase of brte  
   
-  two_sixteen<- cheat_plots[(cheat_plots$Transect_id[1]),]
-}
+#can I post changes? 
 
-#
 #mutate(percent = (count/sum(count)*100)
 
 # where there is lit underneath oak - is there cheat grass in these spaces?
@@ -101,7 +96,7 @@ d <- #Merge live and dead cover of a single species on a single transect|year
     Growth_form = unique(Growth_form), Origin = unique(Origin),
     Basal_cm = sum(Basal_cm), Canopy_cm = sum(Canopy_cm), 
     Total_cm = sum(Total_cm), Transect_cm = unique(Transect_cm),
-    PctC = sum(PctC)#, PctB = sum(PctB) #Last one deprecated in 2016 data
+    PctC = sum(PctC)# PctB = sum(PctB) #Last one deprecated in 2016 data
   )
 
 d_fs <- d[which(d$FS_BAND == "FS"),]
