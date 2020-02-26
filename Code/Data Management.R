@@ -36,16 +36,15 @@ d$Origin[d$Code%in%natives] <- "native"
 #Convert transect ID's to be consistently lower-case
 d$Transect_id <- tolower(d$Transect_id)
 
-#Remove transect only sampled in one yr.
-d <- d[-which(d$Transect_id=="3mbu2a"),] 
-
 #Burn severity issues
 #d <- d[-which(d$RevBI=="Low"),] #Remove the only transect in low severity (N=1; 3LAU1)
 d[which(d$Transect_id=="3LAU1"),"RevBI"] <- "Unburned" #Alternatively, lump in with "unburned"
 #Investigate multiple burn severity issue 
 #(CHECKME_JTS this was a comment from earlier, not sure if resolved)
 
-####3. Deal with ID issues (simplify)####
+
+
+####3. Simplify non-living codes####
 
 #Identify anything that's not a plant:
 not_plant <- c("Gravel", "Soil", "Litter", "Dead wood", "Rock", "Tree root, exposed, living",
@@ -56,7 +55,7 @@ d$Plant <- "y"
 d$Plant[d$Full_name%in%not_plant] <- "n" 
 
 #Consolidate anything that's not a plant:
-View(d[d$Full_name == "combined soil,cryp,pumc,grav,rock", ])
+#View(d[d$Full_name == "combined soil,cryp,pumc,grav,rock", ])
 d[d$Full_name== "Dead wood", "Full_name"] <- "Wood"
 d[d$Full_name== "Tree root, exposed, living", "Full_name"] <- "Root"
 d[d$Full_name== "combined soil,cryp,pumc,grav,rock", "Full_name"] <- "Bare"
@@ -65,6 +64,18 @@ d[d$Full_name== "Soil", "Full_name"] <- "Bare"
 d[d$Full_name== "Bare", "Code"] <- "bare"
 d[d$Full_name== "pine cone", "Code"] <- "litt"
 d[d$Full_name== "pine cone", "Full_name"] <- "litter" #CHECKME_JTS: Kay are pine cones called litter now?
+#DONE
+
+####4. Deal with name changes####
+##BG to-do
+#Create list of name changes (code_old, fullname_old, code_new etc)
+#to use for crosswalk with master data "d"
+#Do the crosswalk and 
+#Also do the crosswalk with "d_13"
+#then move on to step 5.
+#A
+
+####5. Deal with unknown orgins####
 
 #Flag plants that don't have origin. Develop a reconciliation document for these:
 d$RowNum <- c(1:nrow(d)) #for eventual sorting
@@ -73,4 +84,7 @@ issues <- d[is.na(d$Origin) & d$Plant=="y",
             c("RowNum","Transect_id", "year", "Total_cm", "Code", "Full_name", "Origin")]
 issues$Code_new <- "unchanged"
 issues$Full_name_new <- "unchanged"
-write.csv(issues, "Data/Tmp/Reconciliation1.csv")
+#issues$Code_old <- ""	#Not doing this, the name changes are being dealt with separately
+#issues$Full_name_old <- ""
+#write.csv(issues, "Data/BiancaReconciliation/Reconciliation1.csv")
+
