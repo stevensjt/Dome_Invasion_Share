@@ -6,6 +6,7 @@
 
 ####0. Load libraries####
 library(readxl)
+library(dplyr)
 
 ####1. Read data####
 d_13 <- #Old data through 2013
@@ -67,8 +68,51 @@ d[d$Full_name== "pine cone", "Full_name"] <- "litter" #CHECKME_JTS: Kay are pine
 #DONE
 
 ####4. Deal with name changes####
-##BG to-do
+## BG to finish
 #Create list of name changes (code_old, fullname_old, code_new etc)
+
+#Duplicate column to compare 
+d$fullname_old <- d$Full_name
+
+# add columns to compare
+d[c("code_old", "fullname_new", "code_new")] <-NA
+
+# let's make sure shortlist doesn't have mispellings in dataset and there are only two! 
+d[grep("villosa", d$Full_name, ignore.case = T),] %>% select("Full_name") %>% unique()
+
+# make a dataframe of characters to loop through to check partial name matches - can also import when Kay sends
+shortlist_partial <- c("neomexicana", "villosa")
+
+for(i in seq_along(shortlist_partial)){
+  d[grep(shortlist_partial[i], d$Full_name, ignore.case = T),] %>% select("Full_name") %>% unique() %>% print()
+}
+
+# while I wait for Kay to give me the shortlist of plant names, let's move forward with HEVI example
+
+  #fill out old plant code
+d<- d %>% mutate(code_old= ifelse(Full_name== "Chrysopsis villosa", "chvi", 
+                              ifelse(Full_name == "Heterotheca villosa", "hevi", code_old))) %>% 
+  # fill out new code 
+          mutate(code_new= ifelse(Full_name== "Chrysopsis villosa", "hevi", 
+                                  ifelse(Full_name == "Heterotheca villosa", "hevi", Code))) %>% 
+  # fill out new full name
+          mutate(fullname_new= ifelse(Full_name== "Chrysopsis villosa", "Heterotheca villosa", 
+                                      ifelse(Full_name == "Heterotheca villosa", "Heterotheca villosa", Full_name)))
+
+
+### next steps: little script that takes in the shortlist and iterates through the above code filling out the DF
+
+# Little DF from stack overflow to start off the naming
+df<-data.frame(matrix(NA, nrow = 1, ncol = 2,
+                  dimnames = list(NULL, paste0("new_Name", 1:2))) ) %>% dplyr::rename(Old_Name = new_Name1)
+df$Old_Name<- "Chrysopsis villosa"
+df$new_Name2 <- "Heterotheca villosa"
+
+# need codes
+
+# write the file to compare with KAY and get her opinion
+write.csv(d, paste0(getwd(), "/", "name_changes.csv"))
+
 #to use for crosswalk with master data "d"
 #Do the crosswalk and 
 #Also do the crosswalk with "d_13"
