@@ -5,6 +5,7 @@
 ##identities across years and assigns native/exotic origins.
 
 ####0. Load libraries####
+library(vctrs)
 library(readxl)
 library(dplyr)
 
@@ -71,11 +72,12 @@ d[d$Full_name== "pine cone", "Full_name"] <- "litter" #CHECKME_JTS: Kay are pine
 ## BG to finish
 #Create list of name changes (code_old, fullname_old, code_new etc)
 
-#Duplicate column to compare 
+#Duplicate columns
 d$fullname_old <- d$Full_name
+d$cold_old <- d$Code 
 
-# add columns to compare
-d[c("code_old", "fullname_new", "code_new")] <-NA
+# add other columns to fill out later
+#d[c("fullname_new", "code_new")] <-NA
 
 # let's make sure shortlist doesn't have mispellings in dataset and there are only two! 
 d[grep("villosa", d$Full_name, ignore.case = T),] %>% select("Full_name") %>% unique()
@@ -83,24 +85,37 @@ d[grep("villosa", d$Full_name, ignore.case = T),] %>% select("Full_name") %>% un
 # make a dataframe of characters to loop through to check partial name matches - can also import when Kay sends
 shortlist_partial <- c("neomexicana", "villosa")
 
-for(i in seq_along(shortlist_partial)){
-  d[grep(shortlist_partial[i], d$Full_name, ignore.case = T),] %>% select("Full_name") %>% unique() %>% print()
+# Shortlist (already converted to READable format from txt file recieved)
+short_lst <- read_excel("./Data/new_sci_names_DOME_plants.xlsx", trim_ws = T)
+
+short_lst$first <- stringr::word(short_lst$Old, 1)
+
+
+for(i in 1:nrow(short_lst)){
+  d[grep(short_lst[i,4], d$Full_name, ignore.case = T),] %>% select("Full_name") %>% unique() %>% print()  
 }
 
-# while I wait for Kay to give me the shortlist of plant names, let's move forward with HEVI example
 
-  #fill out old plant code
-d<- d %>% mutate(code_old= ifelse(Full_name== "Chrysopsis villosa", "chvi", 
-                              ifelse(Full_name == "Heterotheca villosa", "hevi", code_old))) %>% 
-  # fill out new code 
-          mutate(code_new= ifelse(Full_name== "Chrysopsis villosa", "hevi", 
-                                  ifelse(Full_name == "Heterotheca villosa", "hevi", Code))) %>% 
-  # fill out new full name
-          mutate(fullname_new= ifelse(Full_name== "Chrysopsis villosa", "Heterotheca villosa", 
-                                      ifelse(Full_name == "Heterotheca villosa", "Heterotheca villosa", Full_name)))
+#### with above list check out other possible name combos that they can be under and add to list
+
+## lower everything in shortlist and in D 
+
+d<-as.data.frame(lapply(d, tolower))
+short_lst<-as.data.frame(lapply(short_lst, tolower))
+
+1:nrow(short_lst)
+
+for(i in seq_along(1:nrow(short_lst))){
+  print(i)
+  d %>% mutate(fullname_new = ifelse(d$Full_name== as.character(short_lst[i,1]),
+                                         as.character(short_lst[i,2]), d$Full_name)) 
+}
+#### why doesn't above loop work? sample code below 
 
 
-### next steps: little script that takes in the shortlist and iterates through the above code filling out the DF
+d %>%   # fill out new code y
+  mutate(fullname_new= ifelse(d$Full_name== as.character(short_lst[1,1]), as.character(short_lst[1,2]), d$Full_name)) %>% View()
+
 
 # Little DF from stack overflow to start off the naming
 df<-data.frame(matrix(NA, nrow = 1, ncol = 2,
