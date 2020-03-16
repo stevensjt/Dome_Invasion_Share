@@ -100,21 +100,32 @@ for(i in 1:nrow(short_lst)){
 
 ## lower everything in shortlist and in D 
 
-d<-as.data.frame(lapply(d, tolower))
+d<-as.data.frame(lapply(d, tolower)) #BG_CHECKME: This step erroneously converts Full_name from character back to factor. Is there a different way to do this step? I suspect a lot of variable types get changed here and we don't want that. 
 short_lst<-as.data.frame(lapply(short_lst, tolower))
 
 1:nrow(short_lst)
 
 for(i in seq_along(1:nrow(short_lst))){
   print(i)
-  d %>% mutate(fullname_new = ifelse(d$Full_name== as.character(short_lst[i,1]),
-                                         as.character(short_lst[i,2]), d$Full_name)) 
+  d %>% mutate(fullname_new = 
+                 ifelse(d$Full_name== as.character(short_lst[i,1]),
+                        as.character(short_lst[i,2]), 
+                        d$Full_name
+                        )
+               ) 
 }
 #### why doesn't above loop work? sample code below 
-
+#JTS note: Bianca, I modified the code below and it is now functional. Haven't touched the code above on line 108. The issue was that in "d", Full_name is a factor and not a character string. This fix is suboptimal, the issue was that they were characters and got changed to factors on line 103. 
+#PS: To flag things for my attention, use "JTS_CHECKME". Thanks!
 
 d %>%   # fill out new code y
-  mutate(fullname_new= ifelse(d$Full_name== as.character(short_lst[1,1]), as.character(short_lst[1,2]), d$Full_name)) %>% View()
+  mutate(fullname_new= 
+           ifelse(as.character(Full_name)== as.character(short_lst[1,1]), 
+                  as.character(short_lst[1,2]), 
+                  as.character(Full_name)
+           )
+  ) %>% View()
+
 
 
 # Little DF from stack overflow to start off the naming
