@@ -73,8 +73,8 @@ d[d$Full_name== "pine cone", "Full_name"] <- "litter" #CHECKME_JTS: Kay are pine
 #Create list of name changes (code_old, fullname_old, code_new etc)
 
 #Duplicate columns
-d$fullname_old <- d$Full_name
-d$cold_old <- d$Code 
+d$fullname_old <- tolower(d$Full_name)
+d$code_old <- d$Code #BG Checkme: Can I rename this "code_old"? it was "cold_old".
 
 # add other columns to fill out later
 #d[c("fullname_new", "code_new")] <-NA
@@ -97,9 +97,15 @@ for(i in 1:nrow(short_lst)){
 
 #### with above list check out other possible name combos that they can be under and add to list
 
-# initalize column up here 
-d$fullname_new <- NA
+# Insert new names
+#BG_CHECKME: the next 5 lines (102-106) take the place of the for loops on lines ##-##. This process is easier without using pipes. Delete this comment once you understand the new code.
+d$fullname_new <- #Add new name to species where old name is flagged to have changed:
+  tolower(short_lst$new)[pmatch(d$fullname_old,tolower(short_lst$Old),
+                                                       duplicates.ok = TRUE)]
+d$fullname_new[is.na(d$fullname_new)] <- #import old names for species that didn't change
+  d$fullname_old[is.na(d$fullname_new)]
 
+#BG Checkme: I think everything from here to line 139 can now be deleted, but you should go through and make sure.
 for(i in seq_along(1:nrow(short_lst))){
   print(i)
   
@@ -118,8 +124,8 @@ for(i in seq_along(1:nrow(short_lst))){
 #This fix is suboptimal, the issue was that they were characters and got changed to factors on line 103. 
 #PS: To flag things for my attention, use "JTS_CHECKME". Thanks!
 
-d<-as.data.frame(lapply(d, tolower)) #BG_CHECKME: This step erroneously converts Full_name from character back to factor. Is there a different way to do this step? I suspect a lot of variable types get changed here and we don't want that. 
-short_lst<-as.data.frame(lapply(short_lst, tolower))
+#d<-as.data.frame(lapply(d, tolower)) #BG_CHECKME: This step erroneously converts Full_name from character back to factor. Is there a different way to do this step? I suspect a lot of variable types get changed here and we don't want that. JTS commented this out.
+#short_lst<-as.data.frame(lapply(short_lst, tolower)) #JTS commented this out and added earlier.
 
 d %>%   # fill out new code y
   mutate(fullname_new= 
