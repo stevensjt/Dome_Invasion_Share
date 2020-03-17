@@ -97,7 +97,8 @@ for(i in 1:nrow(short_lst)){
 
 #### with above list check out other possible name combos that they can be under and add to list
 
-# initalize column up here 
+### JTS_CHECKME
+# initalize column
 d$fullname_new <- NA
 
 for(i in seq_along(1:nrow(short_lst))){
