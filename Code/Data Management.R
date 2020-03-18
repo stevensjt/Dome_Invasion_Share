@@ -135,7 +135,7 @@ d$code_new[is.na(d$code_new)] <- d$code_old[is.na(d$code_new)]
 #Flag plants that don't have origin. Develop a reconciliation document for these:
 d$RowNum <- c(1:nrow(d)) #for eventual sorting
 
-no_origin_master<- d$Full_name[is.na(d$Origin)]
+no_origins <- d[is.na(d$Origin),]
 
 # can make an object or filter in excel
 ssp_origins <- d[grepl("spp", d$Full_name, ignore.case = T),]
