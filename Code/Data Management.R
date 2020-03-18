@@ -124,7 +124,7 @@ d$code_new <- tolower(short_lst$new_code)[pmatch(d$code_old, as.character(tolowe
 d$code_new[is.na(d$code_new)] <- d$code_old[is.na(d$code_new)]
 
 #to use for crosswalk with master data "d"
-#Do the crosswalk and 
+#Do the crosswalk and
 #Also do the crosswalk with "d_13"
 #then move on to step 5.
 #A
@@ -135,13 +135,13 @@ d$code_new[is.na(d$code_new)] <- d$code_old[is.na(d$code_new)]
 #Flag plants that don't have origin. Develop a reconciliation document for these:
 d$RowNum <- c(1:nrow(d)) #for eventual sorting
 
-no_origins <- d[is.na(d$Origin),]
+# could be new plants or non plants -- or only identified to genus -- 
+#no_origins <- d[is.na(d$Origin),]
 
 # can make an object or filter in excel
-ssp_origins <- d[grepl("spp", d$Full_name, ignore.case = T),]
+#ssp_origins <- d[grepl("spp", d$Full_name, ignore.case = T),]
 
 # reconciliation 
-write.csv(no_origin, "./Data/BiancaReconciliation/Reconciliation_no_origins.csv")
 
 #write.csv(d, "Data/Tmp/Reference1.csv")
 issues <- d[is.na(d$Origin) & d$Plant=="y",
@@ -149,5 +149,6 @@ issues <- d[is.na(d$Origin) & d$Plant=="y",
 issues$Code_new <- "unchanged"
 issues$Full_name_new <- "unchanged"
 
+write.csv(no_origins, "./Data/BiancaReconciliation/Reconciliation_no_origins.csv")
 
 
