@@ -126,7 +126,7 @@ d$fullname_new[is.na(d$fullname_new)] <- d$fullname_old[is.na(d$fullname_new)]
 
 # need to replace only plants with code d[d$Plant=="y",] %>% dplyr::select(fullname_new)
 
-#JTS_CHECKME
+#JTS_CHECKME - line 129
 
 # first two letters replace in code_new
 d$code_new<- paste(substr(d$fullname_new, start = 1, stop = 2), 
