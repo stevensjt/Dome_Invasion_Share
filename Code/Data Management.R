@@ -118,10 +118,20 @@ d$fullname_new[is.na(d$fullname_new)] <- d$fullname_old[is.na(d$fullname_new)]
 
 # need code_new column now -- use same pattern matching technique ^
 
-d$code_new <- tolower(short_lst$new_code)[pmatch(d$code_old, as.character(tolower(short_lst$old_code)),
-                                                 duplicates.ok = T)]
+# doesn't account for multiple codes so going to take first two letters from each new full_name
+# d$code_new <- tolower(short_lst$new_code)[pmatch(d$code_old, as.character(tolower(short_lst$old_code)),
+#                                                 duplicates.ok = T)]
 
-d$code_new[is.na(d$code_new)] <- d$code_old[is.na(d$code_new)]
+#d$code_new[is.na(d$code_new)] <- d$code_old[is.na(d$code_new)]
+
+# need to replace only plants with code d[d$Plant=="y",] %>% dplyr::select(fullname_new)
+
+#JTS_CHECKME
+
+# first two letters replace in code_new
+d$code_new<- paste(substr(d$fullname_new, start = 1, stop = 2), 
+      substr(sub("^\\S+\\s+", '', d$fullname_new), start = 1, stop = 2), sep = "")
+
 
 #to use for crosswalk with master data "d"
 #Do the crosswalk and
