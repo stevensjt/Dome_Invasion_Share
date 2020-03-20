@@ -1,5 +1,5 @@
 ##Data Management.R
-##Authors: Jens Stevens (stevensjt@gmail.com)
+##Authors: Jens Stevens (stevensjt@gmail.com) Bianca Gonzalez (bianca.glez94@gmail.com)
 ##The purpose of this script is to process and clean data from different years to generate a 
 ##single master data file for analysis. Among other things, it reconciles differences in species
 ##identities across years and assigns native/exotic origins.
@@ -121,7 +121,6 @@ d$code_new<- paste(substr(d$fullname_new, start = 1, stop = 2),
       substr(sub("^\\S+\\s+", '', d$fullname_new), start = 1, stop = 2), sep = "")
 
 # if nonplant - replace new code
-
 d<- d %>% mutate(code_new= ifelse(d$Plant =='y', d$code_new, d$code_old))
 
 #to use for crosswalk with master data "d"
@@ -149,6 +148,18 @@ issues <- d[is.na(d$Origin) & d$Plant=="y",
             c("RowNum","Transect_id", "year", "Total_cm", "Code", "Full_name", "Origin")]
 issues$Code_new <- "unchanged"
 issues$Full_name_new <- "unchanged"
+
+recon <- read.csv("./Data/BiancaReconciliation/issues_to_test.csv")
+
+##JTS_CHECKME:
+
+# How to match rownums of recon ^ with the d dataframe and replace origin vals if they match
+# Can you write this using pmatch and/or which? I'd like some more exposure to this kind of 
+# code 
+
+?pmatch()
+?which()
+
 
 write.csv(no_origins, "./Data/BiancaReconciliation/Reconciliation_no_origins.csv")
 
