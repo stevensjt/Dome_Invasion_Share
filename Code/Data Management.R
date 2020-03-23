@@ -8,6 +8,7 @@
 library(vctrs)
 library(readxl)
 library(dplyr)
+library(readr)
 
 ####1. Read data####
 d_13 <- #Old data through 2013
@@ -149,7 +150,6 @@ issues <- d[is.na(d$Origin) & d$Plant=="y",
 issues$Code_new <- "unchanged"
 issues$Full_name_new <- "unchanged"
 
-recon <- read.csv("./Data/BiancaReconciliation/issues_to_test.csv")
 
 ##JTS_CHECKME:
 
@@ -157,10 +157,21 @@ recon <- read.csv("./Data/BiancaReconciliation/issues_to_test.csv")
 # Can you write this using pmatch and/or which? I'd like some more exposure to this kind of 
 # code 
 
+
 ?pmatch()
 ?which()
 
-
-write.csv(no_origins, "./Data/BiancaReconciliation/Reconciliation_no_origins.csv")
-
+#JTS for BG: Here is the answer to your question above:
+issues_fixed <- #Need to use "read_csv" rather than "read.csv" to keep columns as characters. Requires readr
+  read_csv("./Data/BiancaReconciliation/issues-Jens.csv") 
+issues_fixed <- #IMPORTANT: Because this document had been sorted alphabetically, it needs to be re-sorted by RowNum.
+  issues_fixed[order(issues_fixed$RowNum),] 
+issues_fixed$Code <- #Migrated "Code_new" into "Code" in issues doc, IF it changed
+  ifelse(issues_fixed$Code_new=="unchanged",issues_fixed$Code,issues_fixed$Code_new)
+issues_fixed$Full_name <- #Migrated "Full_name_new" into "Code" in issues doc, IF it changed
+  ifelse(issues_fixed$Full_name_new=="unchanged",issues_fixed$Full_name,issues_fixed$Full_name_new)
+tmp_d <- d #Temporary data frame to do the integration, this will eventually get written to file but leave that for Jens to do.
+tmp_d[which(tmp_d$RowNum%in%issues_fixed$RowNum),c("Code","Full_name","Origin")] = 
+  issues_fixed[,c("Code","Full_name","Origin")]
+#Now compare d to tmp_d for quality control to make sure the three columns in question were changed appropriately. 
 
