@@ -1,1108 +1,1108 @@
-,RowNum,Transect_id,year,Total_cm,Code,Full_name,Origin,Code_new,Full_name_new,JTS_CHECKME,Answer,BG_Checkme
-44,218,1has2,2019,87,agxx2,Agropyron sp.,NA,unchanged,Agropyron trachycaulum,"agtr is the code from 2013 but previously you said to use the most up to date code -- since agxx2 is from 2019, I left this code as is. ",,Needs new code
-157,870,1mbs1,2019,26,agxx2,Agropyron sp.,NA,unchanged,unchanged,,,
-187,1007,1mbs2,2019,145,agxx2,Agropyron sp.,NA,unchanged,unchanged,,,
-220,1189,1u1,2019,93,agxx2,Agropyron sp.,NA,unchanged,unchanged,,,
-552,3160,2mbs3,2019,156,agxx2,Agropyron sp.,NA,unchanged,unchanged,,,
-645,3786,3has1,2019,36,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum,What symbol? ,,Do you know why this symbol   is showing up in all of your new additions? Maybe a mac vs pc thing?
-648,3795,3has1,2019,2,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum,,,
-670,3927,3has2,2019,126,agxx2,Agropyron sp.,NA,agsm,Agropyron smithii,,,
-775,4450,3hbs2,2019,1199,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum ,,,
-831,4787,3lau1,2019,71,agxx2,Agropyron sp.,NA,agsm,Agropyron smithii,,,
-37,169,1has2,1997,149,agsp,Agropyron species,native,agtr,Agropyron trachycaulum,,,
-68,353,1hbs2,1997,22,agsp,Agropyron species,NA,agxx2,Agrophyron sp.,"ok, I've gone back and checked. We might want to change all new full names with ssp or spp or sp to the ""plant_genus ""+ ""sp"" across the board in R for consistency ",,"Next step is going to be to change the codes and full names for unknown species to all be consistent with most recent version. For example in this row, Code_new should be agxx2, and Full_name_new should be Agrophyron sp."
-115,637,1mas2,1998,1,agsp,Agropyron species,NA,agxx2,Agropyron sp.,,,"(Note: I see you did this for most species, so just double check, because these Agropyrons are missing the new code and new Full_name)"
-173,938,1mbs2,1998,7,agsp,Agropyron species,NA,agxx2,Agropyron sp.,,,
-459,2659,2mau2,1997,40,agsp,Agropyron species,NA,agxx2,Agropyron sp.,,,
-731,4259,3hbs1,2008,95,agxx,Agrostis sp.,native,unchanged,unchanged,,,
-486,2833,2mbs1,2008,72,amxx,Amaranthus sp,NA,unchanged,unchanged,,,
-489,2838,2mbs1,2008,5,amxx,Amaranthus sp,NA,unchanged,unchanged,,,
-989,5681,3mbs3,2013,7,amxx,Amaranthus sp,NA,unchanged,unchanged,,,
-246,1335,1u2,2019,11,anma2,Anaphalis margaritacea,native,unchanged,unchanged,,,
-920,5287,3mau2,2019,60,ange,Andropogon gerardii,native,unchanged,unchanged,,,
-116,645,1mas2,2008,64,anxx,Antennaria spp.,native,anpa,Antennaria parvifolia,,,
-256,1412,2has1,2008,10,anxx,Antennaria spp.,NA,unchanged,unchanged,,,
-437,2568,2mau1,2008,138,anxx,Antennaria spp.,NA,unchanged,unchanged,,,
-563,3228,2mbu1,2008,45,anxx,Antennaria spp.,NA,unchanged,unchanged,,,
-986,5667,3mbs3,2013,9,anxx,Antennaria spp.,native,anpa,Antennaria parvifolia,,,
-352,2047,2hbs2,2019,22,arar,Aristida arizonica,native,unchanged,unchanged,,,
-1066,6114,3u1,2019,20,arlo,Aristida longiseta,native,unchanged,unchanged,,,
-74,391,1hbs2,2008,53,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-93,516,1mas1,2008,36,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-209,1120,1u1,2008,200,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-224,1202,1u1,2019,28,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-392,2320,2mas1,2008,386,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-439,2579,2mau1,2008,2,arxx,Aristida spp.,NA,unchanged,unchanged,,,
-671,3934,3has2,2019,72,arca2,Artemisia carruthii,native,unchanged,unchanged,,,
-633,3698,2u2,2019,19,arfr,Artemisia frigida,native,unchanged,unchanged,,,
-714,4168,3hau2,2019,6,arfr,Artemisia frigida,native,unchanged,unchanged,,,
-1001,5728,3mbs3,2019,1,arfr,Artemisia frigida,native,unchanged,unchanged,,,
-898,5151,3mau1,2019,9,arsp,Artemisia species,native,arlu,Artemisia ludoviciana,,,
-1036,5930,3mbu2,2002,36,arsp,Artemisia species,native,unchanged,unchanged,,,
-757,4380,3hbs2,2008,11,asxx2,Asclepias sp.,NA,unchanged,unchanged,,,
-189,1018,1mbs2,2019,17,astr,Aster sp.,NA,unchanged,unchanged,,,
-214,1160,1u1,2013,10,astr,Aster sp.,NA,unchanged,unchanged,,,
-384,2255,2hbu2,2019,13,astr,Aster sp.,NA,unchanged,unchanged,,,
-1004,5733,3mbs3,2019,28,bosp,Bouteloua sp.,native,bocu,Bouteloua curtipendula,,,
-769,4433,3hbs2,2013,40,bric,Brickellia sp.,native,brca,Brickellia californica,,,
-929,5345,3mbs1,2013,5,bric,Brickellia sp.,,unchanged,unchanged,,,
-1087,6207,3u2,2008,48,bric,Brickellia sp.,native,brgr,Brickellia grandiflora,,,
-1092,6235,3u2,2013,12,bric,Brickellia sp.,native,brgr,Brickellia grandiflora,,,
-1,14,1has1,1997,261,casp,Carex spp.,native,care,unchanged,,,
-5,33,1has1,1998,400,casp,Carex spp.,native,care,unchanged,,,
-9,66,1has1,2008,368,caxx,Carex spp.,native,care,unchanged,,,
-34,154,1has2,1997,1441,casp,Carex spp.,native,care,unchanged,,,
-40,187,1has2,2008,72,caxx,Carex spp.,native,care,unchanged,,,
-41,199,1has2,2013,5,caxx,Carex spp.,native,care,unchanged,,,
-45,220,1has2,2019,161,care,Carex spp.,native,care,unchanged,,,
-48,230,1hbs1,1997,242,casp,Carex spp.,native,care,unchanged,,,
-51,252,1hbs1,1998,538,casp,Carex spp.,native,care,unchanged,,,
-54,271,1hbs1,2008,732,caxx,Carex spp.,native,care,unchanged,,,
-57,290,1hbs1,2013,122,caxx,Carex spp.,native,care,unchanged,,,
-58,292,1hbs1,2013,62,care,Carex spp.,native,care,unchanged,,,
-60,305,1hbs1,2016,205,caxx,Carex spp.,native,care,unchanged,,,
-64,329,1hbs1,2019,232,care,Carex spp.,native,care,unchanged,,,
-66,340,1hbs2,1997,325,casp,Carex spp.,native,care,unchanged,,,
-70,366,1hbs2,1998,291,casp,Carex spp.,native,care,unchanged,,,
-75,392,1hbs2,2008,292,caxx,Carex spp.,native,care,unchanged,,,
-76,405,1hbs2,2013,204,caxx,Carex spp.,native,care,unchanged,,,
-81,435,1hbs2,2019,131,care,Carex spp.,native,care,unchanged,,,
-82,439,1hbs2,2019,12,care,Carex spp.,native,care,unchanged,,,
-84,460,1mas1,1997,138,casp,Carex spp.,native,care,unchanged,,,
-87,483,1mas1,1998,211,casp,Carex spp.,native,care,unchanged,,,
-90,503,1mas1,2008,890,caxx,Carex spp.,native,care,unchanged,,,
-96,530,1mas1,2013,92,caxx,Carex spp.,native,care,unchanged,,,
-104,562,1mas1,2019,28,care,Carex spp.,native,care,unchanged,,,
-108,576,1mas2,1997,102,casp,Carex spp.,native,care,unchanged,,,
-112,613,1mas2,1998,170,casp,Carex spp.,native,care,unchanged,,,
-117,652,1mas2,2008,68,caxx,Carex spp.,native,care,unchanged,,,
-130,722,1mas2,2019,31,care,Carex spp.,native,care,unchanged,,,
-131,731,1mbs1,1997,307,casp,Carex spp.,native,care,unchanged,,,
-133,751,1mbs1,1998,457,casp,Carex spp.,native,care,unchanged,,,
-136,776,1mbs1,2008,1366,caxx,Carex spp.,native,care,unchanged,,,
-143,815,1mbs1,2013,86,caxx,Carex spp.,native,care,unchanged,,,
-163,881,1mbs1,2019,21,care,Carex spp.,native,care,unchanged,,,
-166,900,1mbs2,1997,115,casp,Carex spp.,native,care,unchanged,,,
-169,918,1mbs2,1998,450,casp,Carex spp.,native,care,unchanged,,,
-171,933,1mbs2,1998,1,casp,Carex spp.,native,care,unchanged,,,
-174,951,1mbs2,2008,495,caxx,Carex spp.,native,care,unchanged,,,
-180,976,1mbs2,2013,73,caxx,Carex spp.,native,care,unchanged,,,
-188,1012,1mbs2,2019,129,care,Carex spp.,native,care,unchanged,,,
-195,1042,1u1,1997,243,casp,Carex spp.,native,care,unchanged,,,
-202,1083,1u1,1998,225,casp,Carex spp.,native,care,unchanged,,,
-207,1114,1u1,2008,586,caxx,Carex spp.,native,care,unchanged,,,
-213,1159,1u1,2013,18,care,Carex spp.,native,care,unchanged,,,
-221,1194,1u1,2019,50,care,Carex spp.,native,care,unchanged,,,
-231,1236,1u2,1997,29,casp,Carex spp.,native,care,unchanged,,,
-233,1262,1u2,1998,12,casp,Carex spp.,native,care,unchanged,,,
-235,1276,1u2,2008,60,caxx,Carex spp.,native,care,unchanged,,,
-238,1294,1u2,2013,35,caxx,Carex spp.,native,care,unchanged,,,
-247,1342,1u2,2019,6,care,Carex spp.,native,care,unchanged,,,
-250,1362,2has1,1997,35,casp,Carex spp.,native,care,unchanged,,,
-253,1383,2has1,1998,103,casp,Carex spp.,native,care,unchanged,,,
-255,1406,2has1,2008,432,caxx,Carex spp.,native,care,unchanged,,,
-257,1422,2has1,2013,107,caxx,Carex spp.,native,care,unchanged,,,
-264,1443,2has1,2019,328,care,Carex spp.,native,care,unchanged,,,
-271,1472,2has2,1997,18,casp,Carex spp.,native,care,unchanged,,,
-272,1487,2has2,1998,64,casp,Carex spp.,native,care,unchanged,,,
-279,1521,2has2,2008,141,caxx,Carex spp.,native,care,unchanged,,,
-290,1591,2hau1,1997,113,casp,Carex spp.,native,care,unchanged,,,
-292,1610,2hau1,1998,294,casp,Carex spp.,native,care,unchanged,,,
-294,1635,2hau1,2008,126,caxx,Carex spp.,native,care,unchanged,,,
-300,1683,2hau1,2019,11,care,Carex spp.,native,care,unchanged,,,
-301,1690,2hau2,1997,335,casp,Carex spp.,native,care,unchanged,,,
-303,1707,2hau2,1998,439,casp,Carex spp.,native,care,unchanged,,,
-305,1723,2hau2,2008,546,caxx,Carex spp.,native,care,unchanged,,,
-320,1801,2hbs1,1997,484,casp,Carex spp.,native,care,unchanged,,,
-321,1815,2hbs1,1998,683,casp,Carex spp.,native,care,unchanged,,,
-323,1839,2hbs1,2008,551,caxx,Carex spp.,native,care,unchanged,,,
-325,1862,2hbs1,2013,19,care,Carex spp.,native,care,unchanged,,,
-326,1863,2hbs1,2013,36,caxx,Carex spp.,native,care,unchanged,,,
-332,1891,2hbs1,2019,144,care,Carex spp.,native,care,unchanged,,,
-337,1957,2hbs2,1998,54,casp,Carex spp.,native,care,unchanged,,,
-339,1983,2hbs2,2008,44,caxx,Carex spp.,native,care,unchanged,,,
-354,2054,2hbu1,1997,208,casp,Carex spp.,native,care,unchanged,,,
-356,2066,2hbu1,1998,628,casp,Carex spp.,native,care,unchanged,,,
-357,2093,2hbu1,2008,440,caxx,Carex spp.,native,care,unchanged,,,
-360,2108,2hbu1,2013,14,caxx,Carex spp.,native,care,unchanged,,,
-369,2146,2hbu2,1997,1150,casp,Carex spp.,native,care,unchanged,,,
-370,2159,2hbu2,1998,1775,casp,Carex spp.,native,care,unchanged,,,
-371,2181,2hbu2,2008,1323,caxx,Carex spp.,native,care,unchanged,,,
-375,2219,2hbu2,2013,2,caxx,Carex spp.,native,care,unchanged,,,
-376,2221,2hbu2,2013,5,care,Carex spp.,native,care,unchanged,,,
-383,2248,2hbu2,2019,88,care,Carex spp.,native,care,unchanged,,,
-386,2269,2mas1,1997,156,casp,Carex spp.,native,care,unchanged,,,
-389,2293,2mas1,1998,250,casp,Carex spp.,native,care,unchanged,,,
-391,2315,2mas1,2008,345,caxx,Carex spp.,native,care,unchanged,,,
-406,2392,2mas1,2019,11,care,Carex spp.,native,care,unchanged,,,
-412,2418,2mas2,1997,138,casp,Carex spp.,native,care,unchanged,,,
-413,2438,2mas2,1998,289,casp,Carex spp.,native,care,unchanged,,,
-416,2456,2mas2,2008,482,caxx,Carex spp.,native,care,unchanged,,,
-419,2474,2mas2,2013,466,caxx,Carex spp.,native,care,unchanged,,,
-420,2475,2mas2,2013,52,care,Carex spp.,native,care,unchanged,,,
-427,2498,2mas2,2019,682,care,Carex spp.,native,care,unchanged,,,
-429,2505,2mas2,2019,7,care,Carex spp.,native,care,unchanged,,,
-432,2520,2mau1,1997,206,casp,Carex spp.,native,care,unchanged,,,
-434,2542,2mau1,1998,253,casp,Carex spp.,native,care,unchanged,,,
-436,2565,2mau1,2008,1016,caxx,Carex spp.,native,care,unchanged,,,
-442,2598,2mau1,2013,45,care,Carex spp.,native,care,unchanged,,,
-445,2607,2mau1,2013,5,care,Carex spp.,native,care,unchanged,,,
-456,2641,2mau1,2019,9,care,Carex spp.,native,care,unchanged,,,
-458,2655,2mau2,1997,473,casp,Carex spp.,native,care,unchanged,,,
-461,2672,2mau2,1998,837,casp,Carex spp.,native,care,unchanged,,,
-465,2698,2mau2,2008,1100,caxx,Carex spp.,native,care,unchanged,,,
-481,2783,2mbs1,1997,316,casp,Carex spp.,native,care,unchanged,,,
-482,2793,2mbs1,1998,156,casp,Carex spp.,native,care,unchanged,,,
-484,2821,2mbs1,2008,207,caxx,Carex spp.,native,care,unchanged,,,
-512,2936,2mbs2,1997,139,casp,Carex spp.,native,care,unchanged,,,
-514,2954,2mbs2,1998,121,casp,Carex spp.,native,care,unchanged,,,
-515,2975,2mbs2,2008,485,caxx,Carex spp.,native,care,unchanged,,,
-536,3060,2mbs3,1997,52,casp,Carex spp.,native,care,unchanged,,,
-537,3079,2mbs3,2008,761,caxx,Carex spp.,native,care,unchanged,,,
-555,3167,2mbs3,2019,33,care,Carex spp.,native,care,unchanged,,,
-558,3185,2mbu1,1997,96,casp,Carex spp.,native,care,unchanged,,,
-560,3214,2mbu1,1998,140,casp,Carex spp.,native,care,unchanged,,,
-562,3227,2mbu1,2008,212,caxx,Carex spp.,native,care,unchanged,,,
-565,3253,2mbu1,2013,7,care,Carex spp.,native,care,unchanged,,,
-566,3262,2mbu1,2019,283,care,Carex spp.,native,care,unchanged,,,
-567,3282,2mbu2,1997,144,casp,Carex spp.,native,care,unchanged,,,
-570,3306,2mbu2,1998,322,casp,Carex spp.,native,care,unchanged,,,
-573,3331,2mbu2,2008,256,caxx,Carex spp.,native,care,unchanged,,,
-583,3403,2mbu2,2019,23,care,Carex spp.,native,care,unchanged,,,
-591,3426,2u1,1997,642,casp,Carex spp.,native,care,unchanged,,,
-595,3457,2u1,1998,351,casp,Carex spp.,native,care,unchanged,,,
-598,3480,2u1,2008,759,caxx,Carex spp.,native,care,unchanged,,,
-600,3500,2u1,2013,116,caxx,Carex spp.,native,care,unchanged,,,
-601,3501,2u1,2013,7,care,Carex spp.,native,care,unchanged,,,
-602,3505,2u1,2013,3,caxx,Carex spp.,native,care,unchanged,,,
-607,3533,2u1,2019,429,care,Carex spp.,native,care,unchanged,,,
-610,3555,2u2,1997,198,casp,Carex spp.,native,care,unchanged,,,
-612,3581,2u2,1998,283,casp,Carex spp.,native,care,unchanged,,,
-613,3588,2u2,1998,1,casp,Carex spp.,native,care,unchanged,,,
-615,3611,2u2,2008,670,caxx,Carex spp.,native,care,unchanged,,,
-619,3640,2u2,2013,126,caxx,Carex spp.,native,care,unchanged,,,
-627,3678,2u2,2019,327,care,Carex spp.,native,care,unchanged,,,
-637,3737,3has1,2008,119,caxx,Carex spp.,native,care,unchanged,,,
-658,3871,3has2,2008,145,caxx,Carex spp.,native,care,unchanged,,,
-676,3966,3hau1,1997,23,casp,Carex spp.,native,care,unchanged,,,
-677,3976,3hau1,1998,225,casp,Carex spp.,native,care,unchanged,,,
-678,3997,3hau1,2002,94,casp,Carex spp.,native,care,unchanged,,,
-687,4040,3hau1,2019,20,care,Carex spp.,native,care,unchanged,,,
-688,4055,3hau2,1997,10,casp,Carex spp.,native,care,unchanged,,,
-690,4076,3hau2,1998,55,casp,Carex spp.,native,care,unchanged,,,
-694,4097,3hau2,2002,146,casp,Carex spp.,native,care,unchanged,,,
-695,4105,3hau2,2002,83,casp,Carex spp.,native,care,unchanged,,,
-704,4135,3hau2,2013,29,caxx,Carex spp.,native,care,unchanged,,,
-716,4173,3hau2,2019,45,care,Carex spp.,native,care,unchanged,,,
-724,4218,3hbs1,1998,76,casp,Carex spp.,native,care,unchanged,,,
-730,4258,3hbs1,2008,160,caxx,Carex spp.,native,care,unchanged,,,
-754,4359,3hbs2,1998,3,casp,Carex spp.,native,care,unchanged,,,
-758,4381,3hbs2,2008,69,caxx,Carex spp.,native,care,unchanged,,,
-782,4479,3hbs2,2019,27,care,Carex spp.,native,care,unchanged,,,
-783,4490,3hbu1,1997,95,casp,Carex spp.,native,care,unchanged,,,
-784,4504,3hbu1,1998,396,casp,Carex spp.,native,care,unchanged,,,
-787,4526,3hbu1,2002,152,casp,Carex spp.,native,care,unchanged,,,
-789,4551,3hbu1,2019,126,care,Carex spp.,native,care,unchanged,,,
-793,4585,3hbu2,1997,5,casp,Carex spp.,native,care,unchanged,,,
-822,4735,3lau1,1998,3,casp,Carex spp.,native,care,unchanged,,,
-823,4746,3lau1,2002,2,casp,Carex spp.,native,care,unchanged,,,
-843,4828,3mas1,1997,8,casp,Carex spp.,native,care,unchanged,,,
-845,4842,3mas1,1998,28,casp,Carex spp.,native,care,unchanged,,,
-847,4854,3mas1,2008,353,caxx,Carex spp.,native,care,unchanged,,,
-862,4942,3mas2,1997,123,casp,Carex spp.,native,care,unchanged,,,
-864,4967,3mas2,1998,114,casp,Carex spp.,native,care,unchanged,,,
-870,4999,3mas2,2008,20,caxx,Carex spp.,native,care,unchanged,,,
-879,5054,3mas2,2019,70,care,Carex spp.,native,care,unchanged,,,
-885,5069,3mau1,1997,169,casp,Carex spp.,native,care,unchanged,,,
-886,5084,3mau1,1998,226,casp,Carex spp.,native,care,unchanged,,,
-887,5109,3mau1,2002,131,casp,Carex spp.,native,care,unchanged,,,
-888,5118,3mau1,2002,31,casp,Carex spp.,native,care,unchanged,,,
-899,5158,3mau2,1997,261,casp,Carex spp.,native,care,unchanged,,,
-903,5193,3mau2,1998,228,casp,Carex spp.,native,care,unchanged,,,
-906,5229,3mau2,2002,146,casp,Carex spp.,native,care,unchanged,,,
-917,5272,3mau2,2019,56,care,Carex spp.,native,care,unchanged,,,
-924,5311,3mbs1,1997,20,casp,Carex spp.,native,care,unchanged,,,
-925,5326,3mbs1,1998,87,casp,Carex spp.,native,care,unchanged,,,
-927,5334,3mbs1,2008,53,caxx,Carex spp.,native,care,unchanged,,,
-945,5442,3mbs2,1998,11,casp,Carex spp.,native,care,unchanged,,,
-950,5465,3mbs2,2008,41,caxx,Carex spp.,native,care,unchanged,,,
-973,5571,3mbs3,1997,200,casp,Carex spp.,native,care,unchanged,,,
-977,5604,3mbs3,1998,282,casp,Carex spp.,native,care,unchanged,,,
-980,5640,3mbs3,2008,829,caxx,Carex spp.,native,care,unchanged,,,
-988,5670,3mbs3,2013,54,caxx,Carex spp.,native,care,unchanged,,,
-990,5683,3mbs3,2013,19,care,Carex spp.,native,care,unchanged,,,
-1003,5732,3mbs3,2019,192,care,Carex spp.,native,care,unchanged,,,
-1007,5757,3mbu1,1997,50,casp,Carex spp.,native,care,unchanged,,,
-1008,5774,3mbu1,1998,93,casp,Carex spp.,native,care,unchanged,,,
-1012,5796,3mbu1,2002,65,casp,Carex spp.,native,care,unchanged,,,
-1015,5809,3mbu1,2002,8,casp,Carex spp.,native,care,unchanged,,,
-1021,5827,3mbu1,2019,146,care,Carex spp.,native,care,unchanged,,,
-1026,5858,3mbu2,1997,50,casp,Carex spp.,native,care,unchanged,,,
-1030,5885,3mbu2,1998,56,casp,Carex spp.,native,care,unchanged,,,
-1032,5911,3mbu2,2002,252,casp,Carex spp.,native,care,unchanged,,,
-1040,5944,3mbu2,2019,131,care,Carex spp.,native,care,unchanged,,,
-1045,5972,3u1,1997,179,casp,Carex spp.,native,care,unchanged,,,
-1051,6018,3u1,1998,22,casp,Carex spp.,native,care,unchanged,,,
-1055,6051,3u1,2002,11,casp,Carex spp.,native,care,unchanged,,,
-1056,6056,3u1,2002,25,casp,Carex spp.,native,care,unchanged,,,
-1060,6087,3u1,2013,10,caxx,Carex spp.,native,care,unchanged,,,
-1067,6116,3u1,2019,20,care,Carex spp.,native,care,unchanged,,,
-1078,6147,3u2,1997,30,casp,Carex spp.,native,care,unchanged,,,
-1082,6182,3u2,1998,71,casp,Carex spp.,native,care,unchanged,,,
-1088,6208,3u2,2008,58,caxx,Carex spp.,native,care,unchanged,,,
-1106,6281,3u2,2019,33,care,Carex spp.,native,care,unchanged,,,
-156,867,1mbs1,2019,47,chxx,Chenopodium sp.,native,chfr,Chenopodium fremontii,,,
-228,1213,1u1,2019,9,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-309,1750,2hau2,2013,14,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-348,2042,2hbs2,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-455,2639,2mau1,2019,1,chxx,Chenopodium sp.,native,chfr,Chenopodium fremontii,,,
-497,2870,2mbs1,2013,10,chxx,Chenopodium sp.,native,unchanged,unchanged,,,
-587,3412,2mbu2,2019,4,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-617,3634,2u2,2013,296,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-621,3651,2u2,2013,22,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-646,3788,3has1,2019,1,chxx,Chenopodium sp.,exotic,chgr,Chenopodium graveolens,,,
-685,4034,3hau1,2019,20,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-699,4110,3hau2,2002,80,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-701,4114,3hau2,2002,4,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-705,4142,3hau2,2013,5,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-718,4181,3hau2,2019,23,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-727,4237,3hbs1,1998,17,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-797,4624,3hbu2,2002,56,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-798,4625,3hbu2,2002,12,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-807,4681,3hbu2,2019,93,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-826,4767,3lau1,2013,97,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-833,4792,3lau1,2019,4,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-880,5056,3mas2,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-895,5146,3mau1,2019,36,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-953,5478,3mbs2,2008,86,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-955,5482,3mbs2,2008,44,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-958,5505,3mbs2,2013,8,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-961,5518,3mbs2,2013,47,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-1017,5811,3mbu1,2002,3,chsp,Chenopodium sp.,native,chxx,unchanged,,,
-1019,5813,3mbu1,2002,19,chsp,Chenopodium sp.,native,chxx,unchanged,,,
-1037,5931,3mbu2,2002,1,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-1042,5960,3mbu2,2019,70,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-1058,6064,3u1,2002,8,chsp,Chenopodium sp.,NA,chxx,unchanged,,,
-1073,6128,3u1,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged,,,
-30,140,1has1,2019,15,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-83,446,1hbs2,2019,29,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-226,1209,1u1,2019,27,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-316,1778,2hau2,2019,91,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-367,2138,2hbu1,2019,4,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-385,2256,2hbu2,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-409,2401,2mas1,2019,4,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-531,3042,2mbs2,2019,18,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-629,3684,2u2,2019,51,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-647,3793,3has1,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-841,4807,3lau1,2019,61,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-856,4910,3mas1,2019,27,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-937,5380,3mbs1,2019,3,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-1005,5737,3mbs3,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-1077,6135,3u1,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-1105,6280,3u2,2019,42,cine,Cirsium neomexicanum,native,unchanged,unchanged,,,
-10,70,1has1,2008,23,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-17,93,1has1,2013,245,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-19,98,1has1,2013,46,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-77,410,1hbs2,2013,26,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-97,534,1mas1,2013,22,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-139,784,1mbs1,2008,61,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-147,826,1mbs1,2013,93,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-149,835,1mbs1,2013,10,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-211,1140,1u1,2013,137,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-280,1522,2has2,2008,12,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-307,1738,2hau2,2008,5,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-308,1749,2hau2,2013,34,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-358,2099,2hbu1,2008,33,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-361,2113,2hbu1,2013,31,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-394,2327,2mas1,2008,27,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-398,2353,2mas1,2013,17,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-399,2354,2mas1,2013,89,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-440,2582,2mau1,2008,3,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-443,2601,2mau1,2013,2,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-485,2831,2mbs1,2008,15,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-496,2869,2mbs1,2013,20,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-522,3003,2mbs2,2013,13,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-575,3344,2mbu2,2008,31,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-618,3639,2u2,2013,39,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-660,3880,3has2,2008,18,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-661,3884,3has2,2008,8,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-732,4261,3hbs1,2008,13,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-761,4389,3hbs2,2008,36,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-763,4394,3hbs2,2008,24,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-765,4417,3hbs2,2013,51,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-766,4426,3hbs2,2013,16,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-849,4862,3mas1,2008,5,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-850,4875,3mas1,2013,53,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-867,4995,3mas2,2008,2,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-872,5013,3mas2,2013,61,cixx,Cirsium sp.,NA,unchanged,unchanged,,,
-984,5656,3mbs3,2008,22,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-991,5684,3mbs3,2013,9,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-992,5685,3mbs3,2013,2,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-1090,6214,3u2,2008,16,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-1091,6224,3u2,2013,41,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum,,,
-3,20,1has1,1997,69,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-4,22,1has1,1997,1,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-7,54,1has1,1998,4,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-8,60,1has1,1998,18,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-132,740,1mbs1,1997,15,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-134,758,1mbs1,1998,11,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-198,1062,1u1,1997,10,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-199,1066,1u1,1997,5,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-205,1106,1u1,1998,13,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum,,,
-571,3313,2mbu2,1998,21,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-572,3314,2mbu2,1998,10,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-650,3812,3has2,1997,159,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-653,3843,3has2,1998,43,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-656,3848,3has2,1998,46,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-691,4086,3hau2,1998,2,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-698,4109,3hau2,2002,1,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-723,4200,3hbs1,1997,12,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-726,4231,3hbs1,1998,38,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-907,5234,3mau2,2002,4,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-943,5416,3mbs2,1997,14,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-947,5447,3mbs2,1998,10,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.,,,
-970,5557,3mbs2,2019,34,crcr,Cryptantha crassisepala,native,unchanged,unchanged,,,
-105,563,1mas1,2019,4,cryp,Cryptogam,NA,unchanged,unchanged,not sure how to classify cryp?,,
-153,845,1mbs1,2016,2,cryp,Cryptogam,NA,unchanged,unchanged,,,
-186,1006,1mbs2,2019,64,cryp,Cryptogam,NA,unchanged,unchanged,,,
-263,1440,2has1,2019,127,cryp,Cryptogam,NA,unchanged,unchanged,,,
-329,1877,2hbs1,2016,39,cryp,Cryptogam,NA,unchanged,unchanged,,,
-382,2245,2hbu2,2019,46,cryp,Cryptogam,NA,unchanged,unchanged,,,
-422,2487,2mas2,2016,30,cryp,Cryptogam,NA,unchanged,unchanged,,,
-478,2754,2mau2,2019,3,cryp,Cryptogam,NA,unchanged,unchanged,,,
-526,3015,2mbs2,2016,33,cryp,Cryptogam,NA,unchanged,unchanged,,,
-693,4093,3hau2,2002,239,cryp,Cryptogam,NA,unchanged,unchanged,,,
-711,4165,3hau2,2019,3,cryp,Cryptogam,NA,unchanged,unchanged,,,
-743,4309,3hbs1,2019,8,cryp,Cryptogam,NA,unchanged,unchanged,,,
-808,4682,3hbu2,2019,4,cryp,Cryptogam,NA,unchanged,unchanged,,,
-830,4786,3lau1,2019,3,cryp,Cryptogam,NA,unchanged,unchanged,,,
-891,5136,3mau1,2019,12,cryp,Cryptogam,NA,unchanged,unchanged,,,
-23,115,1has1,2016,23,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-59,299,1hbs1,2016,960,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-281,1549,2has2,2016,683,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-328,1873,2hbs1,2016,412,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-401,2369,2mas1,2016,21,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-421,2484,2mas2,2016,655,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-450,2621,2mau1,2016,3,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-498,2876,2mbs1,2016,90,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-523,3010,2mbs2,2016,391,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-639,3767,3has1,2016,30,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-993,5691,3mbs3,2016,80,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis,,,
-488,2837,2mbs1,2008,35,dexx,Descurainia spp.,NA,unchanged,unchanged,,,
-494,2856,2mbs1,2013,6,dexx,Descurainia spp.,NA,unchanged,unchanged,,,
-56,275,1hbs1,2008,408,elxx,Elymus sp.,native,unchanged,unchanged,,,
-138,780,1mbs1,2008,277,elxx,Elymus sp.,native,elel,Elymus elymoides,,,
-438,2570,2mau1,2008,58,elxx,Elymus sp.,native,elel,Elymus elymoides,,,
-1086,6204,3u2,2008,84,elxx,Elymus sp.,native,unchanged,unchanged,,,
-38,171,1has2,1997,47,elsp,Elymus species,native,eltr,Elymus trachycaulum,,,
-32,144,1has1,2019,14,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-65,330,1hbs1,2019,5,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-106,565,1mas1,2019,2,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-107,566,1mas1,2019,28,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-160,875,1mbs1,2019,26,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris,,,
-185,1003,1mbs2,2019,903,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-193,1030,1mbs2,2019,2,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-225,1208,1u1,2019,17,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-265,1444,2has1,2019,29,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-286,1574,2has2,2019,15,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-299,1678,2hau1,2019,2,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-319,1791,2hau2,2019,47,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-333,1897,2hbs1,2019,30,erxx,Erigeron spp.,native,erdi,Erigeron divergens,,,
-353,2048,2hbs2,2019,110,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris,,,
-363,2129,2hbu1,2019,21,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-408,2394,2mas1,2019,22,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-428,2503,2mas2,2019,349,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-431,2508,2mas2,2019,3,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-453,2636,2mau1,2019,13,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-479,2755,2mau2,2019,25,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-510,2918,2mbs1,2019,18,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-532,3045,2mbs2,2019,40,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-556,3172,2mbs3,2019,10,erxx,Erigeron spp.,native,erdi,Erigeron divergens,,,
-581,3399,2mbu2,2019,29,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-608,3543,2u1,2019,13,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-630,3685,2u2,2019,17,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-644,3783,3has1,2019,37,erxx,Erigeron spp.,native,ersp,Erigeron speciosus,,,
-673,3937,3has2,2019,78,erxx,Erigeron spp.,native,ersp,Erigeron speciosus,,,
-715,4170,3hau2,2019,16,erxx,Erigeron spp.,native,ersp,Erigeron speciosus,,,
-742,4306,3hbs1,2019,350,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris,,,
-781,4473,3hbs2,2019,20,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-813,4691,3hbu2,2019,52,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-829,4785,3lau1,2019,26,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-855,4905,3mas1,2019,164,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-878,5050,3mas2,2019,149,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-881,5058,3mas2,2019,6,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-919,5282,3mau2,2019,13,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-939,5385,3mbs1,2019,35,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-998,5714,3mbs3,2019,169,erxx,Erigeron spp.,NA,unchanged,unchanged,,,
-1069,6119,3u1,2019,55,erxx,Erigeron spp.,native,unchanged,unchanged,,,
-1070,6120,3u1,2019,7,erra,Eriogonum racemosum,native,unchanged,unchanged,,,
-239,1307,1u2,2013,8,erxx2,Eriogonum sp.,NA,unchanged,unchanged,,,
-599,3499,2u1,2013,28,erxx2,Eriogonum sp.,NA,unchanged,unchanged,,,
-584,3404,2mbu2,2019,7,erci,Erodium cicutarium,exotic,unchanged,unchanged,,,
-340,2000,2hbs2,2013,7,euxx,Euphorbia spp.,native,eufe,Euphorbia fendleri,,,
-542,3115,2mbs3,2013,7,euxx,Euphorbia spp.,NA,unchanged,unchanged,,,
-802,4645,3hbu2,2013,10,euxx,Euphorbia spp.,native,unchanged,unchanged,,,
-960,5516,3mbs2,2013,13,euxx,Euphorbia spp.,native,euse,Euphorbia serpyllifolia,,,
-800,4638,3hbu2,2013,239,fexx,Festuca sp.,NA,unchanged,unchanged,,,
-111,607,1mas2,1998,495,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-135,767,1mbs1,1998,1,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-464,2694,2mau2,1998,3,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-785,4514,3hbu1,1998,4,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-979,5620,3mbs3,1998,3,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-1083,6187,3u2,1998,1,frov,Frovaria sp.,NA,unchanged,unchanged,,,
-13,73,1has1,2008,25,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-210,1125,1u1,2008,34,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-490,2840,2mbs1,2008,58,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-509,2913,2mbs1,2019,118,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-538,3095,2mbs3,2008,29,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-574,3340,2mbu2,2008,16,gexx,Geranium species,NA,unchanged,unchanged,,,
-626,3677,2u2,2019,392,gexx,Geranium species,NA,unchanged,unchanged,,,
-729,4257,3hbs1,2008,10,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-883,5061,3mas2,2019,88,gexx,Geranium species,native,geca,Geranium caespitosum,,,
-491,2842,2mbs1,2008,61,haxx,Hackelia sp.,NA,unchanged,unchanged,,,
-948,5460,3mbs2,2008,119,haxx,Hackelia sp.,NA,unchanged,unchanged,,,
-719,4182,3hau2,2019,4,hean,Helianthus annuus,native,unchanged,unchanged,,,
-811,4688,3hbu2,2019,103,hean,Helianthus annuus,native,unchanged,unchanged,,,
-63,323,1hbs1,2019,28,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-103,559,1mas1,2019,107,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-223,1201,1u1,2019,6,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-287,1577,2has2,2019,68,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-298,1676,2hau1,2019,183,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-351,2045,2hbs2,2019,25,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-364,2132,2hbu1,2019,48,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-381,2244,2hbu2,2019,315,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-405,2385,2mas1,2019,131,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-452,2632,2mau1,2019,258,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-476,2747,2mau2,2019,498,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-530,3033,2mbs2,2019,133,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-550,3152,2mbs3,2019,83,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-554,3166,2mbs3,2019,30,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-609,3547,2u1,2019,34,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-643,3780,3has1,2019,503,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-649,3796,3has1,2019,3,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-672,3936,3has2,2019,181,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-686,4038,3hau1,2019,42,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-750,4324,3hbs1,2019,3,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-776,4452,3hbs2,2019,721,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-790,4562,3hbu1,2019,31,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-810,4687,3hbu2,2019,74,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-832,4789,3lau1,2019,56,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-854,4902,3mas1,2019,344,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-890,5133,3mau1,2019,301,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-896,5148,3mau1,2019,10,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-912,5264,3mau2,2019,463,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-915,5270,3mau2,2019,55,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1020,5825,3mbu1,2019,446,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1023,5831,3mbu1,2019,11,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1038,5937,3mbu2,2019,1855,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1041,5958,3mbu2,2019,5,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1064,6111,3u1,2019,129,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-1100,6267,3u2,2019,60,hevi,Heterotheca villosa,native,unchanged,unchanged,,,
-14,77,1has1,2008,13,hier,Hieracium spp.,NA,unchanged,unchanged,,,
-175,956,1mbs2,2008,2,hier,Hieracium spp.,native,hife,Hieracium fendleri,,,
-277,1515,2has2,2008,3,hier,Hieracium spp.,NA,unchanged,unchanged,,,
-395,2329,2mas1,2008,5,hier,Hieracium spp.,NA,unchanged,unchanged,,,
-517,2986,2mbs2,2008,16,hier,Hieracium spp.,NA,unchanged,unchanged,,,
-982,5652,3mbs3,2008,8,hier,Hieracium spp.,NA,unchanged,unchanged,,,
-244,1328,1u2,2019,235,koma,Koeleria micrantha,native,unchanged,Koeleria macrantha,misspelling in full_name,,
-828,4773,3lau1,2019,911,koma,Koeleria micrantha,native,unchanged,Koeleria macrantha,,,
-632,3697,2u2,2019,22,lact,Lactuca spp.,native,lase,Lactuca serriola,,,
-318,1788,2hau2,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-350,2044,2hbs2,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-365,2133,2hbu1,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-457,2647,2mau1,2019,6,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-533,3046,2mbs2,2019,1,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-940,5387,3mbs1,2019,25,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-1000,5723,3mbs3,2019,19,lasc,Laennecia schiedeana,native,unchanged,unchanged,,,
-145,824,1mbs1,2013,8,laxx,Lappula sp.,NA,unchanged,unchanged,,,
-212,1153,1u1,2013,108,laxx,Lappula sp.,NA,unchanged,unchanged,,,
-928,5340,3mbs1,2013,594,laxx,Lappula sp.,NA,unchanged,unchanged,,,
-454,2637,2mau1,2019,20,leer,Leucelene ericoides,native,unchanged,unchanged,,,
-588,3413,2mbu2,2019,9,leer,Leucelene ericoides,native,unchanged,unchanged,,,
-129,720,1mas2,2019,13,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-159,874,1mbs1,2019,13,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-366,2136,2hbu1,2019,48,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-504,2899,2mbs1,2019,244,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-579,3393,2mbu2,2019,441,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-683,4030,3hau1,2019,35,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-710,4161,3hau2,2019,114,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-748,4318,3hbs1,2019,42,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-859,4918,3mas1,2019,51,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-897,5150,3mau1,2019,17,memu,Mentzelia multiflora,native,unchanged,unchanged,,,
-341,2004,2hbs2,2013,6,mexx,Mentzelia sp.,native,unchanged,unchanged,,,
-487,2834,2mbs1,2008,5,mexx,Mentzelia sp.,native,unchanged,unchanged,,,
-495,2858,2mbs1,2013,23,mexx,Mentzelia sp.,native,unchanged,unchanged,,,
-585,3408,2mbu2,2019,17,mexx,Mentzelia sp.,native,memu,Mentzelia multiflora,,,
-655,3846,3has2,1998,4,mexx,Mentzelia sp.,native,unchanged,unchanged,,,
-1089,6210,3u2,2008,14,mexx,Mentzelia sp.,native,unchanged,unchanged,,,
-347,2037,2hbs2,2019,159,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-805,4672,3hbu2,2019,234,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-814,4695,3hbu2,2019,16,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-935,5375,3mbs1,2019,1023,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-968,5544,3mbs2,2019,610,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-1099,6263,3u2,2019,351,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-1104,6278,3u2,2019,66,mesp,Mentzelia springeri,native,unchanged,unchanged,,,
-508,2911,2mbs1,2019,74,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-586,3410,2mbu2,2019,18,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-749,4323,3hbs1,2019,9,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-816,4699,3hbu2,2019,23,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-884,5062,3mas2,2019,16,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-969,5548,3mbs2,2019,61,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-1107,6282,3u2,2019,58,mili,Mirabilis linearis,native,unchanged,unchanged,,,
-315,1776,2hau2,2019,292,mimu,Mirabilis multiflora,native,unchanged,unchanged,,,
-590,3417,2mbu2,2019,95,musp,Muhlenbergia species,native,mumo,Muhlenbergia montana,,,
-1075,6132,3u1,2019,12,muwr,Muhlenbergia wrightii,native,unchanged,unchanged,,,
-16,86,1has1,2008,9,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-20,100,1has1,2013,9,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-21,106,1has1,2013,7,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-33,148,1has1,2019,2,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-95,528,1mas1,2013,16,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-128,719,1mas2,2019,21,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-158,871,1mbs1,2019,57,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-179,974,1mbs2,2013,36,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-289,1584,2has2,2019,5,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-506,2905,2mbs1,2019,31,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-540,3100,2mbs3,2008,14,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-557,3175,2mbs3,2019,28,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-834,4793,3lau1,2019,32,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-934,5372,3mbs1,2019,83,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-938,5382,3mbs1,2019,1,oexx,Oenothera sp.,NA,unchanged,unchanged,,,
-985,5657,3mbs3,2008,10,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-997,5710,3mbs3,2019,226,oexx,Oenothera sp.,native,oeho,Oenothera hookeri,,,
-467,2706,2mau2,2008,1,onxx,Onagraceae sp.,NA,unchanged,unchanged,,,
-1071,6121,3u1,2019,33,orpu,Orthocarpus purpureo-albus,native,unchanged,unchanged,,,
-31,141,1has1,2019,4,pamu,Packera multilobata -,native,unchanged,unchanged,,,
-126,706,1mas2,2019,103,pamu,Packera multilobata -,native,unchanged,unchanged,,,
-918,5274,3mau2,2019,25,pamu,Packera multilobata -,native,unchanged,unchanged,,,
-148,827,1mbs1,2013,42,phxx,Phacelia spp.,NA,unchanged,unchanged,,,
-664,3904,3has2,2013,13,phxx,Phacelia spp.,NA,unchanged,unchanged,,,
-959,5515,3mbs2,2013,9,phxx,Phacelia spp.,NA,unchanged,unchanged,,,
-971,5558,3mbs2,2019,7,phxx,Phacelia spp.,NA,unchanged,unchanged,,,
-1103,6275,3u2,2019,28,phxx,Phacelia spp.,NA,unchanged,unchanged,,,
-417,2459,2mas2,2008,35,poxx,Poa sp.,NA,unchanged,unchanged,,,
-956,5487,3mbs2,2008,27,poxx,Poa sp.,NA,unchanged,unchanged,,,
-1009,5776,3mbu1,1998,17,poxx,Poa sp.,native,pofe,Poa fendleriana,,,
-1011,5791,3mbu1,2002,67,poas,Poa spp.,native,pofe,Poa fendleriana,,,
-1057,6062,3u1,2002,21,poas,Poa spp.,native,pofe,Poa fendleriana,,,
-839,4804,3lau1,2019,40,pofr,Populus fremontii,native,unchanged,unchanged,,,
-276,1514,2has2,2008,172,quxx,Quercus spp.,native,quga,Quercus gambellii,,,
-745,4311,3hbs1,2019,7,quxx,Quercus spp.,native,quga,Quercus gambellii,,,
-809,4686,3hbu2,2019,22,quxx,Quercus spp.,native,quun,Quercus undulata,,,
-1065,6113,3u1,2019,362,quxx,Quercus spp.,native,quun,Quercus undulata,,,
-1025,5838,3mbu1,2019,68,rhgl,Rhus glabra,native,unchanged,unchanged,,,
-764,4409,3hbs2,2008,17,rixx,Ribes sp.,NA,unchanged,unchanged,,,
-372,2191,2hbu2,2008,300,roxx,Rosa spp.,native,rowo,Rosa woodsii,,,
-91,514,1mas1,2008,4,sexx,Senecio sp.,NA,unchanged,unchanged,,,
-119,659,1mas2,2008,1,sexx,Senecio sp.,native,sefe,Senecio fendleri,,,
-137,777,1mbs1,2008,152,sexx,Senecio sp.,native,unchanged,unchanged,,,
-236,1277,1u2,2008,133,sexx,Senecio sp.,native,unchanged,unchanged,,,
-324,1846,2hbs1,2008,20,sexx,Senecio sp.,NA,unchanged,unchanged,,,
-373,2192,2hbu2,2008,18,sexx,Senecio sp.,native,sewo,Senecio wootonii,,,
-469,2708,2mau2,2008,14,sexx,Senecio sp.,native,sewo,Senecio wootonii,,,
-516,2982,2mbs2,2008,50,sexx,Senecio sp.,native,unchanged,unchanged,,,
-539,3096,2mbs3,2008,34,sexx,Senecio sp.,native,unchanged,unchanged,,,
-756,4373,3hbs2,2008,135,sexx,Senecio sp.,native,unchanged,unchanged,,,
-983,5653,3mbs3,2008,7,sexx,Senecio sp.,native,unchanged,unchanged,,,
-249,1346,1u2,2019,4,sctr,Senecio triangularis,native,unchanged,unchanged,,,
-674,3940,3has2,2019,122,sial,Sisymbrium altissimum,exotic,unchanged,unchanged,,,
-913,5266,3mau2,2019,72,somi,Solidago missouriensis,native,unchanged,unchanged,,,
-702,4122,3hau2,2002,5,sosp3,Solidago species,NA,soxx,Solidago spp.,changed,,New code should be soxx right?
-792,4580,3hbu2,1997,12,sosp3,Solidago species,native,sowr,Solidago wrightii,,,
-795,4620,3hbu2,2002,418,sosp3,Solidago species,native,sowr,Solidago wrightii,,,
-799,4628,3hbu2,2002,42,sosp3,Solidago species,native,sowr,Solidago wrightii,,,
-820,4727,3lau1,1998,20,sosp3,Solidago species,native,sowr,Solidago wrightii,,,
-821,4730,3lau1,1998,3,sosp3,Solidago species,native,sowr,Solidago wrightii,,,
-904,5219,3mau2,1998,4,sosp3,Solidago species,native,somi,Solidago missouriensis,,,
-905,5220,3mau2,1998,27,sosp3,Solidago species,native,somi,Solidago missouriensis,,,
-92,515,1mas1,2008,72,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-140,788,1mbs1,2008,66,soxx,Solidago spp.,native,sowr,Solidago wrightii,,,
-142,800,1mbs1,2008,29,soxx,Solidago spp.,native,sowr,Solidago wrightii,,,
-177,963,1mbs2,2008,118,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-178,973,1mbs2,2013,118,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-208,1118,1u1,2008,5,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-237,1280,1u2,2008,54,soxx,Solidago spp.,native,sowr,Solidago wrightii,,,
-359,2101,2hbu1,2008,14,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-518,2989,2mbs2,2008,9,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-541,3103,2mbs3,2008,10,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-564,3231,2mbu1,2008,139,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-682,4026,3hau1,2019,71,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-728,4254,3hbs1,2008,50,soxx,Solidago spp.,native,sosp2,Solidago spathulata,,,
-760,4384,3hbs2,2008,17,soxx,Solidago spp.,NA,unchanged,unchanged,,,
-827,4768,3lau1,2013,7,soxx,Solidago spp.,native,sowr,Solidago wrightii,,,
-288,1581,2has2,2019,4,span,Sphaeralcea angustifolia,native,unchanged,unchanged,,,
-164,882,1mbs1,2019,7,spla,Sphaeralcea laxa,native,unchanged,unchanged,,,
-706,4143,3hau2,2013,18,spha,Sphaeralcea species,NA,unchanged,unchanged,,,
-712,4166,3hau2,2019,53,spha,Sphaeralcea species,NA,unchanged,unchanged,,,
-817,4702,3hbu2,2019,20,spha,Sphaeralcea species,NA,unchanged,unchanged,,,
-466,2704,2mau2,2008,70,spor,Sporobolus species,NA,unchanged,unchanged,,,
-681,4023,3hau1,2019,304,spor,Sporobolus species,NA,unchanged,unchanged,,,
-709,4154,3hau2,2019,1021,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus,,,
-815,4696,3hbu2,2019,30,spor,Sporobolus species,NA,unchanged,unchanged,,,
-837,4798,3lau1,2019,13,spor,Sporobolus species,NA,unchanged,unchanged,,,
-893,5142,3mau1,2019,223,spor,Sporobolus species,NA,unchanged,unchanged,,,
-921,5289,3mau2,2019,14,spor,Sporobolus species,NA,unchanged,unchanged,,,
-1022,5828,3mbu1,2019,250,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus,,,
-1039,5943,3mbu2,2019,206,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus,,,
-1063,6110,3u1,2019,60,spor,Sporobolus species,NA,unchanged,unchanged,,,
-720,4183,3hau2,2019,23,thfi,Thelesperma filifolium,native,unchanged,unchanged,,,
-15,78,1has1,2008,3,forb,Unidentified forb,NA,unchanged,unchanged,,,
-24,116,1has1,2016,61,forb,Unidentified forb,NA,unchanged,unchanged,,,
-26,118,1has1,2016,497,forb,Unidentified forb,NA,unchanged,unchanged,,,
-29,139,1has1,2019,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-43,210,1has2,2016,11,forb,Unidentified forb,NA,unchanged,unchanged,,,
-46,223,1has2,2019,3,forb,Unidentified forb,NA,unchanged,unchanged,,,
-62,308,1hbs1,2016,34,forb,Unidentified forb,NA,unchanged,unchanged,,,
-72,377,1hbs2,1998,29,forb,Unidentified forb,NA,unchanged,unchanged,,,
-79,426,1hbs2,2016,36,forb,Unidentified forb,NA,unchanged,unchanged,,,
-80,427,1hbs2,2016,32,forb,Unidentified forb,NA,unchanged,unchanged,,,
-86,475,1mas1,1997,5,forb,Unidentified forb,NA,unchanged,unchanged,,,
-88,492,1mas1,1998,8,forb,Unidentified forb,NA,unchanged,unchanged,,,
-99,542,1mas1,2016,394,forb,Unidentified forb,NA,unchanged,unchanged,,,
-102,549,1mas1,2016,23,forb,Unidentified forb,NA,unchanged,unchanged,,,
-110,585,1mas2,1997,327,forb,Unidentified forb,NA,unchanged,unchanged,,,
-113,620,1mas2,1998,44,forb,Unidentified forb,NA,unchanged,unchanged,,,
-120,679,1mas2,2013,3,forb,Unidentified forb,NA,unchanged,unchanged,,,
-123,690,1mas2,2016,1221,forb,Unidentified forb,NA,unchanged,unchanged,,,
-125,696,1mas2,2016,21,forb,Unidentified forb,NA,unchanged,unchanged,,,
-127,718,1mas2,2019,12,forb,Unidentified forb,NA,unchanged,unchanged,,,
-141,789,1mbs1,2008,9,forb,Unidentified forb,NA,unchanged,unchanged,,,
-151,841,1mbs1,2016,2174,forb,Unidentified forb,NA,unchanged,unchanged,,,
-154,846,1mbs1,2016,12,forb,Unidentified forb,NA,unchanged,unchanged,,,
-161,878,1mbs1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-168,910,1mbs2,1997,12,forb,Unidentified forb,NA,unchanged,unchanged,,,
-170,923,1mbs2,1998,14,forb,Unidentified forb,NA,unchanged,unchanged,,,
-183,992,1mbs2,2016,143,forb,Unidentified forb,NA,unchanged,unchanged,,,
-184,993,1mbs2,2016,23,forb,Unidentified forb,NA,unchanged,unchanged,,,
-192,1022,1mbs2,2019,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-196,1049,1u1,1997,10,forb,Unidentified forb,NA,unchanged,unchanged,,,
-203,1086,1u1,1998,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-216,1170,1u1,2016,347,forb,Unidentified forb,NA,unchanged,unchanged,,,
-217,1173,1u1,2016,16,forb,Unidentified forb,NA,unchanged,unchanged,,,
-227,1212,1u1,2019,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-229,1226,1u2,1997,60,forb,Unidentified forb,NA,unchanged,unchanged,,,
-232,1260,1u2,1998,11,forb,Unidentified forb,NA,unchanged,unchanged,,,
-242,1318,1u2,2016,565,forb,Unidentified forb,NA,unchanged,unchanged,,,
-243,1319,1u2,2016,35,forb,Unidentified forb,NA,unchanged,unchanged,,,
-252,1371,2has1,1997,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-261,1431,2has1,2016,221,forb,Unidentified forb,NA,unchanged,unchanged,,,
-266,1446,2has1,2019,9,forb,Unidentified forb,NA,unchanged,unchanged,,,
-267,1449,2has1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-274,1498,2has2,1998,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-283,1554,2has2,2016,785,forb,Unidentified forb,NA,unchanged,unchanged,,,
-285,1557,2has2,2016,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-296,1664,2hau1,2016,360,forb,Unidentified forb,NA,unchanged,unchanged,,,
-310,1758,2hau2,2016,2345,forb,Unidentified forb,NA,unchanged,unchanged,,,
-313,1766,2hau2,2016,118,forb,Unidentified forb,NA,unchanged,unchanged,,,
-317,1787,2hau2,2019,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-331,1879,2hbs1,2016,184,forb,Unidentified forb,NA,unchanged,unchanged,,,
-335,1904,2hbs1,2019,15,forb,Unidentified forb,NA,unchanged,unchanged,,,
-344,2016,2hbs2,2016,285,forb,Unidentified forb,NA,unchanged,unchanged,,,
-346,2018,2hbs2,2016,100,forb,Unidentified forb,NA,unchanged,unchanged,,,
-377,2229,2hbu2,2016,615,forb,Unidentified forb,NA,unchanged,unchanged,,,
-379,2236,2hbu2,2016,19,forb,Unidentified forb,NA,unchanged,unchanged,,,
-388,2281,2mas1,1997,31,forb,Unidentified forb,NA,unchanged,unchanged,,,
-393,2326,2mas1,2008,14,forb,Unidentified forb,NA,unchanged,unchanged,,,
-397,2347,2mas1,2013,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-400,2364,2mas1,2016,1028,forb,Unidentified forb,NA,unchanged,unchanged,,,
-404,2373,2mas1,2016,67,forb,Unidentified forb,NA,unchanged,unchanged,,,
-407,2393,2mas1,2019,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-410,2405,2mas2,1997,78,forb,Unidentified forb,NA,unchanged,unchanged,,,
-424,2490,2mas2,2016,641,forb,Unidentified forb,NA,unchanged,unchanged,,,
-426,2493,2mas2,2016,16,forb,Unidentified forb,NA,unchanged,unchanged,,,
-446,2612,2mau1,2016,625,forb,Unidentified forb,NA,unchanged,unchanged,,,
-451,2624,2mau1,2016,65,forb,Unidentified forb,NA,unchanged,unchanged,,,
-462,2684,2mau2,1998,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-472,2737,2mau2,2016,670,forb,Unidentified forb,NA,unchanged,unchanged,,,
-475,2743,2mau2,2016,32,forb,Unidentified forb,NA,unchanged,unchanged,,,
-493,2852,2mbs1,2013,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-499,2877,2mbs1,2016,1183,forb,Unidentified forb,NA,unchanged,unchanged,,,
-501,2881,2mbs1,2016,89,forb,Unidentified forb,NA,unchanged,unchanged,,,
-513,2943,2mbs2,1997,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-521,3002,2mbs2,2013,14,forb,Unidentified forb,NA,unchanged,unchanged,,,
-525,3014,2mbs2,2016,718,forb,Unidentified forb,NA,unchanged,unchanged,,,
-528,3019,2mbs2,2016,91,forb,Unidentified forb,NA,unchanged,unchanged,,,
-534,3047,2mbs2,2019,11,forb,Unidentified forb,NA,unchanged,unchanged,,,
-544,3129,2mbs3,2016,809,forb,Unidentified forb,NA,unchanged,unchanged,,,
-546,3135,2mbs3,2016,5,forb,Unidentified forb,NA,unchanged,unchanged,,,
-561,3223,2mbu1,1998,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-569,3288,2mbu2,1997,21,forb,Unidentified forb,NA,unchanged,unchanged,,,
-576,3368,2mbu2,2013,13,forb,Unidentified forb,NA,unchanged,unchanged,,,
-582,3402,2mbu2,2019,29,forb,Unidentified forb,NA,unchanged,unchanged,,,
-589,3414,2mbu2,2019,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-594,3446,2u1,1997,5,forb,Unidentified forb,NA,unchanged,unchanged,,,
-603,3514,2u1,2016,845,forb,Unidentified forb,NA,unchanged,unchanged,,,
-604,3515,2u1,2016,128,forb,Unidentified forb,NA,unchanged,unchanged,,,
-611,3557,2u2,1997,120,forb,Unidentified forb,NA,unchanged,unchanged,,,
-620,3646,2u2,2013,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-623,3660,2u2,2016,1956,forb,Unidentified forb,NA,unchanged,unchanged,,,
-624,3663,2u2,2016,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-628,3681,2u2,2019,61,forb,Unidentified forb,NA,unchanged,unchanged,,,
-640,3772,3has1,2016,64,forb,Unidentified forb,NA,unchanged,unchanged,,,
-641,3773,3has1,2016,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-657,3854,3has2,1998,53,forb,Unidentified forb,NA,unchanged,unchanged,,,
-667,3915,3has2,2016,943,forb,Unidentified forb,NA,unchanged,unchanged,,,
-668,3916,3has2,2016,98,forb,Unidentified forb,NA,unchanged,unchanged,,,
-679,3998,3hau1,2002,72,forb,Unidentified forb,NA,unchanged,unchanged,,,
-680,4007,3hau1,2002,35,forb,Unidentified forb,NA,unchanged,unchanged,,,
-684,4033,3hau1,2019,22,forb,Unidentified forb,NA,unchanged,unchanged,,,
-689,4060,3hau2,1997,12,forb,Unidentified forb,NA,unchanged,unchanged,,,
-692,4092,3hau2,2002,416,forb,Unidentified forb,NA,unchanged,unchanged,,,
-700,4113,3hau2,2002,164,forb,Unidentified forb,NA,unchanged,unchanged,,,
-725,4229,3hbs1,1998,38,forb,Unidentified forb,NA,unchanged,unchanged,,,
-735,4275,3hbs1,2013,18,forb,Unidentified forb,NA,unchanged,unchanged,,,
-736,4283,3hbs1,2013,23,forb,Unidentified forb,NA,unchanged,unchanged,,,
-738,4290,3hbs1,2016,200,forb,Unidentified forb,NA,unchanged,unchanged,,,
-740,4295,3hbs1,2016,20,forb,Unidentified forb,NA,unchanged,unchanged,,,
-753,4354,3hbs2,1998,35,forb,Unidentified forb,NA,unchanged,unchanged,,,
-762,4393,3hbs2,2008,12,forb,Unidentified forb,NA,unchanged,unchanged,,,
-770,4439,3hbs2,2016,1688,forb,Unidentified forb,NA,unchanged,unchanged,,,
-774,4443,3hbs2,2016,161,forb,Unidentified forb,NA,unchanged,unchanged,,,
-777,4464,3hbs2,2019,5,forb,Unidentified forb,NA,unchanged,unchanged,,,
-786,4525,3hbu1,2002,64,forb,Unidentified forb,NA,unchanged,unchanged,,,
-791,4575,3hbu2,1997,96,forb,Unidentified forb,NA,unchanged,unchanged,,,
-794,4597,3hbu2,1998,221,forb,Unidentified forb,NA,unchanged,unchanged,,,
-796,4623,3hbu2,2002,307,forb,Unidentified forb,NA,unchanged,unchanged,,,
-801,4641,3hbu2,2013,82,forb,Unidentified forb,NA,unchanged,unchanged,,,
-812,4690,3hbu2,2019,34,forb,Unidentified forb,NA,unchanged,unchanged,,,
-819,4712,3lau1,1997,28,forb,Unidentified forb,NA,unchanged,unchanged,,,
-825,4752,3lau1,2002,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-835,4794,3lau1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-840,4805,3lau1,2019,9,forb,Unidentified forb,NA,unchanged,unchanged,,,
-851,4884,3mas1,2016,532,forb,Unidentified forb,NA,unchanged,unchanged,,,
-853,4892,3mas1,2016,191,forb,Unidentified forb,NA,unchanged,unchanged,,,
-857,4914,3mas1,2019,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-863,4951,3mas2,1997,19,forb,Unidentified forb,NA,unchanged,unchanged,,,
-868,4996,3mas2,2008,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-874,5030,3mas2,2016,889,forb,Unidentified forb,NA,unchanged,unchanged,,,
-875,5033,3mas2,2016,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-901,5166,3mau2,1997,323,forb,Unidentified forb,NA,unchanged,unchanged,,,
-908,5235,3mau2,2002,197,forb,Unidentified forb,NA,unchanged,unchanged,,,
-909,5236,3mau2,2002,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-926,5333,3mbs1,2008,5,forb,Unidentified forb,NA,unchanged,unchanged,,,
-932,5358,3mbs1,2016,71,forb,Unidentified forb,NA,unchanged,unchanged,,,
-933,5360,3mbs1,2016,16,forb,Unidentified forb,NA,unchanged,unchanged,,,
-936,5377,3mbs1,2019,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-944,5418,3mbs2,1997,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-951,5470,3mbs2,2008,117,forb,Unidentified forb,NA,unchanged,unchanged,,,
-954,5481,3mbs2,2008,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-963,5526,3mbs2,2016,1152,forb,Unidentified forb,NA,unchanged,unchanged,,,
-966,5530,3mbs2,2016,224,forb,Unidentified forb,NA,unchanged,unchanged,,,
-972,5570,3mbs3,1997,128,forb,Unidentified forb,NA,unchanged,unchanged,,,
-976,5596,3mbs3,1997,14,forb,Unidentified forb,NA,unchanged,unchanged,,,
-995,5697,3mbs3,2016,174,forb,Unidentified forb,NA,unchanged,unchanged,,,
-996,5700,3mbs3,2016,4,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1002,5731,3mbs3,2019,1,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1010,5782,3mbu1,1998,27,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1013,5798,3mbu1,2002,210,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1016,5810,3mbu1,2002,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1028,5870,3mbu2,1997,88,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1031,5906,3mbu2,2002,224,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1035,5924,3mbu2,2002,13,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1047,5976,3u1,1997,50,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1050,6017,3u1,1998,7,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1052,6034,3u1,1998,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1072,6124,3u1,2019,6,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1076,6134,3u1,2019,14,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1079,6155,3u2,1997,3,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1081,6158,3u2,1997,20,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1084,6190,3u2,1998,3,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1085,6193,3u2,1998,7,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1094,6244,3u2,2016,685,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1095,6247,3u2,2016,386,forb,Unidentified forb,NA,unchanged,unchanged,,,
-1101,6269,3u2,2019,2,forb,Unidentified forb,NA,unchanged,unchanged,,,
-2,15,1has1,1997,19,gras2,Unidentified grass,NA,gras,unchanged,,,
-6,41,1has1,1998,23,gras,Unidentified grass,NA,gras,unchanged,,,
-11,71,1has1,2008,57,gras,Unidentified grass,NA,gras,unchanged,,,
-12,72,1has1,2008,8,gras,Unidentified grass,NA,gras,unchanged,,,
-22,112,1has1,2016,461,gras,Unidentified grass,NA,gras,unchanged,,,
-28,133,1has1,2019,81,gras,Unidentified grass,NA,gras,unchanged,,,
-36,164,1has2,1997,23,gras2,Unidentified grass,NA,gras,unchanged,,,
-39,183,1has2,2008,632,gras,Unidentified grass,NA,gras,unchanged,,,
-42,206,1has2,2016,200,gras,Unidentified grass,NA,gras,unchanged,,,
-47,225,1has2,2019,4,gras,Unidentified grass,NA,gras,unchanged,,,
-49,236,1hbs1,1997,41,gras2,Unidentified grass,NA,gras,unchanged,,,
-50,246,1hbs1,1997,3,gras,Unidentified grass,NA,gras,unchanged,,,
-52,255,1hbs1,1998,125,gras,Unidentified grass,NA,gras,unchanged,,,
-53,263,1hbs1,1998,21,gras2,Unidentified grass,NA,gras,unchanged,,,
-55,273,1hbs1,2008,4,gras,Unidentified grass,NA,gras,unchanged,,,
-61,307,1hbs1,2016,152,gras,Unidentified grass,NA,gras,unchanged,,,
-67,342,1hbs2,1997,71,gras2,Unidentified grass,NA,gras,unchanged,,,
-69,357,1hbs2,1997,1,gras,Unidentified grass,NA,gras,unchanged,,,
-71,375,1hbs2,1998,42,gras,Unidentified grass,NA,gras,unchanged,,,
-73,383,1hbs2,1998,6,gras2,Unidentified grass,NA,gras,unchanged,,,
-78,425,1hbs2,2016,71,gras,Unidentified grass,NA,gras,unchanged,,,
-85,462,1mas1,1997,362,gras2,Unidentified grass,NA,gras,unchanged,,,
-89,493,1mas1,1998,4,gras2,Unidentified grass,NA,gras,unchanged,,,
-94,517,1mas1,2008,20,gras,Unidentified grass,NA,gras,unchanged,,,
-98,536,1mas1,2013,3,gras,Unidentified grass,NA,gras,unchanged,,,
-100,547,1mas1,2016,10,gras,Unidentified grass,NA,gras,unchanged,,,
-101,548,1mas1,2016,68,gras,Unidentified grass,NA,gras,unchanged,,,
-109,582,1mas2,1997,51,gras2,Unidentified grass,NA,gras,unchanged,,,
-114,629,1mas2,1998,2,gras2,Unidentified grass,NA,gras,unchanged,,,
-118,653,1mas2,2008,5,gras,Unidentified grass,NA,gras,unchanged,,,
-121,680,1mas2,2013,1,gras,Unidentified grass,NA,gras,unchanged,,,
-122,687,1mas2,2016,649,gras,Unidentified grass,NA,gras,unchanged,,,
-124,695,1mas2,2016,5,gras,Unidentified grass,NA,gras,unchanged,,,
-144,817,1mbs1,2013,13,gras,Unidentified grass,NA,gras,unchanged,,,
-146,825,1mbs1,2013,3,gras,Unidentified grass,NA,gras,unchanged,,,
-150,839,1mbs1,2016,2230,gras,Unidentified grass,NA,gras,unchanged,,,
-152,842,1mbs1,2016,68,gras,Unidentified grass,NA,gras,unchanged,,,
-155,863,1mbs1,2019,48,gras,Unidentified grass,NA,gras,unchanged,,,
-165,899,1mbs2,1997,221,gras2,Unidentified grass,NA,gras,unchanged,,,
-167,909,1mbs2,1997,39,gras,Unidentified grass,NA,gras,unchanged,,,
-172,936,1mbs2,1998,3,gras2,Unidentified grass,NA,gras,unchanged,,,
-176,962,1mbs2,2008,19,gras,Unidentified grass,NA,gras,unchanged,,,
-181,987,1mbs2,2016,981,gras,Unidentified grass,NA,gras,unchanged,,,
-182,990,1mbs2,2016,9,gras,Unidentified grass,NA,gras,unchanged,,,
-190,1020,1mbs2,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-194,1040,1u1,1997,12,gras,Unidentified grass,NA,gras,unchanged,,,
-197,1051,1u1,1997,34,gras,Unidentified grass,NA,gras,unchanged,,,
-201,1076,1u1,1997,3,gras2,Unidentified grass,NA,gras,unchanged,,,
-204,1093,1u1,1998,39,gras,Unidentified grass,NA,gras,unchanged,,,
-215,1165,1u1,2016,1050,gras,Unidentified grass,NA,gras,unchanged,,,
-222,1195,1u1,2019,24,gras,Unidentified grass,NA,gras,unchanged,,,
-230,1233,1u2,1997,8,gras2,Unidentified grass,NA,gras,unchanged,,,
-234,1266,1u2,1998,4,gras2,Unidentified grass,NA,gras,unchanged,,,
-240,1312,1u2,2016,2755,gras,Unidentified grass,NA,gras,unchanged,,,
-241,1317,1u2,2016,10,gras,Unidentified grass,NA,gras,unchanged,,,
-248,1345,1u2,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-251,1370,2has1,1997,32,gras2,Unidentified grass,NA,gras,unchanged,,,
-254,1391,2has1,1998,20,gras,Unidentified grass,NA,gras,unchanged,,,
-260,1425,2has1,2013,4,gras,Unidentified grass,NA,gras,unchanged,,,
-262,1432,2has1,2016,132,gras,Unidentified grass,NA,gras,unchanged,,,
-269,1465,2has2,1997,126,gras2,Unidentified grass,NA,gras,unchanged,,,
-270,1466,2has2,1997,49,gras,Unidentified grass,NA,gras,unchanged,,,
-273,1496,2has2,1998,44,gras,Unidentified grass,NA,gras,unchanged,,,
-278,1516,2has2,2008,48,gras,Unidentified grass,NA,gras,unchanged,,,
-282,1552,2has2,2016,206,gras,Unidentified grass,NA,gras,unchanged,,,
-291,1596,2hau1,1997,8,gras2,Unidentified grass,NA,gras,unchanged,,,
-297,1666,2hau1,2016,75,gras,Unidentified grass,NA,gras,unchanged,,,
-302,1699,2hau2,1997,6,gras2,Unidentified grass,NA,gras,unchanged,,,
-304,1722,2hau2,2008,25,gras,Unidentified grass,NA,gras,unchanged,,,
-311,1760,2hau2,2016,133,gras,Unidentified grass,NA,gras,unchanged,,,
-322,1838,2hbs1,2008,379,gras,Unidentified grass,NA,gras,unchanged,,,
-327,1869,2hbs1,2013,3,gras,Unidentified grass,NA,gras,unchanged,,,
-330,1878,2hbs1,2016,189,gras,Unidentified grass,NA,gras,unchanged,,,
-334,1902,2hbs1,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-336,1922,2hbs2,1997,173,gras2,Unidentified grass,NA,gras,unchanged,,,
-338,1975,2hbs2,2008,11,gras,Unidentified grass,NA,gras,unchanged,,,
-343,2014,2hbs2,2016,9,gras,Unidentified grass,NA,gras,unchanged,,,
-345,2017,2hbs2,2016,55,gras,Unidentified grass,NA,gras,unchanged,,,
-349,2043,2hbs2,2019,10,gras,Unidentified grass,NA,gras,unchanged,,,
-355,2061,2hbu1,1997,10,gras2,Unidentified grass,NA,gras,unchanged,,,
-368,2142,2hbu2,1997,165,gras2,Unidentified grass,NA,gras,unchanged,,,
-374,2205,2hbu2,2008,35,gras,Unidentified grass,NA,gras,unchanged,,,
-378,2233,2hbu2,2016,26,gras,Unidentified grass,NA,gras,unchanged,,,
-387,2278,2mas1,1997,3,gras2,Unidentified grass,NA,gras,unchanged,,,
-390,2297,2mas1,1998,5,gras,Unidentified grass,NA,gras,unchanged,,,
-396,2334,2mas1,2008,11,gras,Unidentified grass,NA,gras,unchanged,,,
-402,2371,2mas1,2016,50,gras,Unidentified grass,NA,gras,unchanged,,,
-411,2411,2mas2,1997,118,gras2,Unidentified grass,NA,gras,unchanged,,,
-414,2440,2mas2,1998,24,gras,Unidentified grass,NA,gras,unchanged,,,
-415,2445,2mas2,1998,6,gras2,Unidentified grass,NA,gras,unchanged,,,
-418,2466,2mas2,2008,18,gras,Unidentified grass,NA,gras,unchanged,,,
-423,2488,2mas2,2016,173,gras,Unidentified grass,NA,gras,unchanged,,,
-430,2507,2mas2,2019,10,gras,Unidentified grass,NA,gras,unchanged,,,
-433,2523,2mau1,1997,3,gras2,Unidentified grass,NA,gras,unchanged,,,
-435,2558,2mau1,1998,17,gras,Unidentified grass,NA,gras,unchanged,,,
-441,2587,2mau1,2008,40,gras,Unidentified grass,NA,gras,unchanged,,,
-444,2604,2mau1,2013,5,gras,Unidentified grass,NA,gras,unchanged,,,
-447,2614,2mau1,2016,210,gras,Unidentified grass,NA,gras,unchanged,,,
-460,2665,2mau2,1997,1,gras2,Unidentified grass,NA,gras,unchanged,,,
-463,2687,2mau2,1998,1,gras,Unidentified grass,NA,gras,unchanged,,,
-468,2707,2mau2,2008,7,gras,Unidentified grass,NA,gras,unchanged,,,
-473,2741,2mau2,2016,3,gras,Unidentified grass,NA,gras,unchanged,,,
-474,2742,2mau2,2016,6,gras,Unidentified grass,NA,gras,unchanged,,,
-480,2766,2mbs1,1997,52,gras2,Unidentified grass,NA,gras,unchanged,,,
-483,2808,2mbs1,1998,3,gras2,Unidentified grass,NA,gras,unchanged,,,
-500,2879,2mbs1,2016,135,gras,Unidentified grass,NA,gras,unchanged,,,
-507,2907,2mbs1,2019,188,gras,Unidentified grass,NA,gras,unchanged,,,
-511,2928,2mbs2,1997,342,gras2,Unidentified grass,NA,gras,unchanged,,,
-519,2996,2mbs2,2013,7,gras,Unidentified grass,NA,gras,unchanged,,,
-520,3001,2mbs2,2013,3,gras,Unidentified grass,NA,gras,unchanged,,,
-524,3013,2mbs2,2016,512,gras,Unidentified grass,NA,gras,unchanged,,,
-535,3048,2mbs2,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-543,3127,2mbs3,2016,976,gras,Unidentified grass,NA,gras,unchanged,,,
-547,3137,2mbs3,2016,3,gras,Unidentified grass,NA,gras,unchanged,,,
-549,3149,2mbs3,2019,158,gras,Unidentified grass,NA,gras,unchanged,,,
-551,3156,2mbs3,2019,13,gras,Unidentified grass,NA,gras,unchanged,,,
-559,3191,2mbu1,1997,7,gras2,Unidentified grass,NA,gras,unchanged,,,
-568,3286,2mbu2,1997,8,gras2,Unidentified grass,NA,gras,unchanged,,,
-592,3429,2u1,1997,45,gras2,Unidentified grass,NA,gras,unchanged,,,
-593,3437,2u1,1997,257,gras,Unidentified grass,NA,gras,unchanged,,,
-596,3464,2u1,1998,69,gras,Unidentified grass,NA,gras,unchanged,,,
-597,3470,2u1,1998,4,gras2,Unidentified grass,NA,gras,unchanged,,,
-606,3524,2u1,2016,123,gras,Unidentified grass,NA,gras,unchanged,,,
-614,3589,2u2,1998,10,gras,Unidentified grass,NA,gras,unchanged,,,
-622,3658,2u2,2016,462,gras,Unidentified grass,NA,gras,unchanged,,,
-631,3693,2u2,2019,10,gras,Unidentified grass,NA,gras,unchanged,,,
-634,3703,3has1,1997,279,gras2,Unidentified grass,NA,gras,unchanged,,,
-635,3727,3has1,1998,1,gras2,Unidentified grass,NA,gras,unchanged,,,
-636,3735,3has1,2008,106,gras,Unidentified grass,NA,gras,unchanged,,,
-642,3774,3has1,2016,102,gras,Unidentified grass,NA,gras,unchanged,,,
-651,3813,3has2,1997,2,gras,Unidentified grass,NA,gras,unchanged,,,
-652,3825,3has2,1997,2,gras2,Unidentified grass,NA,gras,unchanged,,,
-654,3845,3has2,1998,12,gras2,Unidentified grass,NA,gras,unchanged,,,
-659,3872,3has2,2008,111,gras,Unidentified grass,NA,gras,unchanged,,,
-662,3889,3has2,2013,28,gras,Unidentified grass,NA,gras,unchanged,,,
-665,3907,3has2,2013,10,gras,Unidentified grass,NA,gras,unchanged,,,
-666,3914,3has2,2016,339,gras,Unidentified grass,NA,gras,unchanged,,,
-696,4106,3hau2,2002,9,gras,Unidentified grass,NA,gras,unchanged,,,
-703,4130,3hau2,2013,145,gras,Unidentified grass,NA,gras,unchanged,,,
-708,4152,3hau2,2019,149,gras,Unidentified grass,NA,gras,unchanged,,,
-713,4167,3hau2,2019,5,gras,Unidentified grass,NA,gras,unchanged,,,
-721,4193,3hbs1,1997,6,gras,Unidentified grass,NA,gras,unchanged,,,
-722,4197,3hbs1,1997,58,gras2,Unidentified grass,NA,gras,unchanged,,,
-733,4272,3hbs1,2013,8,gras,Unidentified grass,NA,gras,unchanged,,,
-737,4288,3hbs1,2016,1366,gras,Unidentified grass,NA,gras,unchanged,,,
-739,4292,3hbs1,2016,11,gras,Unidentified grass,NA,gras,unchanged,,,
-744,4310,3hbs1,2019,7,gras,Unidentified grass,NA,gras,unchanged,,,
-746,4314,3hbs1,2019,30,gras,Unidentified grass,NA,gras,unchanged,,,
-751,4333,3hbs2,1997,122,gras2,Unidentified grass,NA,gras,unchanged,,,
-752,4350,3hbs2,1998,9,gras,Unidentified grass,NA,gras,unchanged,,,
-755,4371,3hbs2,2008,41,gras,Unidentified grass,NA,gras,unchanged,,,
-767,4430,3hbs2,2013,14,gras,Unidentified grass,NA,gras,unchanged,,,
-768,4432,3hbs2,2013,1,gras,Unidentified grass,NA,gras,unchanged,,,
-771,4440,3hbs2,2016,779,gras,Unidentified grass,NA,gras,unchanged,,,
-773,4442,3hbs2,2016,88,gras,Unidentified grass,NA,gras,unchanged,,,
-788,4527,3hbu1,2002,70,gras,Unidentified grass,NA,gras,unchanged,,,
-804,4659,3hbu2,2013,1,gras,Unidentified grass,NA,gras,unchanged,,,
-806,4673,3hbu2,2019,23,gras,Unidentified grass,NA,gras,unchanged,,,
-818,4709,3lau1,1997,4,gras2,Unidentified grass,NA,gras,unchanged,,,
-824,4747,3lau1,2002,11,gras,Unidentified grass,NA,gras,unchanged,,,
-836,4795,3lau1,2019,1,gras,Unidentified grass,NA,gras,unchanged,,,
-842,4819,3mas1,1997,6,gras2,Unidentified grass,NA,gras,unchanged,,,
-844,4837,3mas1,1998,27,gras,Unidentified grass,NA,gras,unchanged,,,
-846,4847,3mas1,1998,1,gras2,Unidentified grass,NA,gras,unchanged,,,
-848,4859,3mas1,2008,270,gras,Unidentified grass,NA,gras,unchanged,,,
-852,4890,3mas1,2016,65,gras,Unidentified grass,NA,gras,unchanged,,,
-858,4915,3mas1,2019,19,gras,Unidentified grass,NA,gras,unchanged,,,
-860,4930,3mas2,1997,241,gras2,Unidentified grass,NA,gras,unchanged,,,
-861,4939,3mas2,1997,60,gras,Unidentified grass,NA,gras,unchanged,,,
-865,4975,3mas2,1998,2,gras2,Unidentified grass,NA,gras,unchanged,,,
-866,4992,3mas2,2008,10,gras,Unidentified grass,NA,gras,unchanged,,,
-877,5036,3mas2,2016,29,gras,Unidentified grass,NA,gras,unchanged,,,
-882,5059,3mas2,2019,14,gras,Unidentified grass,NA,gras,unchanged,,,
-889,5119,3mau1,2002,36,gras2,Unidentified grass,NA,gras,unchanged,,,
-894,5145,3mau1,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-900,5165,3mau2,1997,45,gras,Unidentified grass,NA,gras,unchanged,,,
-902,5180,3mau2,1997,28,gras2,Unidentified grass,NA,gras,unchanged,,,
-910,5238,3mau2,2002,8,gras,Unidentified grass,NA,gras,unchanged,,,
-916,5271,3mau2,2019,26,gras,Unidentified grass,NA,gras,unchanged,,,
-922,5291,3mau2,2019,13,gras,Unidentified grass,NA,gras,unchanged,,,
-923,5299,3mbs1,1997,275,gras2,Unidentified grass,NA,gras,unchanged,,,
-930,5346,3mbs1,2013,1,gras,Unidentified grass,NA,gras,unchanged,,,
-931,5357,3mbs1,2016,5,gras,Unidentified grass,NA,gras,unchanged,,,
-942,5396,3mbs2,1997,37,gras2,Unidentified grass,NA,gras,unchanged,,,
-946,5443,3mbs2,1998,2,gras,Unidentified grass,NA,gras,unchanged,,,
-949,5461,3mbs2,2008,9,gras,Unidentified grass,NA,gras,unchanged,,,
-964,5527,3mbs2,2016,429,gras,Unidentified grass,NA,gras,unchanged,,,
-965,5528,3mbs2,2016,8,gras,Unidentified grass,NA,gras,unchanged,,,
-974,5574,3mbs3,1997,164,gras2,Unidentified grass,NA,gras,unchanged,,,
-981,5647,3mbs3,2008,8,gras,Unidentified grass,NA,gras,unchanged,,,
-987,5668,3mbs3,2013,29,gras,Unidentified grass,NA,gras,unchanged,,,
-994,5692,3mbs3,2016,769,gras,Unidentified grass,NA,gras,unchanged,,,
-999,5721,3mbs3,2019,43,gras,Unidentified grass,NA,gras,unchanged,,,
-1006,5747,3mbu1,1997,12,gras2,Unidentified grass,NA,gras,unchanged,,,
-1014,5801,3mbu1,2002,16,gras,Unidentified grass,NA,gras,unchanged,,,
-1024,5834,3mbu1,2019,3,gras,Unidentified grass,NA,gras,unchanged,,,
-1027,5866,3mbu2,1997,19,gras2,Unidentified grass,NA,gras,unchanged,,,
-1029,5883,3mbu2,1998,54,gras,Unidentified grass,NA,gras,unchanged,,,
-1033,5919,3mbu2,2002,34,gras,Unidentified grass,NA,gras,unchanged,,,
-1034,5923,3mbu2,2002,14,gras,Unidentified grass,NA,gras,unchanged,,,
-1043,5968,3u1,1997,137,gras,Unidentified grass,NA,gras,unchanged,,,
-1044,5969,3u1,1997,87,gras2,Unidentified grass,NA,gras,unchanged,,,
-1046,5975,3u1,1997,3,gras,Unidentified grass,NA,gras,unchanged,,,
-1049,6009,3u1,1998,148,gras,Unidentified grass,NA,gras,unchanged,,,
-1053,6037,3u1,1998,34,gras,Unidentified grass,NA,gras,unchanged,,,
-1054,6049,3u1,2002,94,gras,Unidentified grass,NA,gras,unchanged,,,
-1059,6085,3u1,2013,4,gras,Unidentified grass,NA,gras,unchanged,,,
-1068,6118,3u1,2019,3,gras,Unidentified grass,NA,gras,unchanged,,,
-1074,6129,3u1,2019,2,gras,Unidentified grass,NA,gras,unchanged,,,
-1080,6156,3u2,1997,14,gras2,Unidentified grass,NA,gras,unchanged,,,
-1093,6242,3u2,2016,1019,gras,Unidentified grass,NA,gras,unchanged,,,
-200,1072,1u1,1997,3,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-268,1453,2has1,2019,17,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-312,1764,2hau2,2016,5,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-449,2618,2mau1,2016,18,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-502,2883,2mbs1,2016,8,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-625,3667,2u2,2016,119,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-1097,6251,3u2,2016,6,shru,Unidentified shrub,NA,unchanged,unchanged,,,
-25,117,1has1,2016,383,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-218,1176,1u1,2016,2,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-219,1178,1u1,2016,23,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-284,1555,2has2,2016,323,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-314,1767,2hau2,2016,7,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-342,2010,2hbs2,2016,527,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-380,2237,2hbu2,2016,2,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-403,2372,2mas1,2016,89,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-448,2615,2mau1,2016,164,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-503,2888,2mbs1,2016,50,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-527,3016,2mbs2,2016,414,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-529,3020,2mbs2,2016,33,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-548,3138,2mbs3,2016,25,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-605,3519,2u1,2016,26,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-669,3919,3has2,2016,13,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-741,4296,3hbs1,2016,578,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-772,4441,3hbs2,2016,443,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-873,5027,3mas2,2016,620,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-876,5035,3mas2,2016,6,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-962,5523,3mbs2,2016,723,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-1096,6249,3u2,2016,399,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-1098,6253,3u2,2016,19,subs,Unidentified subshrub,NA,unchanged,unchanged,,,
-35,156,1has2,1997,31,tree,Unidentified tree,NA,unchanged,unchanged,,,
-206,1110,1u1,1998,37,tree,Unidentified tree,NA,unchanged,unchanged,,,
-293,1623,2hau1,1998,2,tree,Unidentified tree,NA,unchanged,unchanged,,,
-975,5581,3mbs3,1997,110,tree,Unidentified tree,NA,unchanged,unchanged,,,
-978,5614,3mbs3,1998,25,tree,Unidentified tree,NA,unchanged,unchanged,,,
-1048,5994,3u1,1997,181,tree,Unidentified tree,NA,unchanged,unchanged,,,
-162,880,1mbs1,2019,11,comp,unknown Composite,NA,unchanged,unchanged,,,
-191,1021,1mbs2,2019,11,comp,unknown Composite,NA,unchanged,unchanged,,,
-245,1334,1u2,2019,53,comp,unknown Composite,NA,unchanged,unchanged,,,
-259,1424,2has1,2013,6,comp,unknown Composite,NA,unchanged,unchanged,,,
-275,1509,2has2,2008,41,comp,unknown Composite,NA,unchanged,unchanged,,,
-306,1737,2hau2,2008,68,comp,unknown Composite,NA,unchanged,unchanged,,,
-362,2128,2hbu1,2019,16,comp,unknown Composite,NA,unchanged,unchanged,,,
-470,2720,2mau2,2008,10,comp,unknown Composite,NA,unchanged,unchanged,,,
-477,2751,2mau2,2019,14,comp,unknown Composite,NA,unchanged,unchanged,,,
-505,2900,2mbs1,2019,285,comp,unknown Composite,NA,unchanged,unchanged,,,
-553,3165,2mbs3,2019,37,comp,unknown Composite,NA,unchanged,unchanged,,,
-577,3373,2mbu2,2013,16,comp,unknown Composite,NA,unchanged,unchanged,,,
-578,3380,2mbu2,2013,4,comp,unknown Composite,NA,unchanged,unchanged,,,
-580,3398,2mbu2,2019,18,comp,unknown Composite,NA,unchanged,unchanged,,,
-675,3945,3has2,2019,21,comp,unknown Composite,NA,unchanged,unchanged,,,
-697,4107,3hau2,2002,364,comp,unknown Composite,NA,unchanged,unchanged,,,
-707,4144,3hau2,2013,41,comp,unknown Composite,NA,unchanged,unchanged,,,
-717,4175,3hau2,2019,14,comp,unknown Composite,NA,unchanged,unchanged,,,
-778,4465,3hbs2,2019,2,comp,unknown Composite,NA,unchanged,unchanged,,,
-779,4466,3hbs2,2019,8,comp,unknown Composite,NA,unchanged,unchanged,,,
-838,4800,3lau1,2019,7,comp,unknown Composite,NA,unchanged,unchanged,,,
-869,4998,3mas2,2008,8,comp,unknown Composite,NA,unchanged,unchanged,,,
-892,5137,3mau1,2019,38,comp,unknown Composite,NA,unchanged,unchanged,,,
-941,5388,3mbs1,2019,1,comp,unknown Composite,NA,unchanged,unchanged,,,
-952,5472,3mbs2,2008,8,comp,unknown Composite,NA,unchanged,unchanged,,,
-967,5542,3mbs2,2019,280,comp,unknown Composite,NA,unchanged,unchanged,,,
-1018,5812,3mbu1,2002,7,comp,unknown Composite,NA,unchanged,unchanged,,,
-1061,6090,3u1,2013,21,comp,unknown Composite,NA,unchanged,unchanged,,,
-1102,6274,3u2,2019,38,comp,unknown Composite,NA,unchanged,unchanged,,,
-871,5001,3mas2,2008,2,cruc,unknown Cruciferae,NA,unchanged,unchanged,,,
-638,3749,3has1,2008,3,pexx,unknown Penstemon,NA,unchanged,unchanged,this is the only one in trasnsect  3has1 ; thanks for catching those that I missed,,"All of these penstemons should be checked against other years, I see several matches so new columns need to be updated."
-759,4383,3hbs2,2008,37,pexx,unknown Penstemon,native,peba,Penstemon barbatus,,,
-780,4471,3hbs2,2019,11,pexx,unknown Penstemon,native,peba,Penstemon barbatus,,,
-911,5242,3mau2,2002,2,pexx,unknown Penstemon,native,peba,Penstemon barbatus,,,
-18,95,1has1,2013,5,unkn,Unknown plant,NA,unchanged,unchanged,,,
-27,119,1has1,2016,10,unkn,Unknown plant,NA,unchanged,unchanged,,,
-258,1423,2has1,2013,4,unkn,Unknown plant,NA,unchanged,unchanged,,,
-295,1650,2hau1,2013,2,unkn,Unknown plant,NA,unchanged,unchanged,,,
-425,2492,2mas2,2016,1,unkn,Unknown plant,NA,unchanged,unchanged,,,
-471,2727,2mau2,2013,30,unkn,Unknown plant,NA,unchanged,unchanged,,,
-492,2851,2mbs1,2013,16,unkn,Unknown plant,NA,unchanged,unchanged,,,
-545,3132,2mbs3,2016,12,unkn,Unknown plant,NA,unchanged,unchanged,,,
-616,3630,2u2,2013,16,unkn,Unknown plant,NA,unchanged,unchanged,,,
-663,3897,3has2,2013,3,unkn,Unknown plant,NA,unchanged,unchanged,,,
-734,4273,3hbs1,2013,2,unkn,Unknown plant,NA,unchanged,unchanged,,,
-747,4315,3hbs1,2019,2,unkn,Unknown plant,NA,unchanged,unchanged,,,
-803,4649,3hbu2,2013,40,unkn,Unknown plant,NA,unchanged,unchanged,,,
-914,5268,3mau2,2019,8,unkn,Unknown plant,NA,unchanged,unchanged,,,
-957,5498,3mbs2,2013,4,unkn,Unknown plant,NA,unchanged,unchanged,,,
-1062,6093,3u1,2013,36,unkn,Unknown plant,NA,unchanged,unchanged,,,
+RowNum,Transect_id,year,Total_cm,Code,Full_name,Origin,code_new,fullname_new
+218,1has2,2019,87,agxx2,Agropyron sp.,native,agtr,Agropyron trachycaulum
+870,1mbs1,2019,26,agxx2,Agropyron sp.,NA,unchanged,unchanged
+1007,1mbs2,2019,145,agxx2,Agropyron sp.,NA,unchanged,unchanged
+1189,1u1,2019,93,agxx2,Agropyron sp.,NA,unchanged,unchanged
+3160,2mbs3,2019,156,agxx2,Agropyron sp.,NA,unchanged,unchanged
+3786,3has1,2019,36,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum
+3795,3has1,2019,2,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum
+3927,3has2,2019,126,agxx2,Agropyron sp.,NA,agsm,Agropyron smithii
+4450,3hbs2,2019,1199,agxx2,Agropyron sp.,NA,agda,Agropyron dasytachum 
+4787,3lau1,2019,71,agxx2,Agropyron sp.,NA,agsm,Agropyron smithii
+169,1has2,1997,149,agsp,Agropyron species,native,agtr,Agropyron trachycaulum
+353,1hbs2,1997,22,agsp,Agropyron species,NA,agxx2,Agropyron sp.
+637,1mas2,1998,1,agsp,Agropyron species,NA,agxx2,Agropyron sp.
+938,1mbs2,1998,7,agsp,Agropyron species,NA,agxx2,Agropyron sp.
+2659,2mau2,1997,40,agsp,Agropyron species,NA,agxx2,Agropyron sp.
+4259,3hbs1,2008,95,agxx,Agrostis sp.,native,unchanged,unchanged
+2833,2mbs1,2008,72,amxx,Amaranthus sp,NA,unchanged,Amaranthus sp.
+2838,2mbs1,2008,5,amxx,Amaranthus sp,NA,unchanged,Amaranthus sp.
+5681,3mbs3,2013,7,amxx,Amaranthus sp,NA,unchanged,Amaranthus sp.
+1335,1u2,2019,11,anma2,Anaphalis margaritacea,native,unchanged,unchanged
+5287,3mau2,2019,60,ange,Andropogon gerardii,native,unchanged,unchanged
+645,1mas2,2008,64,anxx,Antennaria spp.,native,anpa,Antennaria parvifolia
+1412,2has1,2008,10,anxx,Antennaria spp.,NA,unchanged,Antennaria sp.
+2568,2mau1,2008,138,anxx,Antennaria spp.,NA,unchanged,Antennaria sp.
+3228,2mbu1,2008,45,anxx,Antennaria spp.,NA,unchanged,Antennaria sp.
+5667,3mbs3,2013,9,anxx,Antennaria spp.,native,anpa,Antennaria parvifolia
+2047,2hbs2,2019,22,arar,Aristida arizonica,native,unchanged,unchanged
+6114,3u1,2019,20,arlo,Aristida longiseta,native,unchanged,unchanged
+391,1hbs2,2008,53,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+516,1mas1,2008,36,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+1120,1u1,2008,200,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+1202,1u1,2019,28,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+2320,2mas1,2008,386,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+2579,2mau1,2008,2,arxx,Aristida spp.,NA,unchanged,Aristida sp.
+3934,3has2,2019,72,arca2,Artemisia carruthii,native,unchanged,unchanged
+3698,2u2,2019,19,arfr,Artemisia frigida,native,unchanged,unchanged
+4168,3hau2,2019,6,arfr,Artemisia frigida,native,unchanged,unchanged
+5728,3mbs3,2019,1,arfr,Artemisia frigida,native,unchanged,unchanged
+5151,3mau1,2019,9,arsp,Artemisia species,native,arlu,Artemisia ludoviciana
+5930,3mbu2,2002,36,arsp,Artemisia species,native,unchanged,Artemisia sp.
+4380,3hbs2,2008,11,asxx2,Asclepias sp.,NA,unchanged,unchanged
+1018,1mbs2,2019,17,astr,Aster sp.,NA,unchanged,unchanged
+1160,1u1,2013,10,astr,Aster sp.,NA,unchanged,unchanged
+2255,2hbu2,2019,13,astr,Aster sp.,NA,unchanged,unchanged
+5733,3mbs3,2019,28,bosp,Bouteloua sp.,native,bocu,Bouteloua curtipendula
+4433,3hbs2,2013,40,bric,Brickellia sp.,native,brca,Brickellia californica
+5345,3mbs1,2013,5,bric,Brickellia sp.,,unchanged,unchanged
+6207,3u2,2008,48,bric,Brickellia sp.,native,brgr,Brickellia grandiflora
+6235,3u2,2013,12,bric,Brickellia sp.,native,brgr,Brickellia grandiflora
+14,1has1,1997,261,casp,Carex spp.,native,care,Carex sp.
+33,1has1,1998,400,casp,Carex spp.,native,care,Carex sp.
+66,1has1,2008,368,caxx,Carex spp.,native,care,Carex sp.
+154,1has2,1997,1441,casp,Carex spp.,native,care,Carex sp.
+187,1has2,2008,72,caxx,Carex spp.,native,care,Carex sp.
+199,1has2,2013,5,caxx,Carex spp.,native,care,Carex sp.
+220,1has2,2019,161,care,Carex spp.,native,care,Carex sp.
+230,1hbs1,1997,242,casp,Carex spp.,native,care,Carex sp.
+252,1hbs1,1998,538,casp,Carex spp.,native,care,Carex sp.
+271,1hbs1,2008,732,caxx,Carex spp.,native,care,Carex sp.
+290,1hbs1,2013,122,caxx,Carex spp.,native,care,Carex sp.
+292,1hbs1,2013,62,care,Carex spp.,native,care,Carex sp.
+305,1hbs1,2016,205,caxx,Carex spp.,native,care,Carex sp.
+329,1hbs1,2019,232,care,Carex spp.,native,care,Carex sp.
+340,1hbs2,1997,325,casp,Carex spp.,native,care,Carex sp.
+366,1hbs2,1998,291,casp,Carex spp.,native,care,Carex sp.
+392,1hbs2,2008,292,caxx,Carex spp.,native,care,Carex sp.
+405,1hbs2,2013,204,caxx,Carex spp.,native,care,Carex sp.
+435,1hbs2,2019,131,care,Carex spp.,native,care,Carex sp.
+439,1hbs2,2019,12,care,Carex spp.,native,care,Carex sp.
+460,1mas1,1997,138,casp,Carex spp.,native,care,Carex sp.
+483,1mas1,1998,211,casp,Carex spp.,native,care,Carex sp.
+503,1mas1,2008,890,caxx,Carex spp.,native,care,Carex sp.
+530,1mas1,2013,92,caxx,Carex spp.,native,care,Carex sp.
+562,1mas1,2019,28,care,Carex spp.,native,care,Carex sp.
+576,1mas2,1997,102,casp,Carex spp.,native,care,Carex sp.
+613,1mas2,1998,170,casp,Carex spp.,native,care,Carex sp.
+652,1mas2,2008,68,caxx,Carex spp.,native,care,Carex sp.
+722,1mas2,2019,31,care,Carex spp.,native,care,Carex sp.
+731,1mbs1,1997,307,casp,Carex spp.,native,care,Carex sp.
+751,1mbs1,1998,457,casp,Carex spp.,native,care,Carex sp.
+776,1mbs1,2008,1366,caxx,Carex spp.,native,care,Carex sp.
+815,1mbs1,2013,86,caxx,Carex spp.,native,care,Carex sp.
+881,1mbs1,2019,21,care,Carex spp.,native,care,Carex sp.
+900,1mbs2,1997,115,casp,Carex spp.,native,care,Carex sp.
+918,1mbs2,1998,450,casp,Carex spp.,native,care,Carex sp.
+933,1mbs2,1998,1,casp,Carex spp.,native,care,Carex sp.
+951,1mbs2,2008,495,caxx,Carex spp.,native,care,Carex sp.
+976,1mbs2,2013,73,caxx,Carex spp.,native,care,Carex sp.
+1012,1mbs2,2019,129,care,Carex spp.,native,care,Carex sp.
+1042,1u1,1997,243,casp,Carex spp.,native,care,Carex sp.
+1083,1u1,1998,225,casp,Carex spp.,native,care,Carex sp.
+1114,1u1,2008,586,caxx,Carex spp.,native,care,Carex sp.
+1159,1u1,2013,18,care,Carex spp.,native,care,Carex sp.
+1194,1u1,2019,50,care,Carex spp.,native,care,Carex sp.
+1236,1u2,1997,29,casp,Carex spp.,native,care,Carex sp.
+1262,1u2,1998,12,casp,Carex spp.,native,care,Carex sp.
+1276,1u2,2008,60,caxx,Carex spp.,native,care,Carex sp.
+1294,1u2,2013,35,caxx,Carex spp.,native,care,Carex sp.
+1342,1u2,2019,6,care,Carex spp.,native,care,Carex sp.
+1362,2has1,1997,35,casp,Carex spp.,native,care,Carex sp.
+1383,2has1,1998,103,casp,Carex spp.,native,care,Carex sp.
+1406,2has1,2008,432,caxx,Carex spp.,native,care,Carex sp.
+1422,2has1,2013,107,caxx,Carex spp.,native,care,Carex sp.
+1443,2has1,2019,328,care,Carex spp.,native,care,Carex sp.
+1472,2has2,1997,18,casp,Carex spp.,native,care,Carex sp.
+1487,2has2,1998,64,casp,Carex spp.,native,care,Carex sp.
+1521,2has2,2008,141,caxx,Carex spp.,native,care,Carex sp.
+1591,2hau1,1997,113,casp,Carex spp.,native,care,Carex sp.
+1610,2hau1,1998,294,casp,Carex spp.,native,care,Carex sp.
+1635,2hau1,2008,126,caxx,Carex spp.,native,care,Carex sp.
+1683,2hau1,2019,11,care,Carex spp.,native,care,Carex sp.
+1690,2hau2,1997,335,casp,Carex spp.,native,care,Carex sp.
+1707,2hau2,1998,439,casp,Carex spp.,native,care,Carex sp.
+1723,2hau2,2008,546,caxx,Carex spp.,native,care,Carex sp.
+1801,2hbs1,1997,484,casp,Carex spp.,native,care,Carex sp.
+1815,2hbs1,1998,683,casp,Carex spp.,native,care,Carex sp.
+1839,2hbs1,2008,551,caxx,Carex spp.,native,care,Carex sp.
+1862,2hbs1,2013,19,care,Carex spp.,native,care,Carex sp.
+1863,2hbs1,2013,36,caxx,Carex spp.,native,care,Carex sp.
+1891,2hbs1,2019,144,care,Carex spp.,native,care,Carex sp.
+1957,2hbs2,1998,54,casp,Carex spp.,native,care,Carex sp.
+1983,2hbs2,2008,44,caxx,Carex spp.,native,care,Carex sp.
+2054,2hbu1,1997,208,casp,Carex spp.,native,care,Carex sp.
+2066,2hbu1,1998,628,casp,Carex spp.,native,care,Carex sp.
+2093,2hbu1,2008,440,caxx,Carex spp.,native,care,Carex sp.
+2108,2hbu1,2013,14,caxx,Carex spp.,native,care,Carex sp.
+2146,2hbu2,1997,1150,casp,Carex spp.,native,care,Carex sp.
+2159,2hbu2,1998,1775,casp,Carex spp.,native,care,Carex sp.
+2181,2hbu2,2008,1323,caxx,Carex spp.,native,care,Carex sp.
+2219,2hbu2,2013,2,caxx,Carex spp.,native,care,Carex sp.
+2221,2hbu2,2013,5,care,Carex spp.,native,care,Carex sp.
+2248,2hbu2,2019,88,care,Carex spp.,native,care,Carex sp.
+2269,2mas1,1997,156,casp,Carex spp.,native,care,Carex sp.
+2293,2mas1,1998,250,casp,Carex spp.,native,care,Carex sp.
+2315,2mas1,2008,345,caxx,Carex spp.,native,care,Carex sp.
+2392,2mas1,2019,11,care,Carex spp.,native,care,Carex sp.
+2418,2mas2,1997,138,casp,Carex spp.,native,care,Carex sp.
+2438,2mas2,1998,289,casp,Carex spp.,native,care,Carex sp.
+2456,2mas2,2008,482,caxx,Carex spp.,native,care,Carex sp.
+2474,2mas2,2013,466,caxx,Carex spp.,native,care,Carex sp.
+2475,2mas2,2013,52,care,Carex spp.,native,care,Carex sp.
+2498,2mas2,2019,682,care,Carex spp.,native,care,Carex sp.
+2505,2mas2,2019,7,care,Carex spp.,native,care,Carex sp.
+2520,2mau1,1997,206,casp,Carex spp.,native,care,Carex sp.
+2542,2mau1,1998,253,casp,Carex spp.,native,care,Carex sp.
+2565,2mau1,2008,1016,caxx,Carex spp.,native,care,Carex sp.
+2598,2mau1,2013,45,care,Carex spp.,native,care,Carex sp.
+2607,2mau1,2013,5,care,Carex spp.,native,care,Carex sp.
+2641,2mau1,2019,9,care,Carex spp.,native,care,Carex sp.
+2655,2mau2,1997,473,casp,Carex spp.,native,care,Carex sp.
+2672,2mau2,1998,837,casp,Carex spp.,native,care,Carex sp.
+2698,2mau2,2008,1100,caxx,Carex spp.,native,care,Carex sp.
+2783,2mbs1,1997,316,casp,Carex spp.,native,care,Carex sp.
+2793,2mbs1,1998,156,casp,Carex spp.,native,care,Carex sp.
+2821,2mbs1,2008,207,caxx,Carex spp.,native,care,Carex sp.
+2936,2mbs2,1997,139,casp,Carex spp.,native,care,Carex sp.
+2954,2mbs2,1998,121,casp,Carex spp.,native,care,Carex sp.
+2975,2mbs2,2008,485,caxx,Carex spp.,native,care,Carex sp.
+3060,2mbs3,1997,52,casp,Carex spp.,native,care,Carex sp.
+3079,2mbs3,2008,761,caxx,Carex spp.,native,care,Carex sp.
+3167,2mbs3,2019,33,care,Carex spp.,native,care,Carex sp.
+3185,2mbu1,1997,96,casp,Carex spp.,native,care,Carex sp.
+3214,2mbu1,1998,140,casp,Carex spp.,native,care,Carex sp.
+3227,2mbu1,2008,212,caxx,Carex spp.,native,care,Carex sp.
+3253,2mbu1,2013,7,care,Carex spp.,native,care,Carex sp.
+3262,2mbu1,2019,283,care,Carex spp.,native,care,Carex sp.
+3282,2mbu2,1997,144,casp,Carex spp.,native,care,Carex sp.
+3306,2mbu2,1998,322,casp,Carex spp.,native,care,Carex sp.
+3331,2mbu2,2008,256,caxx,Carex spp.,native,care,Carex sp.
+3403,2mbu2,2019,23,care,Carex spp.,native,care,Carex sp.
+3426,2u1,1997,642,casp,Carex spp.,native,care,Carex sp.
+3457,2u1,1998,351,casp,Carex spp.,native,care,Carex sp.
+3480,2u1,2008,759,caxx,Carex spp.,native,care,Carex sp.
+3500,2u1,2013,116,caxx,Carex spp.,native,care,Carex sp.
+3501,2u1,2013,7,care,Carex spp.,native,care,Carex sp.
+3505,2u1,2013,3,caxx,Carex spp.,native,care,Carex sp.
+3533,2u1,2019,429,care,Carex spp.,native,care,Carex sp.
+3555,2u2,1997,198,casp,Carex spp.,native,care,Carex sp.
+3581,2u2,1998,283,casp,Carex spp.,native,care,Carex sp.
+3588,2u2,1998,1,casp,Carex spp.,native,care,Carex sp.
+3611,2u2,2008,670,caxx,Carex spp.,native,care,Carex sp.
+3640,2u2,2013,126,caxx,Carex spp.,native,care,Carex sp.
+3678,2u2,2019,327,care,Carex spp.,native,care,Carex sp.
+3737,3has1,2008,119,caxx,Carex spp.,native,care,Carex sp.
+3871,3has2,2008,145,caxx,Carex spp.,native,care,Carex sp.
+3966,3hau1,1997,23,casp,Carex spp.,native,care,Carex sp.
+3976,3hau1,1998,225,casp,Carex spp.,native,care,Carex sp.
+3997,3hau1,2002,94,casp,Carex spp.,native,care,Carex sp.
+4040,3hau1,2019,20,care,Carex spp.,native,care,Carex sp.
+4055,3hau2,1997,10,casp,Carex spp.,native,care,Carex sp.
+4076,3hau2,1998,55,casp,Carex spp.,native,care,Carex sp.
+4097,3hau2,2002,146,casp,Carex spp.,native,care,Carex sp.
+4105,3hau2,2002,83,casp,Carex spp.,native,care,Carex sp.
+4135,3hau2,2013,29,caxx,Carex spp.,native,care,Carex sp.
+4173,3hau2,2019,45,care,Carex spp.,native,care,Carex sp.
+4218,3hbs1,1998,76,casp,Carex spp.,native,care,Carex sp.
+4258,3hbs1,2008,160,caxx,Carex spp.,native,care,Carex sp.
+4359,3hbs2,1998,3,casp,Carex spp.,native,care,Carex sp.
+4381,3hbs2,2008,69,caxx,Carex spp.,native,care,Carex sp.
+4479,3hbs2,2019,27,care,Carex spp.,native,care,Carex sp.
+4490,3hbu1,1997,95,casp,Carex spp.,native,care,Carex sp.
+4504,3hbu1,1998,396,casp,Carex spp.,native,care,Carex sp.
+4526,3hbu1,2002,152,casp,Carex spp.,native,care,Carex sp.
+4551,3hbu1,2019,126,care,Carex spp.,native,care,Carex sp.
+4585,3hbu2,1997,5,casp,Carex spp.,native,care,Carex sp.
+4735,3lau1,1998,3,casp,Carex spp.,native,care,Carex sp.
+4746,3lau1,2002,2,casp,Carex spp.,native,care,Carex sp.
+4828,3mas1,1997,8,casp,Carex spp.,native,care,Carex sp.
+4842,3mas1,1998,28,casp,Carex spp.,native,care,Carex sp.
+4854,3mas1,2008,353,caxx,Carex spp.,native,care,Carex sp.
+4942,3mas2,1997,123,casp,Carex spp.,native,care,Carex sp.
+4967,3mas2,1998,114,casp,Carex spp.,native,care,Carex sp.
+4999,3mas2,2008,20,caxx,Carex spp.,native,care,Carex sp.
+5054,3mas2,2019,70,care,Carex spp.,native,care,Carex sp.
+5069,3mau1,1997,169,casp,Carex spp.,native,care,Carex sp.
+5084,3mau1,1998,226,casp,Carex spp.,native,care,Carex sp.
+5109,3mau1,2002,131,casp,Carex spp.,native,care,Carex sp.
+5118,3mau1,2002,31,casp,Carex spp.,native,care,Carex sp.
+5158,3mau2,1997,261,casp,Carex spp.,native,care,Carex sp.
+5193,3mau2,1998,228,casp,Carex spp.,native,care,Carex sp.
+5229,3mau2,2002,146,casp,Carex spp.,native,care,Carex sp.
+5272,3mau2,2019,56,care,Carex spp.,native,care,Carex sp.
+5311,3mbs1,1997,20,casp,Carex spp.,native,care,Carex sp.
+5326,3mbs1,1998,87,casp,Carex spp.,native,care,Carex sp.
+5334,3mbs1,2008,53,caxx,Carex spp.,native,care,Carex sp.
+5442,3mbs2,1998,11,casp,Carex spp.,native,care,Carex sp.
+5465,3mbs2,2008,41,caxx,Carex spp.,native,care,Carex sp.
+5571,3mbs3,1997,200,casp,Carex spp.,native,care,Carex sp.
+5604,3mbs3,1998,282,casp,Carex spp.,native,care,Carex sp.
+5640,3mbs3,2008,829,caxx,Carex spp.,native,care,Carex sp.
+5670,3mbs3,2013,54,caxx,Carex spp.,native,care,Carex sp.
+5683,3mbs3,2013,19,care,Carex spp.,native,care,Carex sp.
+5732,3mbs3,2019,192,care,Carex spp.,native,care,Carex sp.
+5757,3mbu1,1997,50,casp,Carex spp.,native,care,Carex sp.
+5774,3mbu1,1998,93,casp,Carex spp.,native,care,Carex sp.
+5796,3mbu1,2002,65,casp,Carex spp.,native,care,Carex sp.
+5809,3mbu1,2002,8,casp,Carex spp.,native,care,Carex sp.
+5827,3mbu1,2019,146,care,Carex spp.,native,care,Carex sp.
+5858,3mbu2,1997,50,casp,Carex spp.,native,care,Carex sp.
+5885,3mbu2,1998,56,casp,Carex spp.,native,care,Carex sp.
+5911,3mbu2,2002,252,casp,Carex spp.,native,care,Carex sp.
+5944,3mbu2,2019,131,care,Carex spp.,native,care,Carex sp.
+5972,3u1,1997,179,casp,Carex spp.,native,care,Carex sp.
+6018,3u1,1998,22,casp,Carex spp.,native,care,Carex sp.
+6051,3u1,2002,11,casp,Carex spp.,native,care,Carex sp.
+6056,3u1,2002,25,casp,Carex spp.,native,care,Carex sp.
+6087,3u1,2013,10,caxx,Carex spp.,native,care,Carex sp.
+6116,3u1,2019,20,care,Carex spp.,native,care,Carex sp.
+6147,3u2,1997,30,casp,Carex spp.,native,care,Carex sp.
+6182,3u2,1998,71,casp,Carex spp.,native,care,Carex sp.
+6208,3u2,2008,58,caxx,Carex spp.,native,care,Carex sp.
+6281,3u2,2019,33,care,Carex spp.,native,care,Carex sp.
+867,1mbs1,2019,47,chxx,Chenopodium sp.,native,chfr,Chenopodium fremontii
+1213,1u1,2019,9,chxx,Chenopodium sp.,NA,unchanged,unchanged
+1750,2hau2,2013,14,chxx,Chenopodium sp.,NA,unchanged,unchanged
+2042,2hbs2,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged
+2639,2mau1,2019,1,chxx,Chenopodium sp.,native,chfr,Chenopodium fremontii
+2870,2mbs1,2013,10,chxx,Chenopodium sp.,native,unchanged,unchanged
+3412,2mbu2,2019,4,chxx,Chenopodium sp.,NA,unchanged,unchanged
+3634,2u2,2013,296,chxx,Chenopodium sp.,NA,unchanged,unchanged
+3651,2u2,2013,22,chxx,Chenopodium sp.,NA,unchanged,unchanged
+3788,3has1,2019,1,chxx,Chenopodium sp.,exotic,chgr,Chenopodium graveolens
+4034,3hau1,2019,20,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4110,3hau2,2002,80,chsp,Chenopodium sp.,NA,chxx,unchanged
+4114,3hau2,2002,4,chsp,Chenopodium sp.,NA,chxx,unchanged
+4142,3hau2,2013,5,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4181,3hau2,2019,23,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4237,3hbs1,1998,17,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4624,3hbu2,2002,56,chsp,Chenopodium sp.,NA,chxx,unchanged
+4625,3hbu2,2002,12,chsp,Chenopodium sp.,NA,chxx,unchanged
+4681,3hbu2,2019,93,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4767,3lau1,2013,97,chxx,Chenopodium sp.,NA,unchanged,unchanged
+4792,3lau1,2019,4,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5056,3mas2,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5146,3mau1,2019,36,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5478,3mbs2,2008,86,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5482,3mbs2,2008,44,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5505,3mbs2,2013,8,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5518,3mbs2,2013,47,chxx,Chenopodium sp.,NA,unchanged,unchanged
+5811,3mbu1,2002,3,chsp,Chenopodium sp.,NA,chxx,unchanged
+5813,3mbu1,2002,19,chsp,Chenopodium sp.,NA,chxx,unchanged
+5931,3mbu2,2002,1,chsp,Chenopodium sp.,NA,chxx,unchanged
+5960,3mbu2,2019,70,chxx,Chenopodium sp.,NA,unchanged,unchanged
+6064,3u1,2002,8,chsp,Chenopodium sp.,NA,chxx,unchanged
+6128,3u1,2019,3,chxx,Chenopodium sp.,NA,unchanged,unchanged
+140,1has1,2019,15,cine,Cirsium neomexicanum,native,unchanged,unchanged
+446,1hbs2,2019,29,cine,Cirsium neomexicanum,native,unchanged,unchanged
+1209,1u1,2019,27,cine,Cirsium neomexicanum,native,unchanged,unchanged
+1778,2hau2,2019,91,cine,Cirsium neomexicanum,native,unchanged,unchanged
+2138,2hbu1,2019,4,cine,Cirsium neomexicanum,native,unchanged,unchanged
+2256,2hbu2,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged
+2401,2mas1,2019,4,cine,Cirsium neomexicanum,native,unchanged,unchanged
+3042,2mbs2,2019,18,cine,Cirsium neomexicanum,native,unchanged,unchanged
+3684,2u2,2019,51,cine,Cirsium neomexicanum,native,unchanged,unchanged
+3793,3has1,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged
+4807,3lau1,2019,61,cine,Cirsium neomexicanum,native,unchanged,unchanged
+4910,3mas1,2019,27,cine,Cirsium neomexicanum,native,unchanged,unchanged
+5380,3mbs1,2019,3,cine,Cirsium neomexicanum,native,unchanged,unchanged
+5737,3mbs3,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged
+6135,3u1,2019,6,cine,Cirsium neomexicanum,native,unchanged,unchanged
+6280,3u2,2019,42,cine,Cirsium neomexicanum,native,unchanged,unchanged
+70,1has1,2008,23,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+93,1has1,2013,245,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+98,1has1,2013,46,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+410,1hbs2,2013,26,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+534,1mas1,2013,22,cixx,Cirsium sp.,NA,unchanged,unchanged
+784,1mbs1,2008,61,cixx,Cirsium sp.,NA,unchanged,unchanged
+826,1mbs1,2013,93,cixx,Cirsium sp.,NA,unchanged,unchanged
+835,1mbs1,2013,10,cixx,Cirsium sp.,NA,unchanged,unchanged
+1140,1u1,2013,137,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+1522,2has2,2008,12,cixx,Cirsium sp.,NA,unchanged,unchanged
+1738,2hau2,2008,5,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+1749,2hau2,2013,34,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2099,2hbu1,2008,33,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2113,2hbu1,2013,31,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2327,2mas1,2008,27,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2353,2mas1,2013,17,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2354,2mas1,2013,89,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+2582,2mau1,2008,3,cixx,Cirsium sp.,NA,unchanged,unchanged
+2601,2mau1,2013,2,cixx,Cirsium sp.,NA,unchanged,unchanged
+2831,2mbs1,2008,15,cixx,Cirsium sp.,NA,unchanged,unchanged
+2869,2mbs1,2013,20,cixx,Cirsium sp.,NA,unchanged,unchanged
+3003,2mbs2,2013,13,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+3344,2mbu2,2008,31,cixx,Cirsium sp.,NA,unchanged,unchanged
+3639,2u2,2013,39,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+3880,3has2,2008,18,cixx,Cirsium sp.,NA,unchanged,unchanged
+3884,3has2,2008,8,cixx,Cirsium sp.,NA,unchanged,unchanged
+4261,3hbs1,2008,13,cixx,Cirsium sp.,NA,unchanged,unchanged
+4389,3hbs2,2008,36,cixx,Cirsium sp.,NA,unchanged,unchanged
+4394,3hbs2,2008,24,cixx,Cirsium sp.,NA,unchanged,unchanged
+4417,3hbs2,2013,51,cixx,Cirsium sp.,NA,unchanged,unchanged
+4426,3hbs2,2013,16,cixx,Cirsium sp.,NA,unchanged,unchanged
+4862,3mas1,2008,5,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+4875,3mas1,2013,53,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+4995,3mas2,2008,2,cixx,Cirsium sp.,NA,unchanged,unchanged
+5013,3mas2,2013,61,cixx,Cirsium sp.,NA,unchanged,unchanged
+5656,3mbs3,2008,22,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+5684,3mbs3,2013,9,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+5685,3mbs3,2013,2,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+6214,3u2,2008,16,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+6224,3u2,2013,41,cixx,Cirsium sp.,native,cine,Cirsium neomexicanum
+20,1has1,1997,69,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+22,1has1,1997,1,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+54,1has1,1998,4,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+60,1has1,1998,18,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+740,1mbs1,1997,15,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+758,1mbs1,1998,11,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+1062,1u1,1997,10,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+1066,1u1,1997,5,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+1106,1u1,1998,13,cisp,Cirsium spp.,native,cine,Cirsium neomexicanum
+3313,2mbu2,1998,21,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+3314,2mbu2,1998,10,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+3812,3has2,1997,159,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+3843,3has2,1998,43,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+3848,3has2,1998,46,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+4086,3hau2,1998,2,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+4109,3hau2,2002,1,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+4200,3hbs1,1997,12,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+4231,3hbs1,1998,38,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+5234,3mau2,2002,4,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+5416,3mbs2,1997,14,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+5447,3mbs2,1998,10,cisp,Cirsium spp.,NA,unchanged,Cirsium sp.
+5557,3mbs2,2019,34,crcr,Cryptantha crassisepala,native,unchanged,unchanged
+563,1mas1,2019,4,cryp,Cryptogam,NA,unchanged,unchanged
+845,1mbs1,2016,2,cryp,Cryptogam,NA,unchanged,unchanged
+1006,1mbs2,2019,64,cryp,Cryptogam,NA,unchanged,unchanged
+1440,2has1,2019,127,cryp,Cryptogam,NA,unchanged,unchanged
+1877,2hbs1,2016,39,cryp,Cryptogam,NA,unchanged,unchanged
+2245,2hbu2,2019,46,cryp,Cryptogam,NA,unchanged,unchanged
+2487,2mas2,2016,30,cryp,Cryptogam,NA,unchanged,unchanged
+2754,2mau2,2019,3,cryp,Cryptogam,NA,unchanged,unchanged
+3015,2mbs2,2016,33,cryp,Cryptogam,NA,unchanged,unchanged
+4093,3hau2,2002,239,cryp,Cryptogam,NA,unchanged,unchanged
+4165,3hau2,2019,3,cryp,Cryptogam,NA,unchanged,unchanged
+4309,3hbs1,2019,8,cryp,Cryptogam,NA,unchanged,unchanged
+4682,3hbu2,2019,4,cryp,Cryptogam,NA,unchanged,unchanged
+4786,3lau1,2019,3,cryp,Cryptogam,NA,unchanged,unchanged
+5136,3mau1,2019,12,cryp,Cryptogam,NA,unchanged,unchanged
+115,1has1,2016,23,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+299,1hbs1,2016,960,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+1549,2has2,2016,683,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+1873,2hbs1,2016,412,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+2369,2mas1,2016,21,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+2484,2mas2,2016,655,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+2621,2mau1,2016,3,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+2876,2mbs1,2016,90,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+3010,2mbs2,2016,391,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+3767,3has1,2016,30,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+5691,3mbs3,2016,80,blit,"dead, attached BRIN lvs on grnd over bare",exotic,brin,Bromus inermis
+2837,2mbs1,2008,35,dexx,Descurainia spp.,NA,unchanged,Descurainia sp.
+2856,2mbs1,2013,6,dexx,Descurainia spp.,NA,unchanged,Descurainia sp.
+275,1hbs1,2008,408,elxx,Elymus sp.,NA,unchanged,unchanged
+780,1mbs1,2008,277,elxx,Elymus sp.,native,elel,Elymus elymoides
+2570,2mau1,2008,58,elxx,Elymus sp.,native,elel,Elymus elymoides
+6204,3u2,2008,84,elxx,Elymus sp.,NA,unchanged,unchanged
+171,1has2,1997,47,elsp,Elymus species,native,eltr,Elymus trachycaulum
+144,1has1,2019,14,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+330,1hbs1,2019,5,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+565,1mas1,2019,2,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+566,1mas1,2019,28,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+875,1mbs1,2019,26,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris
+1003,1mbs2,2019,903,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1030,1mbs2,2019,2,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1208,1u1,2019,17,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1444,2has1,2019,29,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1574,2has2,2019,15,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1678,2hau1,2019,2,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1791,2hau2,2019,47,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+1897,2hbs1,2019,30,erxx,Erigeron spp.,native,erdi,Erigeron divergens
+2048,2hbs2,2019,110,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris
+2129,2hbu1,2019,21,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2394,2mas1,2019,22,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2503,2mas2,2019,349,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2508,2mas2,2019,3,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2636,2mau1,2019,13,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2755,2mau2,2019,25,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+2918,2mbs1,2019,18,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+3045,2mbs2,2019,40,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+3172,2mbs3,2019,10,erxx,Erigeron spp.,native,erdi,Erigeron divergens
+3399,2mbu2,2019,29,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+3543,2u1,2019,13,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+3685,2u2,2019,17,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+3783,3has1,2019,37,erxx,Erigeron spp.,native,ersp,Erigeron speciosus
+3937,3has2,2019,78,erxx,Erigeron spp.,native,ersp,Erigeron speciosus
+4170,3hau2,2019,16,erxx,Erigeron spp.,native,ersp,Erigeron speciosus
+4306,3hbs1,2019,350,erxx,Erigeron spp.,native,erfl,Erigeron flagellaris
+4473,3hbs2,2019,20,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+4691,3hbu2,2019,52,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+4785,3lau1,2019,26,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+4905,3mas1,2019,164,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+5050,3mas2,2019,149,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+5058,3mas2,2019,6,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+5282,3mau2,2019,13,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+5385,3mbs1,2019,35,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+5714,3mbs3,2019,169,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+6119,3u1,2019,55,erxx,Erigeron spp.,NA,unchanged,Erigeron sp.
+6120,3u1,2019,7,erra,Eriogonum racemosum,native,unchanged,unchanged
+1307,1u2,2013,8,erxx2,Eriogonum sp.,NA,unchanged,unchanged
+3499,2u1,2013,28,erxx2,Eriogonum sp.,NA,unchanged,unchanged
+3404,2mbu2,2019,7,erci,Erodium cicutarium,exotic,unchanged,unchanged
+2000,2hbs2,2013,7,euxx,Euphorbia spp.,native,eufe,Euphorbia fendleri
+3115,2mbs3,2013,7,euxx,Euphorbia spp.,NA,unchanged,Euphorbia sp.
+4645,3hbu2,2013,10,euxx,Euphorbia spp.,NA,unchanged,Euphorbia sp.
+5516,3mbs2,2013,13,euxx,Euphorbia spp.,native,euse,Euphorbia serpyllifolia
+4638,3hbu2,2013,239,fexx,Festuca sp.,NA,unchanged,unchanged
+607,1mas2,1998,495,frov,Frovaria sp.,NA,unchanged,unchanged
+767,1mbs1,1998,1,frov,Frovaria sp.,NA,unchanged,unchanged
+2694,2mau2,1998,3,frov,Frovaria sp.,NA,unchanged,unchanged
+4514,3hbu1,1998,4,frov,Frovaria sp.,NA,unchanged,unchanged
+5620,3mbs3,1998,3,frov,Frovaria sp.,NA,unchanged,unchanged
+6187,3u2,1998,1,frov,Frovaria sp.,NA,unchanged,unchanged
+73,1has1,2008,25,gexx,Geranium species,native,geca,Geranium caespitosum
+1125,1u1,2008,34,gexx,Geranium species,native,geca,Geranium caespitosum
+2840,2mbs1,2008,58,gexx,Geranium species,native,geca,Geranium caespitosum
+2913,2mbs1,2019,118,gexx,Geranium species,native,geca,Geranium caespitosum
+3095,2mbs3,2008,29,gexx,Geranium species,native,geca,Geranium caespitosum
+3340,2mbu2,2008,16,gexx,Geranium species,NA,unchanged,Geranium sp.
+3677,2u2,2019,392,gexx,Geranium species,NA,unchanged,Geranium sp.
+4257,3hbs1,2008,10,gexx,Geranium species,native,geca,Geranium caespitosum
+5061,3mas2,2019,88,gexx,Geranium species,native,geca,Geranium caespitosum
+2842,2mbs1,2008,61,haxx,Hackelia sp.,NA,unchanged,unchanged
+5460,3mbs2,2008,119,haxx,Hackelia sp.,NA,unchanged,unchanged
+4182,3hau2,2019,4,hean,Helianthus annuus,native,unchanged,unchanged
+4688,3hbu2,2019,103,hean,Helianthus annuus,native,unchanged,unchanged
+323,1hbs1,2019,28,hevi,Heterotheca villosa,native,unchanged,unchanged
+559,1mas1,2019,107,hevi,Heterotheca villosa,native,unchanged,unchanged
+1201,1u1,2019,6,hevi,Heterotheca villosa,native,unchanged,unchanged
+1577,2has2,2019,68,hevi,Heterotheca villosa,native,unchanged,unchanged
+1676,2hau1,2019,183,hevi,Heterotheca villosa,native,unchanged,unchanged
+2045,2hbs2,2019,25,hevi,Heterotheca villosa,native,unchanged,unchanged
+2132,2hbu1,2019,48,hevi,Heterotheca villosa,native,unchanged,unchanged
+2244,2hbu2,2019,315,hevi,Heterotheca villosa,native,unchanged,unchanged
+2385,2mas1,2019,131,hevi,Heterotheca villosa,native,unchanged,unchanged
+2632,2mau1,2019,258,hevi,Heterotheca villosa,native,unchanged,unchanged
+2747,2mau2,2019,498,hevi,Heterotheca villosa,native,unchanged,unchanged
+3033,2mbs2,2019,133,hevi,Heterotheca villosa,native,unchanged,unchanged
+3152,2mbs3,2019,83,hevi,Heterotheca villosa,native,unchanged,unchanged
+3166,2mbs3,2019,30,hevi,Heterotheca villosa,native,unchanged,unchanged
+3547,2u1,2019,34,hevi,Heterotheca villosa,native,unchanged,unchanged
+3780,3has1,2019,503,hevi,Heterotheca villosa,native,unchanged,unchanged
+3796,3has1,2019,3,hevi,Heterotheca villosa,native,unchanged,unchanged
+3936,3has2,2019,181,hevi,Heterotheca villosa,native,unchanged,unchanged
+4038,3hau1,2019,42,hevi,Heterotheca villosa,native,unchanged,unchanged
+4324,3hbs1,2019,3,hevi,Heterotheca villosa,native,unchanged,unchanged
+4452,3hbs2,2019,721,hevi,Heterotheca villosa,native,unchanged,unchanged
+4562,3hbu1,2019,31,hevi,Heterotheca villosa,native,unchanged,unchanged
+4687,3hbu2,2019,74,hevi,Heterotheca villosa,native,unchanged,unchanged
+4789,3lau1,2019,56,hevi,Heterotheca villosa,native,unchanged,unchanged
+4902,3mas1,2019,344,hevi,Heterotheca villosa,native,unchanged,unchanged
+5133,3mau1,2019,301,hevi,Heterotheca villosa,native,unchanged,unchanged
+5148,3mau1,2019,10,hevi,Heterotheca villosa,native,unchanged,unchanged
+5264,3mau2,2019,463,hevi,Heterotheca villosa,native,unchanged,unchanged
+5270,3mau2,2019,55,hevi,Heterotheca villosa,native,unchanged,unchanged
+5825,3mbu1,2019,446,hevi,Heterotheca villosa,native,unchanged,unchanged
+5831,3mbu1,2019,11,hevi,Heterotheca villosa,native,unchanged,unchanged
+5937,3mbu2,2019,1855,hevi,Heterotheca villosa,native,unchanged,unchanged
+5958,3mbu2,2019,5,hevi,Heterotheca villosa,native,unchanged,unchanged
+6111,3u1,2019,129,hevi,Heterotheca villosa,native,unchanged,unchanged
+6267,3u2,2019,60,hevi,Heterotheca villosa,native,unchanged,unchanged
+77,1has1,2008,13,hier,Hieracium spp.,NA,unchanged,Hieracium sp.
+956,1mbs2,2008,2,hier,Hieracium spp.,native,hife,Hieracium fendleri
+1515,2has2,2008,3,hier,Hieracium spp.,NA,unchanged,Hieracium sp.
+2329,2mas1,2008,5,hier,Hieracium spp.,NA,unchanged,Hieracium sp.
+2986,2mbs2,2008,16,hier,Hieracium spp.,NA,unchanged,Hieracium sp.
+5652,3mbs3,2008,8,hier,Hieracium spp.,NA,unchanged,Hieracium sp.
+1328,1u2,2019,235,koma,Koeleria micrantha,native,unchanged,Koeleria macrantha
+4773,3lau1,2019,911,koma,Koeleria micrantha,native,unchanged,Koeleria macrantha
+3697,2u2,2019,22,lact,Lactuca spp.,native,lase,Lactuca serriola
+1788,2hau2,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged
+2044,2hbs2,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged
+2133,2hbu1,2019,3,lasc,Laennecia schiedeana,native,unchanged,unchanged
+2647,2mau1,2019,6,lasc,Laennecia schiedeana,native,unchanged,unchanged
+3046,2mbs2,2019,1,lasc,Laennecia schiedeana,native,unchanged,unchanged
+5387,3mbs1,2019,25,lasc,Laennecia schiedeana,native,unchanged,unchanged
+5723,3mbs3,2019,19,lasc,Laennecia schiedeana,native,unchanged,unchanged
+824,1mbs1,2013,8,laxx,Lappula sp.,NA,unchanged,unchanged
+1153,1u1,2013,108,laxx,Lappula sp.,NA,unchanged,unchanged
+5340,3mbs1,2013,594,laxx,Lappula sp.,NA,unchanged,unchanged
+2637,2mau1,2019,20,leer,Leucelene ericoides,native,unchanged,unchanged
+3413,2mbu2,2019,9,leer,Leucelene ericoides,native,unchanged,unchanged
+720,1mas2,2019,13,memu,Mentzelia multiflora,native,unchanged,unchanged
+874,1mbs1,2019,13,memu,Mentzelia multiflora,native,unchanged,unchanged
+2136,2hbu1,2019,48,memu,Mentzelia multiflora,native,unchanged,unchanged
+2899,2mbs1,2019,244,memu,Mentzelia multiflora,native,unchanged,unchanged
+3393,2mbu2,2019,441,memu,Mentzelia multiflora,native,unchanged,unchanged
+4030,3hau1,2019,35,memu,Mentzelia multiflora,native,unchanged,unchanged
+4161,3hau2,2019,114,memu,Mentzelia multiflora,native,unchanged,unchanged
+4318,3hbs1,2019,42,memu,Mentzelia multiflora,native,unchanged,unchanged
+4918,3mas1,2019,51,memu,Mentzelia multiflora,native,unchanged,unchanged
+5150,3mau1,2019,17,memu,Mentzelia multiflora,native,unchanged,unchanged
+2004,2hbs2,2013,6,mexx,Mentzelia sp.,NA,unchanged,unchanged
+2834,2mbs1,2008,5,mexx,Mentzelia sp.,NA,unchanged,unchanged
+2858,2mbs1,2013,23,mexx,Mentzelia sp.,NA,unchanged,unchanged
+3408,2mbu2,2019,17,mexx,Mentzelia sp.,native,memu,Mentzelia multiflora
+3846,3has2,1998,4,mexx,Mentzelia sp.,NA,unchanged,unchanged
+6210,3u2,2008,14,mexx,Mentzelia sp.,NA,unchanged,unchanged
+2037,2hbs2,2019,159,mesp,Mentzelia springeri,native,unchanged,unchanged
+4672,3hbu2,2019,234,mesp,Mentzelia springeri,native,unchanged,unchanged
+4695,3hbu2,2019,16,mesp,Mentzelia springeri,native,unchanged,unchanged
+5375,3mbs1,2019,1023,mesp,Mentzelia springeri,native,unchanged,unchanged
+5544,3mbs2,2019,610,mesp,Mentzelia springeri,native,unchanged,unchanged
+6263,3u2,2019,351,mesp,Mentzelia springeri,native,unchanged,unchanged
+6278,3u2,2019,66,mesp,Mentzelia springeri,native,unchanged,unchanged
+2911,2mbs1,2019,74,mili,Mirabilis linearis,native,unchanged,unchanged
+3410,2mbu2,2019,18,mili,Mirabilis linearis,native,unchanged,unchanged
+4323,3hbs1,2019,9,mili,Mirabilis linearis,native,unchanged,unchanged
+4699,3hbu2,2019,23,mili,Mirabilis linearis,native,unchanged,unchanged
+5062,3mas2,2019,16,mili,Mirabilis linearis,native,unchanged,unchanged
+5548,3mbs2,2019,61,mili,Mirabilis linearis,native,unchanged,unchanged
+6282,3u2,2019,58,mili,Mirabilis linearis,native,unchanged,unchanged
+1776,2hau2,2019,292,mimu,Mirabilis multiflora,native,unchanged,unchanged
+3417,2mbu2,2019,95,musp,Muhlenbergia species,native,mumo,Muhlenbergia montana
+6132,3u1,2019,12,muwr,Muhlenbergia wrightii,native,unchanged,unchanged
+86,1has1,2008,9,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+100,1has1,2013,9,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+106,1has1,2013,7,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+148,1has1,2019,2,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+528,1mas1,2013,16,oexx,Oenothera sp.,NA,unchanged,unchanged
+719,1mas2,2019,21,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+871,1mbs1,2019,57,oexx,Oenothera sp.,NA,unchanged,unchanged
+974,1mbs2,2013,36,oexx,Oenothera sp.,NA,unchanged,unchanged
+1584,2has2,2019,5,oexx,Oenothera sp.,NA,unchanged,unchanged
+2905,2mbs1,2019,31,oexx,Oenothera sp.,NA,unchanged,unchanged
+3100,2mbs3,2008,14,oexx,Oenothera sp.,NA,unchanged,unchanged
+3175,2mbs3,2019,28,oexx,Oenothera sp.,NA,unchanged,unchanged
+4793,3lau1,2019,32,oexx,Oenothera sp.,NA,unchanged,unchanged
+5372,3mbs1,2019,83,oexx,Oenothera sp.,NA,unchanged,unchanged
+5382,3mbs1,2019,1,oexx,Oenothera sp.,NA,unchanged,unchanged
+5657,3mbs3,2008,10,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+5710,3mbs3,2019,226,oexx,Oenothera sp.,native,oeho,Oenothera hookeri
+2706,2mau2,2008,1,onxx,Onagraceae sp.,native,epci,Epilobium ciliatum
+6121,3u1,2019,33,orpu,Orthocarpus purpureo-albus,native,unchanged,unchanged
+141,1has1,2019,4,pamu,Packera multilobata -,native,unchanged,Packera multilobata
+706,1mas2,2019,103,pamu,Packera multilobata -,native,unchanged,Packera multilobata
+5274,3mau2,2019,25,pamu,Packera multilobata -,native,unchanged,Packera multilobata
+827,1mbs1,2013,42,phxx,Phacelia spp.,NA,unchanged,Phacelia sp.
+3904,3has2,2013,13,phxx,Phacelia spp.,NA,unchanged,Phacelia sp.
+5515,3mbs2,2013,9,phxx,Phacelia spp.,NA,unchanged,Phacelia sp.
+5558,3mbs2,2019,7,phxx,Phacelia spp.,NA,unchanged,Phacelia sp.
+6275,3u2,2019,28,phxx,Phacelia spp.,NA,unchanged,Phacelia sp.
+2459,2mas2,2008,35,poxx,Poa sp.,NA,unchanged,unchanged
+5487,3mbs2,2008,27,poxx,Poa sp.,NA,unchanged,unchanged
+5776,3mbu1,1998,17,poxx,Poa sp.,native,pofe,Poa fendleriana
+5791,3mbu1,2002,67,poas,Poa spp.,native,pofe,Poa fendleriana
+6062,3u1,2002,21,poas,Poa spp.,native,pofe,Poa fendleriana
+4804,3lau1,2019,40,pofr,Populus fremontii,native,unchanged,unchanged
+1514,2has2,2008,172,quxx,Quercus spp.,native,quga,Quercus gambellii
+4311,3hbs1,2019,7,quxx,Quercus spp.,native,quga,Quercus gambellii
+4686,3hbu2,2019,22,quxx,Quercus spp.,native,quun,Quercus undulata
+6113,3u1,2019,362,quxx,Quercus spp.,native,quun,Quercus undulata
+5838,3mbu1,2019,68,rhgl,Rhus glabra,native,unchanged,unchanged
+4409,3hbs2,2008,17,rixx,Ribes sp.,NA,unchanged,unchanged
+2191,2hbu2,2008,300,roxx,Rosa spp.,native,rowo,Rosa woodsii
+514,1mas1,2008,4,sexx,Senecio sp.,NA,unchanged,unchanged
+659,1mas2,2008,1,sexx,Senecio sp.,native,sefe,Senecio fendleri
+777,1mbs1,2008,152,sexx,Senecio sp.,NA,unchanged,unchanged
+1277,1u2,2008,133,sexx,Senecio sp.,NA,unchanged,unchanged
+1846,2hbs1,2008,20,sexx,Senecio sp.,NA,unchanged,unchanged
+2192,2hbu2,2008,18,sexx,Senecio sp.,native,sewo,Senecio wootonii
+2708,2mau2,2008,14,sexx,Senecio sp.,native,sewo,Senecio wootonii
+2982,2mbs2,2008,50,sexx,Senecio sp.,NA,unchanged,unchanged
+3096,2mbs3,2008,34,sexx,Senecio sp.,NA,unchanged,unchanged
+4373,3hbs2,2008,135,sexx,Senecio sp.,NA,unchanged,unchanged
+5653,3mbs3,2008,7,sexx,Senecio sp.,NA,unchanged,unchanged
+1346,1u2,2019,4,sctr,Senecio triangularis,native,unchanged,unchanged
+3940,3has2,2019,122,sial,Sisymbrium altissimum,exotic,unchanged,unchanged
+5266,3mau2,2019,72,somi,Solidago missouriensis,native,unchanged,unchanged
+4122,3hau2,2002,5,sosp3,Solidago species,NA,soxx,Solidago sp.
+4580,3hbu2,1997,12,sosp3,Solidago species,native,sowr,Solidago wrightii
+4620,3hbu2,2002,418,sosp3,Solidago species,native,sowr,Solidago wrightii
+4628,3hbu2,2002,42,sosp3,Solidago species,native,sowr,Solidago wrightii
+4727,3lau1,1998,20,sosp3,Solidago species,native,sowr,Solidago wrightii
+4730,3lau1,1998,3,sosp3,Solidago species,native,sowr,Solidago wrightii
+5219,3mau2,1998,4,sosp3,Solidago species,native,somi,Solidago missouriensis
+5220,3mau2,1998,27,sosp3,Solidago species,native,somi,Solidago missouriensis
+515,1mas1,2008,72,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+788,1mbs1,2008,66,soxx,Solidago spp.,native,sowr,Solidago wrightii
+800,1mbs1,2008,29,soxx,Solidago spp.,native,sowr,Solidago wrightii
+963,1mbs2,2008,118,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+973,1mbs2,2013,118,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+1118,1u1,2008,5,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+1280,1u2,2008,54,soxx,Solidago spp.,native,sowr,Solidago wrightii
+2101,2hbu1,2008,14,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+2989,2mbs2,2008,9,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+3103,2mbs3,2008,10,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+3231,2mbu1,2008,139,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+4026,3hau1,2019,71,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+4254,3hbs1,2008,50,soxx,Solidago spp.,native,sosp2,Solidago spathulata
+4384,3hbs2,2008,17,soxx,Solidago spp.,NA,unchanged,Solidago sp.
+4768,3lau1,2013,7,soxx,Solidago spp.,native,sowr,Solidago wrightii
+1581,2has2,2019,4,span,Sphaeralcea angustifolia,native,unchanged,unchanged
+882,1mbs1,2019,7,spla,Sphaeralcea laxa,native,unchanged,unchanged
+4143,3hau2,2013,18,spha,Sphaeralcea species,NA,unchanged,Sphaeralcea sp.
+4166,3hau2,2019,53,spha,Sphaeralcea species,NA,unchanged,Sphaeralcea sp.
+4702,3hbu2,2019,20,spha,Sphaeralcea species,NA,unchanged,Sphaeralcea sp.
+2704,2mau2,2008,70,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+4023,3hau1,2019,304,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+4154,3hau2,2019,1021,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus
+4696,3hbu2,2019,30,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+4798,3lau1,2019,13,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+5142,3mau1,2019,223,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+5289,3mau2,2019,14,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+5828,3mbu1,2019,250,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus
+5943,3mbu2,2019,206,spor,Sporobolus species,native,spcr,Sporobolus cryptandrus
+6110,3u1,2019,60,spor,Sporobolus species,NA,unchanged,Sporobolus sp.
+4183,3hau2,2019,23,thfi,Thelesperma filifolium,native,unchanged,unchanged
+78,1has1,2008,3,forb,Unidentified forb,NA,unchanged,unchanged
+116,1has1,2016,61,forb,Unidentified forb,NA,unchanged,unchanged
+118,1has1,2016,497,forb,Unidentified forb,NA,unchanged,unchanged
+139,1has1,2019,2,forb,Unidentified forb,NA,unchanged,unchanged
+210,1has2,2016,11,forb,Unidentified forb,NA,unchanged,unchanged
+223,1has2,2019,3,forb,Unidentified forb,NA,unchanged,unchanged
+308,1hbs1,2016,34,forb,Unidentified forb,NA,unchanged,unchanged
+377,1hbs2,1998,29,forb,Unidentified forb,NA,unchanged,unchanged
+426,1hbs2,2016,36,forb,Unidentified forb,NA,unchanged,unchanged
+427,1hbs2,2016,32,forb,Unidentified forb,NA,unchanged,unchanged
+475,1mas1,1997,5,forb,Unidentified forb,NA,unchanged,unchanged
+492,1mas1,1998,8,forb,Unidentified forb,NA,unchanged,unchanged
+542,1mas1,2016,394,forb,Unidentified forb,NA,unchanged,unchanged
+549,1mas1,2016,23,forb,Unidentified forb,NA,unchanged,unchanged
+585,1mas2,1997,327,forb,Unidentified forb,NA,unchanged,unchanged
+620,1mas2,1998,44,forb,Unidentified forb,NA,unchanged,unchanged
+679,1mas2,2013,3,forb,Unidentified forb,NA,unchanged,unchanged
+690,1mas2,2016,1221,forb,Unidentified forb,NA,unchanged,unchanged
+696,1mas2,2016,21,forb,Unidentified forb,NA,unchanged,unchanged
+718,1mas2,2019,12,forb,Unidentified forb,NA,unchanged,unchanged
+789,1mbs1,2008,9,forb,Unidentified forb,NA,unchanged,unchanged
+841,1mbs1,2016,2174,forb,Unidentified forb,NA,unchanged,unchanged
+846,1mbs1,2016,12,forb,Unidentified forb,NA,unchanged,unchanged
+878,1mbs1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged
+910,1mbs2,1997,12,forb,Unidentified forb,NA,unchanged,unchanged
+923,1mbs2,1998,14,forb,Unidentified forb,NA,unchanged,unchanged
+992,1mbs2,2016,143,forb,Unidentified forb,NA,unchanged,unchanged
+993,1mbs2,2016,23,forb,Unidentified forb,NA,unchanged,unchanged
+1022,1mbs2,2019,6,forb,Unidentified forb,NA,unchanged,unchanged
+1049,1u1,1997,10,forb,Unidentified forb,NA,unchanged,unchanged
+1086,1u1,1998,6,forb,Unidentified forb,NA,unchanged,unchanged
+1170,1u1,2016,347,forb,Unidentified forb,NA,unchanged,unchanged
+1173,1u1,2016,16,forb,Unidentified forb,NA,unchanged,unchanged
+1212,1u1,2019,2,forb,Unidentified forb,NA,unchanged,unchanged
+1226,1u2,1997,60,forb,Unidentified forb,NA,unchanged,unchanged
+1260,1u2,1998,11,forb,Unidentified forb,NA,unchanged,unchanged
+1318,1u2,2016,565,forb,Unidentified forb,NA,unchanged,unchanged
+1319,1u2,2016,35,forb,Unidentified forb,NA,unchanged,unchanged
+1371,2has1,1997,1,forb,Unidentified forb,NA,unchanged,unchanged
+1431,2has1,2016,221,forb,Unidentified forb,NA,unchanged,unchanged
+1446,2has1,2019,9,forb,Unidentified forb,NA,unchanged,unchanged
+1449,2has1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged
+1498,2has2,1998,1,forb,Unidentified forb,NA,unchanged,unchanged
+1554,2has2,2016,785,forb,Unidentified forb,NA,unchanged,unchanged
+1557,2has2,2016,1,forb,Unidentified forb,NA,unchanged,unchanged
+1664,2hau1,2016,360,forb,Unidentified forb,NA,unchanged,unchanged
+1758,2hau2,2016,2345,forb,Unidentified forb,NA,unchanged,unchanged
+1766,2hau2,2016,118,forb,Unidentified forb,NA,unchanged,unchanged
+1787,2hau2,2019,4,forb,Unidentified forb,NA,unchanged,unchanged
+1879,2hbs1,2016,184,forb,Unidentified forb,NA,unchanged,unchanged
+1904,2hbs1,2019,15,forb,Unidentified forb,NA,unchanged,unchanged
+2016,2hbs2,2016,285,forb,Unidentified forb,NA,unchanged,unchanged
+2018,2hbs2,2016,100,forb,Unidentified forb,NA,unchanged,unchanged
+2229,2hbu2,2016,615,forb,Unidentified forb,NA,unchanged,unchanged
+2236,2hbu2,2016,19,forb,Unidentified forb,NA,unchanged,unchanged
+2281,2mas1,1997,31,forb,Unidentified forb,NA,unchanged,unchanged
+2326,2mas1,2008,14,forb,Unidentified forb,NA,unchanged,unchanged
+2347,2mas1,2013,2,forb,Unidentified forb,NA,unchanged,unchanged
+2364,2mas1,2016,1028,forb,Unidentified forb,NA,unchanged,unchanged
+2373,2mas1,2016,67,forb,Unidentified forb,NA,unchanged,unchanged
+2393,2mas1,2019,4,forb,Unidentified forb,NA,unchanged,unchanged
+2405,2mas2,1997,78,forb,Unidentified forb,NA,unchanged,unchanged
+2490,2mas2,2016,641,forb,Unidentified forb,NA,unchanged,unchanged
+2493,2mas2,2016,16,forb,Unidentified forb,NA,unchanged,unchanged
+2612,2mau1,2016,625,forb,Unidentified forb,NA,unchanged,unchanged
+2624,2mau1,2016,65,forb,Unidentified forb,NA,unchanged,unchanged
+2684,2mau2,1998,1,forb,Unidentified forb,NA,unchanged,unchanged
+2737,2mau2,2016,670,forb,Unidentified forb,NA,unchanged,unchanged
+2743,2mau2,2016,32,forb,Unidentified forb,NA,unchanged,unchanged
+2852,2mbs1,2013,2,forb,Unidentified forb,NA,unchanged,unchanged
+2877,2mbs1,2016,1183,forb,Unidentified forb,NA,unchanged,unchanged
+2881,2mbs1,2016,89,forb,Unidentified forb,NA,unchanged,unchanged
+2943,2mbs2,1997,2,forb,Unidentified forb,NA,unchanged,unchanged
+3002,2mbs2,2013,14,forb,Unidentified forb,NA,unchanged,unchanged
+3014,2mbs2,2016,718,forb,Unidentified forb,NA,unchanged,unchanged
+3019,2mbs2,2016,91,forb,Unidentified forb,NA,unchanged,unchanged
+3047,2mbs2,2019,11,forb,Unidentified forb,NA,unchanged,unchanged
+3129,2mbs3,2016,809,forb,Unidentified forb,NA,unchanged,unchanged
+3135,2mbs3,2016,5,forb,Unidentified forb,NA,unchanged,unchanged
+3223,2mbu1,1998,4,forb,Unidentified forb,NA,unchanged,unchanged
+3288,2mbu2,1997,21,forb,Unidentified forb,NA,unchanged,unchanged
+3368,2mbu2,2013,13,forb,Unidentified forb,NA,unchanged,unchanged
+3402,2mbu2,2019,29,forb,Unidentified forb,NA,unchanged,unchanged
+3414,2mbu2,2019,1,forb,Unidentified forb,NA,unchanged,unchanged
+3446,2u1,1997,5,forb,Unidentified forb,NA,unchanged,unchanged
+3514,2u1,2016,845,forb,Unidentified forb,NA,unchanged,unchanged
+3515,2u1,2016,128,forb,Unidentified forb,NA,unchanged,unchanged
+3557,2u2,1997,120,forb,Unidentified forb,NA,unchanged,unchanged
+3646,2u2,2013,1,forb,Unidentified forb,NA,unchanged,unchanged
+3660,2u2,2016,1956,forb,Unidentified forb,NA,unchanged,unchanged
+3663,2u2,2016,6,forb,Unidentified forb,NA,unchanged,unchanged
+3681,2u2,2019,61,forb,Unidentified forb,NA,unchanged,unchanged
+3772,3has1,2016,64,forb,Unidentified forb,NA,unchanged,unchanged
+3773,3has1,2016,6,forb,Unidentified forb,NA,unchanged,unchanged
+3854,3has2,1998,53,forb,Unidentified forb,NA,unchanged,unchanged
+3915,3has2,2016,943,forb,Unidentified forb,NA,unchanged,unchanged
+3916,3has2,2016,98,forb,Unidentified forb,NA,unchanged,unchanged
+3998,3hau1,2002,72,forb,Unidentified forb,NA,unchanged,unchanged
+4007,3hau1,2002,35,forb,Unidentified forb,NA,unchanged,unchanged
+4033,3hau1,2019,22,forb,Unidentified forb,NA,unchanged,unchanged
+4060,3hau2,1997,12,forb,Unidentified forb,NA,unchanged,unchanged
+4092,3hau2,2002,416,forb,Unidentified forb,NA,unchanged,unchanged
+4113,3hau2,2002,164,forb,Unidentified forb,NA,unchanged,unchanged
+4229,3hbs1,1998,38,forb,Unidentified forb,NA,unchanged,unchanged
+4275,3hbs1,2013,18,forb,Unidentified forb,NA,unchanged,unchanged
+4283,3hbs1,2013,23,forb,Unidentified forb,NA,unchanged,unchanged
+4290,3hbs1,2016,200,forb,Unidentified forb,NA,unchanged,unchanged
+4295,3hbs1,2016,20,forb,Unidentified forb,NA,unchanged,unchanged
+4354,3hbs2,1998,35,forb,Unidentified forb,NA,unchanged,unchanged
+4393,3hbs2,2008,12,forb,Unidentified forb,NA,unchanged,unchanged
+4439,3hbs2,2016,1688,forb,Unidentified forb,NA,unchanged,unchanged
+4443,3hbs2,2016,161,forb,Unidentified forb,NA,unchanged,unchanged
+4464,3hbs2,2019,5,forb,Unidentified forb,NA,unchanged,unchanged
+4525,3hbu1,2002,64,forb,Unidentified forb,NA,unchanged,unchanged
+4575,3hbu2,1997,96,forb,Unidentified forb,NA,unchanged,unchanged
+4597,3hbu2,1998,221,forb,Unidentified forb,NA,unchanged,unchanged
+4623,3hbu2,2002,307,forb,Unidentified forb,NA,unchanged,unchanged
+4641,3hbu2,2013,82,forb,Unidentified forb,NA,unchanged,unchanged
+4690,3hbu2,2019,34,forb,Unidentified forb,NA,unchanged,unchanged
+4712,3lau1,1997,28,forb,Unidentified forb,NA,unchanged,unchanged
+4752,3lau1,2002,1,forb,Unidentified forb,NA,unchanged,unchanged
+4794,3lau1,2019,1,forb,Unidentified forb,NA,unchanged,unchanged
+4805,3lau1,2019,9,forb,Unidentified forb,NA,unchanged,unchanged
+4884,3mas1,2016,532,forb,Unidentified forb,NA,unchanged,unchanged
+4892,3mas1,2016,191,forb,Unidentified forb,NA,unchanged,unchanged
+4914,3mas1,2019,6,forb,Unidentified forb,NA,unchanged,unchanged
+4951,3mas2,1997,19,forb,Unidentified forb,NA,unchanged,unchanged
+4996,3mas2,2008,2,forb,Unidentified forb,NA,unchanged,unchanged
+5030,3mas2,2016,889,forb,Unidentified forb,NA,unchanged,unchanged
+5033,3mas2,2016,6,forb,Unidentified forb,NA,unchanged,unchanged
+5166,3mau2,1997,323,forb,Unidentified forb,NA,unchanged,unchanged
+5235,3mau2,2002,197,forb,Unidentified forb,NA,unchanged,unchanged
+5236,3mau2,2002,6,forb,Unidentified forb,NA,unchanged,unchanged
+5333,3mbs1,2008,5,forb,Unidentified forb,NA,unchanged,unchanged
+5358,3mbs1,2016,71,forb,Unidentified forb,NA,unchanged,unchanged
+5360,3mbs1,2016,16,forb,Unidentified forb,NA,unchanged,unchanged
+5377,3mbs1,2019,4,forb,Unidentified forb,NA,unchanged,unchanged
+5418,3mbs2,1997,6,forb,Unidentified forb,NA,unchanged,unchanged
+5470,3mbs2,2008,117,forb,Unidentified forb,NA,unchanged,unchanged
+5481,3mbs2,2008,4,forb,Unidentified forb,NA,unchanged,unchanged
+5526,3mbs2,2016,1152,forb,Unidentified forb,NA,unchanged,unchanged
+5530,3mbs2,2016,224,forb,Unidentified forb,NA,unchanged,unchanged
+5570,3mbs3,1997,128,forb,Unidentified forb,NA,unchanged,unchanged
+5596,3mbs3,1997,14,forb,Unidentified forb,NA,unchanged,unchanged
+5697,3mbs3,2016,174,forb,Unidentified forb,NA,unchanged,unchanged
+5700,3mbs3,2016,4,forb,Unidentified forb,NA,unchanged,unchanged
+5731,3mbs3,2019,1,forb,Unidentified forb,NA,unchanged,unchanged
+5782,3mbu1,1998,27,forb,Unidentified forb,NA,unchanged,unchanged
+5798,3mbu1,2002,210,forb,Unidentified forb,NA,unchanged,unchanged
+5810,3mbu1,2002,6,forb,Unidentified forb,NA,unchanged,unchanged
+5870,3mbu2,1997,88,forb,Unidentified forb,NA,unchanged,unchanged
+5906,3mbu2,2002,224,forb,Unidentified forb,NA,unchanged,unchanged
+5924,3mbu2,2002,13,forb,Unidentified forb,NA,unchanged,unchanged
+5976,3u1,1997,50,forb,Unidentified forb,NA,unchanged,unchanged
+6017,3u1,1998,7,forb,Unidentified forb,NA,unchanged,unchanged
+6034,3u1,1998,2,forb,Unidentified forb,NA,unchanged,unchanged
+6124,3u1,2019,6,forb,Unidentified forb,NA,unchanged,unchanged
+6134,3u1,2019,14,forb,Unidentified forb,NA,unchanged,unchanged
+6155,3u2,1997,3,forb,Unidentified forb,NA,unchanged,unchanged
+6158,3u2,1997,20,forb,Unidentified forb,NA,unchanged,unchanged
+6190,3u2,1998,3,forb,Unidentified forb,NA,unchanged,unchanged
+6193,3u2,1998,7,forb,Unidentified forb,NA,unchanged,unchanged
+6244,3u2,2016,685,forb,Unidentified forb,NA,unchanged,unchanged
+6247,3u2,2016,386,forb,Unidentified forb,NA,unchanged,unchanged
+6269,3u2,2019,2,forb,Unidentified forb,NA,unchanged,unchanged
+15,1has1,1997,19,gras2,Unidentified grass,NA,gras,unchanged
+41,1has1,1998,23,gras,Unidentified grass,NA,gras,unchanged
+71,1has1,2008,57,gras,Unidentified grass,NA,gras,unchanged
+72,1has1,2008,8,gras,Unidentified grass,NA,gras,unchanged
+112,1has1,2016,461,gras,Unidentified grass,NA,gras,unchanged
+133,1has1,2019,81,gras,Unidentified grass,NA,gras,unchanged
+164,1has2,1997,23,gras2,Unidentified grass,NA,gras,unchanged
+183,1has2,2008,632,gras,Unidentified grass,NA,gras,unchanged
+206,1has2,2016,200,gras,Unidentified grass,NA,gras,unchanged
+225,1has2,2019,4,gras,Unidentified grass,NA,gras,unchanged
+236,1hbs1,1997,41,gras2,Unidentified grass,NA,gras,unchanged
+246,1hbs1,1997,3,gras,Unidentified grass,NA,gras,unchanged
+255,1hbs1,1998,125,gras,Unidentified grass,NA,gras,unchanged
+263,1hbs1,1998,21,gras2,Unidentified grass,NA,gras,unchanged
+273,1hbs1,2008,4,gras,Unidentified grass,NA,gras,unchanged
+307,1hbs1,2016,152,gras,Unidentified grass,NA,gras,unchanged
+342,1hbs2,1997,71,gras2,Unidentified grass,NA,gras,unchanged
+357,1hbs2,1997,1,gras,Unidentified grass,NA,gras,unchanged
+375,1hbs2,1998,42,gras,Unidentified grass,NA,gras,unchanged
+383,1hbs2,1998,6,gras2,Unidentified grass,NA,gras,unchanged
+425,1hbs2,2016,71,gras,Unidentified grass,NA,gras,unchanged
+462,1mas1,1997,362,gras2,Unidentified grass,NA,gras,unchanged
+493,1mas1,1998,4,gras2,Unidentified grass,NA,gras,unchanged
+517,1mas1,2008,20,gras,Unidentified grass,NA,gras,unchanged
+536,1mas1,2013,3,gras,Unidentified grass,NA,gras,unchanged
+547,1mas1,2016,10,gras,Unidentified grass,NA,gras,unchanged
+548,1mas1,2016,68,gras,Unidentified grass,NA,gras,unchanged
+582,1mas2,1997,51,gras2,Unidentified grass,NA,gras,unchanged
+629,1mas2,1998,2,gras2,Unidentified grass,NA,gras,unchanged
+653,1mas2,2008,5,gras,Unidentified grass,NA,gras,unchanged
+680,1mas2,2013,1,gras,Unidentified grass,NA,gras,unchanged
+687,1mas2,2016,649,gras,Unidentified grass,NA,gras,unchanged
+695,1mas2,2016,5,gras,Unidentified grass,NA,gras,unchanged
+817,1mbs1,2013,13,gras,Unidentified grass,NA,gras,unchanged
+825,1mbs1,2013,3,gras,Unidentified grass,NA,gras,unchanged
+839,1mbs1,2016,2230,gras,Unidentified grass,NA,gras,unchanged
+842,1mbs1,2016,68,gras,Unidentified grass,NA,gras,unchanged
+863,1mbs1,2019,48,gras,Unidentified grass,NA,gras,unchanged
+899,1mbs2,1997,221,gras2,Unidentified grass,NA,gras,unchanged
+909,1mbs2,1997,39,gras,Unidentified grass,NA,gras,unchanged
+936,1mbs2,1998,3,gras2,Unidentified grass,NA,gras,unchanged
+962,1mbs2,2008,19,gras,Unidentified grass,NA,gras,unchanged
+987,1mbs2,2016,981,gras,Unidentified grass,NA,gras,unchanged
+990,1mbs2,2016,9,gras,Unidentified grass,NA,gras,unchanged
+1020,1mbs2,2019,2,gras,Unidentified grass,NA,gras,unchanged
+1040,1u1,1997,12,gras,Unidentified grass,NA,gras,unchanged
+1051,1u1,1997,34,gras,Unidentified grass,NA,gras,unchanged
+1076,1u1,1997,3,gras2,Unidentified grass,NA,gras,unchanged
+1093,1u1,1998,39,gras,Unidentified grass,NA,gras,unchanged
+1165,1u1,2016,1050,gras,Unidentified grass,NA,gras,unchanged
+1195,1u1,2019,24,gras,Unidentified grass,NA,gras,unchanged
+1233,1u2,1997,8,gras2,Unidentified grass,NA,gras,unchanged
+1266,1u2,1998,4,gras2,Unidentified grass,NA,gras,unchanged
+1312,1u2,2016,2755,gras,Unidentified grass,NA,gras,unchanged
+1317,1u2,2016,10,gras,Unidentified grass,NA,gras,unchanged
+1345,1u2,2019,2,gras,Unidentified grass,NA,gras,unchanged
+1370,2has1,1997,32,gras2,Unidentified grass,NA,gras,unchanged
+1391,2has1,1998,20,gras,Unidentified grass,NA,gras,unchanged
+1425,2has1,2013,4,gras,Unidentified grass,NA,gras,unchanged
+1432,2has1,2016,132,gras,Unidentified grass,NA,gras,unchanged
+1465,2has2,1997,126,gras2,Unidentified grass,NA,gras,unchanged
+1466,2has2,1997,49,gras,Unidentified grass,NA,gras,unchanged
+1496,2has2,1998,44,gras,Unidentified grass,NA,gras,unchanged
+1516,2has2,2008,48,gras,Unidentified grass,NA,gras,unchanged
+1552,2has2,2016,206,gras,Unidentified grass,NA,gras,unchanged
+1596,2hau1,1997,8,gras2,Unidentified grass,NA,gras,unchanged
+1666,2hau1,2016,75,gras,Unidentified grass,NA,gras,unchanged
+1699,2hau2,1997,6,gras2,Unidentified grass,NA,gras,unchanged
+1722,2hau2,2008,25,gras,Unidentified grass,NA,gras,unchanged
+1760,2hau2,2016,133,gras,Unidentified grass,NA,gras,unchanged
+1838,2hbs1,2008,379,gras,Unidentified grass,NA,gras,unchanged
+1869,2hbs1,2013,3,gras,Unidentified grass,NA,gras,unchanged
+1878,2hbs1,2016,189,gras,Unidentified grass,NA,gras,unchanged
+1902,2hbs1,2019,2,gras,Unidentified grass,NA,gras,unchanged
+1922,2hbs2,1997,173,gras2,Unidentified grass,NA,gras,unchanged
+1975,2hbs2,2008,11,gras,Unidentified grass,NA,gras,unchanged
+2014,2hbs2,2016,9,gras,Unidentified grass,NA,gras,unchanged
+2017,2hbs2,2016,55,gras,Unidentified grass,NA,gras,unchanged
+2043,2hbs2,2019,10,gras,Unidentified grass,NA,gras,unchanged
+2061,2hbu1,1997,10,gras2,Unidentified grass,NA,gras,unchanged
+2142,2hbu2,1997,165,gras2,Unidentified grass,NA,gras,unchanged
+2205,2hbu2,2008,35,gras,Unidentified grass,NA,gras,unchanged
+2233,2hbu2,2016,26,gras,Unidentified grass,NA,gras,unchanged
+2278,2mas1,1997,3,gras2,Unidentified grass,NA,gras,unchanged
+2297,2mas1,1998,5,gras,Unidentified grass,NA,gras,unchanged
+2334,2mas1,2008,11,gras,Unidentified grass,NA,gras,unchanged
+2371,2mas1,2016,50,gras,Unidentified grass,NA,gras,unchanged
+2411,2mas2,1997,118,gras2,Unidentified grass,NA,gras,unchanged
+2440,2mas2,1998,24,gras,Unidentified grass,NA,gras,unchanged
+2445,2mas2,1998,6,gras2,Unidentified grass,NA,gras,unchanged
+2466,2mas2,2008,18,gras,Unidentified grass,NA,gras,unchanged
+2488,2mas2,2016,173,gras,Unidentified grass,NA,gras,unchanged
+2507,2mas2,2019,10,gras,Unidentified grass,NA,gras,unchanged
+2523,2mau1,1997,3,gras2,Unidentified grass,NA,gras,unchanged
+2558,2mau1,1998,17,gras,Unidentified grass,NA,gras,unchanged
+2587,2mau1,2008,40,gras,Unidentified grass,NA,gras,unchanged
+2604,2mau1,2013,5,gras,Unidentified grass,NA,gras,unchanged
+2614,2mau1,2016,210,gras,Unidentified grass,NA,gras,unchanged
+2665,2mau2,1997,1,gras2,Unidentified grass,NA,gras,unchanged
+2687,2mau2,1998,1,gras,Unidentified grass,NA,gras,unchanged
+2707,2mau2,2008,7,gras,Unidentified grass,NA,gras,unchanged
+2741,2mau2,2016,3,gras,Unidentified grass,NA,gras,unchanged
+2742,2mau2,2016,6,gras,Unidentified grass,NA,gras,unchanged
+2766,2mbs1,1997,52,gras2,Unidentified grass,NA,gras,unchanged
+2808,2mbs1,1998,3,gras2,Unidentified grass,NA,gras,unchanged
+2879,2mbs1,2016,135,gras,Unidentified grass,NA,gras,unchanged
+2907,2mbs1,2019,188,gras,Unidentified grass,NA,gras,unchanged
+2928,2mbs2,1997,342,gras2,Unidentified grass,NA,gras,unchanged
+2996,2mbs2,2013,7,gras,Unidentified grass,NA,gras,unchanged
+3001,2mbs2,2013,3,gras,Unidentified grass,NA,gras,unchanged
+3013,2mbs2,2016,512,gras,Unidentified grass,NA,gras,unchanged
+3048,2mbs2,2019,2,gras,Unidentified grass,NA,gras,unchanged
+3127,2mbs3,2016,976,gras,Unidentified grass,NA,gras,unchanged
+3137,2mbs3,2016,3,gras,Unidentified grass,NA,gras,unchanged
+3149,2mbs3,2019,158,gras,Unidentified grass,NA,gras,unchanged
+3156,2mbs3,2019,13,gras,Unidentified grass,NA,gras,unchanged
+3191,2mbu1,1997,7,gras2,Unidentified grass,NA,gras,unchanged
+3286,2mbu2,1997,8,gras2,Unidentified grass,NA,gras,unchanged
+3429,2u1,1997,45,gras2,Unidentified grass,NA,gras,unchanged
+3437,2u1,1997,257,gras,Unidentified grass,NA,gras,unchanged
+3464,2u1,1998,69,gras,Unidentified grass,NA,gras,unchanged
+3470,2u1,1998,4,gras2,Unidentified grass,NA,gras,unchanged
+3524,2u1,2016,123,gras,Unidentified grass,NA,gras,unchanged
+3589,2u2,1998,10,gras,Unidentified grass,NA,gras,unchanged
+3658,2u2,2016,462,gras,Unidentified grass,NA,gras,unchanged
+3693,2u2,2019,10,gras,Unidentified grass,NA,gras,unchanged
+3703,3has1,1997,279,gras2,Unidentified grass,NA,gras,unchanged
+3727,3has1,1998,1,gras2,Unidentified grass,NA,gras,unchanged
+3735,3has1,2008,106,gras,Unidentified grass,NA,gras,unchanged
+3774,3has1,2016,102,gras,Unidentified grass,NA,gras,unchanged
+3813,3has2,1997,2,gras,Unidentified grass,NA,gras,unchanged
+3825,3has2,1997,2,gras2,Unidentified grass,NA,gras,unchanged
+3845,3has2,1998,12,gras2,Unidentified grass,NA,gras,unchanged
+3872,3has2,2008,111,gras,Unidentified grass,NA,gras,unchanged
+3889,3has2,2013,28,gras,Unidentified grass,NA,gras,unchanged
+3907,3has2,2013,10,gras,Unidentified grass,NA,gras,unchanged
+3914,3has2,2016,339,gras,Unidentified grass,NA,gras,unchanged
+4106,3hau2,2002,9,gras,Unidentified grass,NA,gras,unchanged
+4130,3hau2,2013,145,gras,Unidentified grass,NA,gras,unchanged
+4152,3hau2,2019,149,gras,Unidentified grass,NA,gras,unchanged
+4167,3hau2,2019,5,gras,Unidentified grass,NA,gras,unchanged
+4193,3hbs1,1997,6,gras,Unidentified grass,NA,gras,unchanged
+4197,3hbs1,1997,58,gras2,Unidentified grass,NA,gras,unchanged
+4272,3hbs1,2013,8,gras,Unidentified grass,NA,gras,unchanged
+4288,3hbs1,2016,1366,gras,Unidentified grass,NA,gras,unchanged
+4292,3hbs1,2016,11,gras,Unidentified grass,NA,gras,unchanged
+4310,3hbs1,2019,7,gras,Unidentified grass,NA,gras,unchanged
+4314,3hbs1,2019,30,gras,Unidentified grass,NA,gras,unchanged
+4333,3hbs2,1997,122,gras2,Unidentified grass,NA,gras,unchanged
+4350,3hbs2,1998,9,gras,Unidentified grass,NA,gras,unchanged
+4371,3hbs2,2008,41,gras,Unidentified grass,NA,gras,unchanged
+4430,3hbs2,2013,14,gras,Unidentified grass,NA,gras,unchanged
+4432,3hbs2,2013,1,gras,Unidentified grass,NA,gras,unchanged
+4440,3hbs2,2016,779,gras,Unidentified grass,NA,gras,unchanged
+4442,3hbs2,2016,88,gras,Unidentified grass,NA,gras,unchanged
+4527,3hbu1,2002,70,gras,Unidentified grass,NA,gras,unchanged
+4659,3hbu2,2013,1,gras,Unidentified grass,NA,gras,unchanged
+4673,3hbu2,2019,23,gras,Unidentified grass,NA,gras,unchanged
+4709,3lau1,1997,4,gras2,Unidentified grass,NA,gras,unchanged
+4747,3lau1,2002,11,gras,Unidentified grass,NA,gras,unchanged
+4795,3lau1,2019,1,gras,Unidentified grass,NA,gras,unchanged
+4819,3mas1,1997,6,gras2,Unidentified grass,NA,gras,unchanged
+4837,3mas1,1998,27,gras,Unidentified grass,NA,gras,unchanged
+4847,3mas1,1998,1,gras2,Unidentified grass,NA,gras,unchanged
+4859,3mas1,2008,270,gras,Unidentified grass,NA,gras,unchanged
+4890,3mas1,2016,65,gras,Unidentified grass,NA,gras,unchanged
+4915,3mas1,2019,19,gras,Unidentified grass,NA,gras,unchanged
+4930,3mas2,1997,241,gras2,Unidentified grass,NA,gras,unchanged
+4939,3mas2,1997,60,gras,Unidentified grass,NA,gras,unchanged
+4975,3mas2,1998,2,gras2,Unidentified grass,NA,gras,unchanged
+4992,3mas2,2008,10,gras,Unidentified grass,NA,gras,unchanged
+5036,3mas2,2016,29,gras,Unidentified grass,NA,gras,unchanged
+5059,3mas2,2019,14,gras,Unidentified grass,NA,gras,unchanged
+5119,3mau1,2002,36,gras2,Unidentified grass,NA,gras,unchanged
+5145,3mau1,2019,2,gras,Unidentified grass,NA,gras,unchanged
+5165,3mau2,1997,45,gras,Unidentified grass,NA,gras,unchanged
+5180,3mau2,1997,28,gras2,Unidentified grass,NA,gras,unchanged
+5238,3mau2,2002,8,gras,Unidentified grass,NA,gras,unchanged
+5271,3mau2,2019,26,gras,Unidentified grass,NA,gras,unchanged
+5291,3mau2,2019,13,gras,Unidentified grass,NA,gras,unchanged
+5299,3mbs1,1997,275,gras2,Unidentified grass,NA,gras,unchanged
+5346,3mbs1,2013,1,gras,Unidentified grass,NA,gras,unchanged
+5357,3mbs1,2016,5,gras,Unidentified grass,NA,gras,unchanged
+5396,3mbs2,1997,37,gras2,Unidentified grass,NA,gras,unchanged
+5443,3mbs2,1998,2,gras,Unidentified grass,NA,gras,unchanged
+5461,3mbs2,2008,9,gras,Unidentified grass,NA,gras,unchanged
+5527,3mbs2,2016,429,gras,Unidentified grass,NA,gras,unchanged
+5528,3mbs2,2016,8,gras,Unidentified grass,NA,gras,unchanged
+5574,3mbs3,1997,164,gras2,Unidentified grass,NA,gras,unchanged
+5647,3mbs3,2008,8,gras,Unidentified grass,NA,gras,unchanged
+5668,3mbs3,2013,29,gras,Unidentified grass,NA,gras,unchanged
+5692,3mbs3,2016,769,gras,Unidentified grass,NA,gras,unchanged
+5721,3mbs3,2019,43,gras,Unidentified grass,NA,gras,unchanged
+5747,3mbu1,1997,12,gras2,Unidentified grass,NA,gras,unchanged
+5801,3mbu1,2002,16,gras,Unidentified grass,NA,gras,unchanged
+5834,3mbu1,2019,3,gras,Unidentified grass,NA,gras,unchanged
+5866,3mbu2,1997,19,gras2,Unidentified grass,NA,gras,unchanged
+5883,3mbu2,1998,54,gras,Unidentified grass,NA,gras,unchanged
+5919,3mbu2,2002,34,gras,Unidentified grass,NA,gras,unchanged
+5923,3mbu2,2002,14,gras,Unidentified grass,NA,gras,unchanged
+5968,3u1,1997,137,gras,Unidentified grass,NA,gras,unchanged
+5969,3u1,1997,87,gras2,Unidentified grass,NA,gras,unchanged
+5975,3u1,1997,3,gras,Unidentified grass,NA,gras,unchanged
+6009,3u1,1998,148,gras,Unidentified grass,NA,gras,unchanged
+6037,3u1,1998,34,gras,Unidentified grass,NA,gras,unchanged
+6049,3u1,2002,94,gras,Unidentified grass,NA,gras,unchanged
+6085,3u1,2013,4,gras,Unidentified grass,NA,gras,unchanged
+6118,3u1,2019,3,gras,Unidentified grass,NA,gras,unchanged
+6129,3u1,2019,2,gras,Unidentified grass,NA,gras,unchanged
+6156,3u2,1997,14,gras2,Unidentified grass,NA,gras,unchanged
+6242,3u2,2016,1019,gras,Unidentified grass,NA,gras,unchanged
+1072,1u1,1997,3,shru,Unidentified shrub,NA,unchanged,unchanged
+1453,2has1,2019,17,shru,Unidentified shrub,NA,unchanged,unchanged
+1764,2hau2,2016,5,shru,Unidentified shrub,NA,unchanged,unchanged
+2618,2mau1,2016,18,shru,Unidentified shrub,NA,unchanged,unchanged
+2883,2mbs1,2016,8,shru,Unidentified shrub,NA,unchanged,unchanged
+3667,2u2,2016,119,shru,Unidentified shrub,NA,unchanged,unchanged
+6251,3u2,2016,6,shru,Unidentified shrub,NA,unchanged,unchanged
+117,1has1,2016,383,subs,Unidentified subshrub,NA,unchanged,unchanged
+1176,1u1,2016,2,subs,Unidentified subshrub,NA,unchanged,unchanged
+1178,1u1,2016,23,subs,Unidentified subshrub,NA,unchanged,unchanged
+1555,2has2,2016,323,subs,Unidentified subshrub,NA,unchanged,unchanged
+1767,2hau2,2016,7,subs,Unidentified subshrub,NA,unchanged,unchanged
+2010,2hbs2,2016,527,subs,Unidentified subshrub,NA,unchanged,unchanged
+2237,2hbu2,2016,2,subs,Unidentified subshrub,NA,unchanged,unchanged
+2372,2mas1,2016,89,subs,Unidentified subshrub,NA,unchanged,unchanged
+2615,2mau1,2016,164,subs,Unidentified subshrub,NA,unchanged,unchanged
+2888,2mbs1,2016,50,subs,Unidentified subshrub,NA,unchanged,unchanged
+3016,2mbs2,2016,414,subs,Unidentified subshrub,NA,unchanged,unchanged
+3020,2mbs2,2016,33,subs,Unidentified subshrub,NA,unchanged,unchanged
+3138,2mbs3,2016,25,subs,Unidentified subshrub,NA,unchanged,unchanged
+3519,2u1,2016,26,subs,Unidentified subshrub,NA,unchanged,unchanged
+3919,3has2,2016,13,subs,Unidentified subshrub,NA,unchanged,unchanged
+4296,3hbs1,2016,578,subs,Unidentified subshrub,NA,unchanged,unchanged
+4441,3hbs2,2016,443,subs,Unidentified subshrub,NA,unchanged,unchanged
+5027,3mas2,2016,620,subs,Unidentified subshrub,NA,unchanged,unchanged
+5035,3mas2,2016,6,subs,Unidentified subshrub,NA,unchanged,unchanged
+5523,3mbs2,2016,723,subs,Unidentified subshrub,NA,unchanged,unchanged
+6249,3u2,2016,399,subs,Unidentified subshrub,NA,unchanged,unchanged
+6253,3u2,2016,19,subs,Unidentified subshrub,NA,unchanged,unchanged
+156,1has2,1997,31,tree,Unidentified tree,NA,unchanged,unchanged
+1110,1u1,1998,37,tree,Unidentified tree,NA,unchanged,unchanged
+1623,2hau1,1998,2,tree,Unidentified tree,NA,unchanged,unchanged
+5581,3mbs3,1997,110,tree,Unidentified tree,NA,unchanged,unchanged
+5614,3mbs3,1998,25,tree,Unidentified tree,NA,unchanged,unchanged
+5994,3u1,1997,181,tree,Unidentified tree,NA,unchanged,unchanged
+880,1mbs1,2019,11,comp,unknown Composite,NA,unchanged,unchanged
+1021,1mbs2,2019,11,comp,unknown Composite,NA,unchanged,unchanged
+1334,1u2,2019,53,comp,unknown Composite,NA,unchanged,unchanged
+1424,2has1,2013,6,comp,unknown Composite,NA,unchanged,unchanged
+1509,2has2,2008,41,comp,unknown Composite,NA,unchanged,unchanged
+1737,2hau2,2008,68,comp,unknown Composite,NA,unchanged,unchanged
+2128,2hbu1,2019,16,comp,unknown Composite,NA,unchanged,unchanged
+2720,2mau2,2008,10,comp,unknown Composite,NA,unchanged,unchanged
+2751,2mau2,2019,14,comp,unknown Composite,NA,unchanged,unchanged
+2900,2mbs1,2019,285,comp,unknown Composite,NA,unchanged,unchanged
+3165,2mbs3,2019,37,comp,unknown Composite,NA,unchanged,unchanged
+3373,2mbu2,2013,16,comp,unknown Composite,NA,unchanged,unchanged
+3380,2mbu2,2013,4,comp,unknown Composite,NA,unchanged,unchanged
+3398,2mbu2,2019,18,comp,unknown Composite,NA,unchanged,unchanged
+3945,3has2,2019,21,comp,unknown Composite,NA,unchanged,unchanged
+4107,3hau2,2002,364,comp,unknown Composite,NA,unchanged,unchanged
+4144,3hau2,2013,41,comp,unknown Composite,NA,unchanged,unchanged
+4175,3hau2,2019,14,comp,unknown Composite,NA,unchanged,unchanged
+4465,3hbs2,2019,2,comp,unknown Composite,NA,unchanged,unchanged
+4466,3hbs2,2019,8,comp,unknown Composite,NA,unchanged,unchanged
+4800,3lau1,2019,7,comp,unknown Composite,NA,unchanged,unchanged
+4998,3mas2,2008,8,comp,unknown Composite,NA,unchanged,unchanged
+5137,3mau1,2019,38,comp,unknown Composite,NA,unchanged,unchanged
+5388,3mbs1,2019,1,comp,unknown Composite,NA,unchanged,unchanged
+5472,3mbs2,2008,8,comp,unknown Composite,NA,unchanged,unchanged
+5542,3mbs2,2019,280,comp,unknown Composite,NA,unchanged,unchanged
+5812,3mbu1,2002,7,comp,unknown Composite,NA,unchanged,unchanged
+6090,3u1,2013,21,comp,unknown Composite,NA,unchanged,unchanged
+6274,3u2,2019,38,comp,unknown Composite,NA,unchanged,unchanged
+5001,3mas2,2008,2,cruc,unknown Cruciferae,NA,unchanged,unchanged
+3749,3has1,2008,3,pexx,unknown Penstemon,native,unchanged,Penstemon sp.
+4383,3hbs2,2008,37,pexx,unknown Penstemon,native,peba,Penstemon barbatus
+4471,3hbs2,2019,11,pexx,unknown Penstemon,native,peba,Penstemon barbatus
+5242,3mau2,2002,2,pexx,unknown Penstemon,native,peba,Penstemon barbatus
+95,1has1,2013,5,unkn,Unknown plant,NA,unchanged,unchanged
+119,1has1,2016,10,unkn,Unknown plant,NA,unchanged,unchanged
+1423,2has1,2013,4,unkn,Unknown plant,NA,unchanged,unchanged
+1650,2hau1,2013,2,unkn,Unknown plant,NA,unchanged,unchanged
+2492,2mas2,2016,1,unkn,Unknown plant,NA,unchanged,unchanged
+2727,2mau2,2013,30,unkn,Unknown plant,NA,unchanged,unchanged
+2851,2mbs1,2013,16,unkn,Unknown plant,NA,unchanged,unchanged
+3132,2mbs3,2016,12,unkn,Unknown plant,NA,unchanged,unchanged
+3630,2u2,2013,16,unkn,Unknown plant,NA,unchanged,unchanged
+3897,3has2,2013,3,unkn,Unknown plant,NA,unchanged,unchanged
+4273,3hbs1,2013,2,unkn,Unknown plant,NA,unchanged,unchanged
+4315,3hbs1,2019,2,unkn,Unknown plant,NA,unchanged,unchanged
+4649,3hbu2,2013,40,unkn,Unknown plant,NA,unchanged,unchanged
+5268,3mau2,2019,8,unkn,Unknown plant,NA,unchanged,unchanged
+5498,3mbs2,2013,4,unkn,Unknown plant,NA,unchanged,unchanged
+6093,3u1,2013,36,unkn,Unknown plant,NA,unchanged,unchanged
