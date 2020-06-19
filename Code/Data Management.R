@@ -78,14 +78,13 @@ d[d$Full_name== "pine cone", "Full_name"] <- "litter"
 #DONE
 
 ####4. Deal with name changes####
-#JTS clean version of #4. JTSCHECKME this needs to be re-run once Kay confirms name change issues.
 #Bianca, Kay and Taylor developed this file identifying species whose name changed:
 name_changes <- #Import name change data;
   read_excel("./Data/Intermediate/Species/new_sci_names_DOME_plants.xlsx", trim_ws = T)
+d[which(d$Full_name%in%name_changes$Old),"Code"] <- #This one must go first
+  name_changes$new_code[na.exclude(pmatch(d$Full_name,name_changes$Old, duplicates.ok = TRUE))]
 d[which(d$Full_name%in%name_changes$Old),"Full_name"] <-
   name_changes$New[na.exclude(pmatch(d$Full_name,name_changes$Old, duplicates.ok = TRUE))]
-d[which(d$Full_name%in%name_changes$Old),"Code"] <-
-  name_changes$new_code[na.exclude(pmatch(d$Full_name,name_changes$Old, duplicates.ok = TRUE))]
 d$RowNum <- c(1:nrow(d)) #for eventual reconciliation of issues identified below.
 
 
@@ -110,13 +109,26 @@ d$RowNum <- c(1:nrow(d)) #for eventual reconciliation of issues identified below
 ####6. Incorporate the fixed issues into "d"####
 issues_fixed <- #Need to use "read_csv" rather than "read.csv" to keep columns as characters.
   read_csv("./Data/Intermediate/BiancaReconciliation/issues-Jens.csv") 
-issues_fixed <- #IMPORTANT: Because this document had been sorted alphabetically, it needs to be re-sorted by RowNum.
+issues_fixed <- #IMPORTANT: Because this document may have been sorted alphabetically, 
+  #it needs to be re-sorted by RowNum.
   issues_fixed[order(issues_fixed$RowNum),] 
 issues_fixed$Code <- #Migrated "code_new" into "Code" in issues doc, IF it changed
   ifelse(issues_fixed$code_new=="unchanged",issues_fixed$Code,issues_fixed$code_new)
 issues_fixed$Full_name <- #Migrated "fullname_new" into "Code" in issues doc, IF it changed
   ifelse(issues_fixed$fullname_new=="unchanged",issues_fixed$Full_name,issues_fixed$fullname_new)
 
+
+#START HERE: Assign origins to unknown species where appropriate
+#Everything should be good in issues_fixed, I solved whatever the problem was with Phacelia.
+#unk_genera <- unique(issues_fixed[which(is.na(issues_fixed$Origin)),c("Full_name", "Origin")]) #Done? Deprecate?
+#copy this list into new_sci_names_DOME_plants_notes.xlsx and edit manually with help from Kay. #Done? Deprecate?
+#Maybe still need to manually update issues-jens to include nativity information? #Done? Deprecate?
+#Then do the nativity merge below (double check code). #Do this once more for good measure, I think.
+
+issues_fixed$Origin <- #Migrated "fullname_new" into "Code" in issues doc, IF it changed
+  ifelse(is.na(issues_fixed$Origin),issues_fixed$Origin_new,issues_fixed$Origin)
+
+#Todo: Manually double check all remaining unidentified species with known genera (e.g. euphorbia) to simplify.
 tmp_d <- d #Temporary data frame to do the integration, this will eventually get written to file but leave that for Jens to do.
 tmp_d[which(tmp_d$RowNum%in%issues_fixed$RowNum),c("Code","Full_name","Origin")] <- 
   issues_fixed[,c("Code","Full_name","Origin")]
