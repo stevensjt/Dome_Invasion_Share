@@ -9,6 +9,8 @@ library(splines)
 library(scales)
 stdErr <- function(x) sqrt(var(x, na.rm = T)/length(na.exclude(x)))
 
+
+
 ####1. Data input and processing####
 #d_old <- read_excel("./Data/dome_invasion_data.xlsx", sheet = "data") #Old data through 2013
 #d_old$Origin[d_old$Origin=="NA"] <- NA #Recode NA from text to NA
@@ -34,7 +36,8 @@ d$Transect_id <- toupper(d$Transect_id) #Uppercase for consistency
 #d[which(d$Transect_id=="3LAU1"),"RevBI"] <- "Unburned" #Alternatively, lump in with "unburned"
 #Investigate multiple burn severity issue:
 
-d <- #Merge live and dead cover of a single species on a single transect|year
+#deprecated, d2 is not referenced anywhere below, subsequent d data table is primary source
+d2 <- #Merge live and dead cover of a single species on a single transect|year
   d %>%
   group_by(Transect_id, year, Code) %>%
   summarise(
@@ -48,8 +51,12 @@ d <- #Merge live and dead cover of a single species on a single transect|year
     
   )
 
+d<-as.data.table(d)
+d<-d[,.(PctC=sum(PctC), Total_cm = sum(Total_cm), Basal_cm = sum(Basal_cm), Canopy_cm=sum(Canopy_cm)),by=c("Transect_id","year","Code","RevBI","FS_BAND","TRT","Full_name","Origin","Transect_cm","Growth_form")]
+
 d_fs <- d[which(d$FS_BAND == "FS"),]
   
+d$PctC<-ifelse(d$PctC>100,100,d$PctC)
 
 d_annual <- 
   #Remove trees from dataset because they're all native and mess up %cover
@@ -62,12 +69,18 @@ d_annual <-
     PctC_exotic = sum(PctC[Origin == "exotic"], na.rm = T),
     PctC_lolium = sum(PctC[grep("Lolium",Full_name)], na.rm = T), #deprecate?
     PctC_brin = sum(PctC[grep("brin",Code)], na.rm = T), #deprecate?
+    PctC_brte = sum(PctC[grep("brte",Code)], na.rm = T), #deprecate?
     Richness_exotic = length(which(Origin=="exotic")),
     Richness_native = length(which(Origin=="native")),
     Prop_exotic = length(which(Origin=="exotic")) / 
       (length(which(Origin=="exotic")) + length(which(Origin=="native")))
 
   )
+
+#rounding errors result in Pct greater than 100
+d_annual$PctC_lolium<-ifelse(d_annual$PctC_lolium>100,100,d_annual$PctC_lolium)
+d_annual$PctC_exotic<-ifelse(d_annual$PctC_exotic>100,100,d_annual$PctC_exotic)
+
 
 d_annual_fs <- d_annual[which(d_annual$FS_BAND == "FS"),]
 d_fs_mean <- d_annual_fs %>%
@@ -82,6 +95,9 @@ d_fs_mean <- d_annual_fs %>%
             Prop_exotic_se = stdErr(Prop_exotic),
             PctC_exotic_sig = NA, Richness_exotic_sig = NA, Prop_exotic_sig = NA)
 
+
+
+
 #There are 20 unique exotics (all are found on FS land, haven't checked BAND)
 unique_exotic <- 
   unique(na.exclude(d$Full_name[d$Origin=="exotic" & d$FS_BAND == "FS"]))
@@ -94,6 +110,7 @@ d_exotic_stats <-
 exotic_2main <- #Inclues BRIN, LOMU, and BRTE (which I remove below)
   c(d_exotic_stats[d_exotic_stats$max_PctC>50, "Full_name"]) [[1]]
 
+
 d_exotic_2main <- 
   d_fs %>%
   group_by(Transect_id, year, RevBI,TRT) %>%
@@ -103,9 +120,10 @@ d_exotic_2main <-
   merge(d_exotic %>%
           #filter(Full_name%in%c("Bromus inermis", "Lolium multiflorum")) %>%
           filter(Full_name%in%exotic_2main) %>%
-          select(c("Transect_id", "year", "RevBI", "Code", "Full_name", "PctC")),
+          dplyr::select(c("Transect_id", "year", "RevBI", "Code", "Full_name", "PctC")),
         by = c("Transect_id", "year", "RevBI", "Code"),
         all = TRUE)
+
 d_exotic_2main$PctC[is.na(d_exotic_2main$PctC)] <- 0 #Add zeros
 d_exotic_2main$Code = as.character(d_exotic_2main$Code) #Need for model code later
 
@@ -162,6 +180,21 @@ for(r in 1:nrow(d_fs_mean)){
   }
 }
 
+library(glmmTMB)
+library(lme4)
+
+
+str(d_annual_fs)
+
+test<-merge(d_annual_fs,topo,by="Transect_id")
+
+exotic_rich_mod<-lmer(Richness_exotic ~ TRT + RevBI + cwd +(1|Transect_id), data=test)
+summary(exotic_rich_mod)
+
+native_rich_mod<-lmer(Richness_native ~ TRT + RevBI + cwd + (1|Transect_id), data=test)
+summary(native_rich_mod)
+
+
 #Plot:
 #pdf("./Figures/EDA/RichnessNative1.pdf",height = 4, width = 6)
 ggplot(d_fs_mean) +
@@ -179,12 +212,34 @@ ggplot(d_fs_mean) +
   theme(legend.position = c(0.8,0.8))
 #dev.off()
 
+
+ggplot(d_fs_mean) +
+  geom_point(aes(x=year, y=Richness_exotic_mean, col = TRT)) + 
+  geom_line(aes(x=year, y=Richness_exotic_mean, col = TRT))+
+  geom_errorbar(aes(x=year, ymin = Richness_exotic_mean - Richness_exotic_se, 
+                    ymax = Richness_exotic_mean + Richness_exotic_se, 
+                    col = TRT))+
+  scale_color_manual(values = c("blue","darkred"))+
+  geom_vline(aes(xintercept = 1996.5), lty = 2) +
+  geom_vline(aes(xintercept = 2011), lty = 2) +
+  #geom_text(aes(x = year, y = 4, label = Richness_exotic_symbol), size =12) +
+  facet_grid(cols=vars(RevBI)) + 
+  labs(col = "Treatment", y = "Exotic Richness") +
+  theme(legend.position = c(0.8,0.8))
+#dev.off()
+
 ggplot(d_annual_fs) + #Old, deprecate eventually
   geom_smooth(aes(x = year, y = Richness_exotic, col = TRT)) + 
   geom_vline(aes(xintercept = 1996), lty = 2) + 
   geom_vline(aes(xintercept = 2011), lty = 2) +
   geom_jitter(aes(x = year, y = Richness_exotic, col = TRT), width = 0.2) +
   theme_bw()
+
+
+
+
+
+
 
 ####3.2 Q2####
 #How does exotic species proportion change over time as a function of burn severity and seeding?
@@ -200,6 +255,10 @@ for(r in 1:nrow(d_fs_mean)){
     } else d_fs_mean[r,paste(v,"symbol",sep = "_")] <- ""
   }
 }
+
+prop_exotic_mod<-glmmTMB(Prop_exotic ~ TRT + RevBI + cwd + (1|Transect_id) + (1|year), data= test, family="binomial")
+summary(prop_exotic_mod)
+
 
 #Plot:
 #pdf("./Figures/EDA/PropExotic1.pdf", height = 4, width = 6)
@@ -254,6 +313,18 @@ ggplot(d_fs_mean) +
   theme(legend.position = c(0.8,0.8))
 #dev.off()
 
+
+
+#Percent cover must be constrained between 0-1 for models
+test$PctC_exotic<-test$PctC_exotic/100
+test$PctC_lolium<-test$PctC_lolium/100
+test$PctC_brin<-test$PctC_brin/100
+
+
+pct_mod<-glmmTMB(PctC_exotic ~ TRT + RevBI + scale(cwd)  + (1|Transect_id) +(1|year), data = test, family = "binomial" )
+r.squaredGLMM(pct_mod)
+summary(pct_mod)
+
 ####3.4 Q4####
 #What are the dynamics of the invaders in the seed mix?
 #Ppt said Bromus carinatus was exotic but USDA plants says native
@@ -289,6 +360,18 @@ for(r in 1:nrow(d_mean_exotic_2main)){
 }
 
 
+str(test)
+brin_pct<-glmmTMB(PctC_brin ~ TRT + RevBI + cwd + (1|Transect_id) + (1|year), data=test, family="binomial")
+summary(brin_pct)
+r.squaredGLMM(brin_pct)
+
+lol_pct<-glmmTMB(PctC_lolium ~ TRT + RevBI + cwd + (1|Transect_id) + (1|year), data=test, family="binomial")
+summary(lol_pct)
+r.squaredGLMM(lol_pct)
+
+
+
+
 #pdf("./Figures/EDA/Cover2Main_1.pdf",width = 6, height = 4)
 ggplot(d_mean_exotic_2main) +
   geom_point(aes(x=year, y=PctC_mean, col = Code)) + 
@@ -321,4 +404,6 @@ ggplot(d_mean_exotic_2main) +
   #lims(y = c(0,50)) +
   theme(legend.position = c(0.8,0.7))
 #dev.off()
+
+
 

@@ -10,6 +10,7 @@
 library(readxl) #For read_excel; version 1.3.1
 library(readr) #For read_csv; version 1.3.1
 library(dplyr) #for pipes; version 0.8.3
+library(data.table) #for andreas who doesn't like dplyr
 options(warn = -1) #A lot of warnings pop up because of read_csv; these can be safely ignored.
 
 ####1. Read data####
@@ -60,7 +61,7 @@ d[which(d$Transect_id=="3lau1"),"RevBI"] <- "Unburned"
 #Identify anything that's not a plant:
 not_plant <- c("Gravel", "Soil", "Litter", "Dead wood", "Rock", "Tree root, exposed, living",
                "Animal feces", "combined soil,cryp,pumc,grav,rock", "combined soil,pumc,grav,rock",
-               "Pumice soil", "Moss", "Mushroom", "Fungus", "Cryptogram", "pine cone", 
+               "Pumice soil", "Moss", "Mushroom", "Fungus", "Cryptogam", "pine cone", 
                "Human debris, inorganic", "Ant hill")
 d$Plant <- "y"
 d$Plant[d$Full_name%in%not_plant] <- "n" 
@@ -108,7 +109,8 @@ d$RowNum <- c(1:nrow(d)) #for eventual reconciliation of issues identified below
 
 ####6. Incorporate the fixed issues into "d"####
 issues_fixed <- #Need to use "read_csv" rather than "read.csv" to keep columns as characters.
-  read_csv("./Data/Intermediate/BiancaReconciliation/issues-Jens.csv") 
+  read_csv("./Data/Intermediate/BiancaReconciliation/issues-andreas.csv") 
+#andreas entered row number 5871 to issues file - typo from 1997 that will be fixed below. hence "issues-andreas" 11/17/22  "Epilboim>Epilobium"
 issues_fixed <- #IMPORTANT: Because this document may have been sorted alphabetically, 
   #it needs to be re-sorted by RowNum.
   issues_fixed[order(issues_fixed$RowNum),] 
@@ -151,7 +153,44 @@ for(y in unique(tmp_plants$year)[(2:6)]){
     
 }
 
-  
+
+final<-tmp_d
+final<-as.data.table(final)
+
+#checking, looks like Epilobium has been fixed.
+
+#checking for duplicates of unique names - possible spelling errors
+tst<-unique(final$Full_name)
+tst<-as.data.frame(tst)
+#resulting data frame should have 240 entries
+
+#there are a number of duplicates within transect-year combos. Best I can tell, these are entries whose name was changed in the above code. 
+#For example, Agropyron sp. to Agropyron smithii.  The code below is aggregating these entries, based on the total_cm column by Name, Transect, Year, Status (L/D), and Growth Form (sometimes L for Litter)
+
+names(final)
+
+tyr<-final[,.(col=sum(Total_cm)),by=c("Transect_id","year","Full_name","Status","Growth_form")]
+#notice there are 41 fewer entires in the 'tst' file than in "final" or tmp_d. 
+
+#can check each difference using the below code.   Merging this with the final file to reconcile these entries. 
+ttst<-merge(tyr,final)
+#Sort entries by "check', a zero indicates a difference between the total_cm calculated above (column = 'col') and total_cm in original data set
+ttst$check<-ifelse(ttst$Total_cm==ttst$col,1,0)
+#these entries were all potentially entries that had their names updated, as stated above.  Notice the sum of the two entires is equal to the column "col".
+#will use this new column, which is the sum of all total_cm by name, transect, year, status, and growth form, as a the "true" total_cm column
+
+tyr2<-final[,.(Total_cm=sum(Total_cm),Basal_cm=sum(Basal_cm),Canopy_cm=sum(Canopy_cm),PctC=sum(PctC)),by=c("Transect_id","year","Full_name","Analysis type","Status","Growth_form","Code","RevBI","FS_BAND","TRT","Plant","Transect_cm","Origin")]
+#full dataset, aggregated, with all columns
+
+final<-tyr2
+
+write.csv(final,"Data/Raw/All Years 1997-2019 PermPlot-Entire-APW.csv")
+
+
+
+
+
+
 #Origins need to be imported from issues_fixed for all row matches into d.
 #Check for duplicate species from the same transect-year
 #There is no Frovaria sp ANYWHERE ON THE INTERNET. Fragaria?
